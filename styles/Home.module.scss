@@ -1,10 +1,6 @@
 //Hero section
 .heroContainer {
     position: relative;
- 
-    // background-image: url("/world-map-tablet.png");
-    // background-repeat: no-repeat;
-    // background-size: 100% 230px;
 }
 
 .worldMapIcon{
@@ -14,9 +10,8 @@
 }
 
 .heroTitle {
-    font-size: 22px;
+    font-size: 19px;
     font-weight: 800;
-    
     margin: 0 auto;
     text-align: center;
     text-transform: uppercase;
@@ -41,37 +36,37 @@
 }
 
 .heroLinkGreenland {
-    top: 2.5%;
+    top: 2%;
     left: 29.5%;
 }
 
 .heroLinkNA {
-    top: 16.4%;
-    left: 15.2%;
+    top: 20%;
+    left: 13%;
 }
 
 .heroLinkSA {
-    top: 39%;
-    left: 27.1%;
+    top: 46.5%;
+    left: 25.1%;
 }
 
 .heroLinkAfrica {
-    top: 31.5%;
-    left: 48%;
+    top: 36.5%;
+    left: 47%;
 }
 
 .heroLinkEurope {
-    top: 15%;
+    top: 17%;
     left: 55%;
 }
 
 .heroLinkAsia {
-    top: 17%;
+    top: 21%;
     left: 75%;
 }
 
 .heroLinkAU {
-    top: 47.7%;
+    top: 55.7%;
     left: 76.7%;
 }
 
@@ -87,55 +82,66 @@
         }
     
         .heroLinkNA {
-            top: 20.4%;
+            top: 21.5%;
+            left: 14%;
         }
     
         .heroLinkSA {
-            top: 46%;
+            top: 50%;
+            left: 26%;
         }
     
         .heroLinkAfrica {
-            top: 37.5%;
+            top: 38.5%;
         }
     
         .heroLinkEurope {
-            top: 18%;
+            top: 19%;
         }
     
         .heroLinkAsia {
-            top: 21%;
+            top: 23%;
         }
     
         .heroLinkAU {
-            top: 57.7%;
+            top: 59.7%;
             left: 77.7%;
         }
 }
+@media screen and (min-width:460px) {
 
-@media screen and (min-width: 410px){
-    .heroLink{
-        font-size: 10px;
+    .heroTitle{
+        font-size: 20px;
     }
-    
-          .heroLinkSA {
-              top: 49%;
-          }
-    
-          .heroLinkAfrica {
-              top: 39.5%;
-          }
-    
-          .heroLinkEurope {
-              top: 18.7%;
-          }
-    
-          .heroLinkAsia {
-              top: 23%;
-          }
-    
-          .heroLinkAU {
-              top: 59.7%;
-          }
+    .heroLink {
+        &Greenland{
+            top: 3.6%;
+            left: 30.5%;
+        }
+        &NA{
+            top: 23.5%;
+            left: 14%;
+        }
+        &SA {
+            top: 52%;
+            left: 27%;
+        }
+        &Africa {
+            top: 40.5%;
+        }
+        &Europe {
+            top: 20%;
+        }
+        
+        &Asia {
+            top: 24%;
+        }
+        
+        &AU {
+            top: 61%;
+            left: 77.7%;
+        }
+    }
 }
 
 @media screen and (min-width:768px) {

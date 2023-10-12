@@ -26,7 +26,27 @@ export const Header = () => {
     { id: 6, title: t("manual"), path: "/manual", pathEn: "en/manual" },
   ];
 
-  
+  const mobileNavList = [
+    { id: 1, title: t("contacts"), path: "/#contacts", pathEn: "/en#contacts" },
+    {
+      id: 2,
+      title: t("author"),
+      path: "/#author",
+      pathEn: "/en#author",
+    },
+    {
+      id: 3,
+      title: t("resource"),
+      path: "/#resource",
+      pathEn: "/#resource",
+    },
+  ];
+
+  const authList = [
+    { id: 1, title: t("auth"), path: "/auth", pathEn: "/en/auth" },
+    { id: 2, title: t("registrate"), path: "/register", pathEn: "/en/register" },
+  ];
+
   return (
     <header className={`${styles.header}`}>
       <div className={`${styles.bgContainer} `}>
@@ -38,6 +58,8 @@ export const Header = () => {
             Gastro
             <span className={styles.headerLogoDecorWord}>Guide</span>
           </Link>
+
+          <MainNavList navList={navList} />
           <div className={styles.locale}>
             <Link href="/" locale="en" className={styles.localeLink}>
               EN
@@ -47,10 +69,12 @@ export const Header = () => {
               УКР
             </Link>
           </div>
-          <MainNavList navList={navList} />
-
-          <MobileMenu />
-
+          <MobileMenu
+            navList={navList}
+            mobileNavList={mobileNavList}
+            auth={t("auth")}
+            registrate={t("registrate")}
+          />
           <ul className={styles.authList}>
             <li>
               <Link

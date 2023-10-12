@@ -1,6 +1,5 @@
 .header {
     background-color: #ffffff;
-    z-index: 100;
     width: 100%;
     box-shadow: 0px 10px 10px 0px var(--box-shadow-color-header-footer);
     
@@ -10,11 +9,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    font-size: 19px;
-    font-weight: 600;
+    gap: 5px;
+    font-size: 12px;
+    font-weight: 500;
     &Link{
-       color: var(--color-primary-text);
+       color: #ffffff;
 
        &:hover, &:focus{
         border-bottom: 1px solid var(--color-primary-text) ;
@@ -36,7 +35,7 @@
 
 .headerNav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -45,19 +44,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 22px;
+    height: 46px;
+    font-size: 20px;
     color: var(--color-primary-text);
     transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     &DecorWord {
-        margin-left: 72px;
+        margin-left: 68px;
     }
-
            &::after {
                content: "";
                position: absolute;
-               top: -10px;
-               right: 72px;
+               top: 0px;
+               right: 64px;
                width: 65px;
                height: 46px;
                background-size: cover;
@@ -119,33 +118,14 @@
     pointer-events: auto;
 }
 
-//mobile menu 
-
-// .mobMenuBtn {
-//     cursor: pointer;
-//     transition: 350ms cubic-bezier(.87, .2, .21, .76);
-
-// }
-
-// .mobMenuBtnIcon {
-//     width: 46px;
-//     height: 40px;
-//     fill: var(--color-primary-text);
-//     transition: fill 350ms cubic-bezier(.87, .2, .21, .76);
-// }
-
-// .mobMenuBtnIcon:hover {
-//     fill: url(#gradient);
-// }
-
-
 @media screen and (min-width:768px) {
     .headerLogo {
         width: 250px;
-        font-size: 26px;
+        height: 50px;
+        font-size: 24px;
 
         &::after{
-            top: -9px;
+            top: 0px;
             right: 82px;
             width: 70px;
             height: 50px;
@@ -157,8 +137,9 @@
         }
     }
 
-   
-
+    .locale{
+        margin-left: 300px;
+    }
 }
 
 
@@ -168,20 +149,24 @@
         display: none;
     }
 
+    .locale{
+        margin: 0;
+    }
+
     .dropdown-content {
         font-size: 16px;
     }
 
     .headerNav {
         justify-content: start;
-        gap: 32px;
+        gap: 25px;
     }
 
     .navList {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 15px;
+        gap: 12px;
         font-size: 16px;
         font-weight: 500;
 
@@ -264,21 +249,22 @@
 
 @media screen and (min-width:1200px) {
     .headerNav {
-        gap: 38px;
+        gap: 35px;
     }
 
     .navList {
         gap: 20px;
-        font-size: 19px;
+        font-size: 18px;
     }
 
     .headerLogo {
         width: 310px;
+        height: 55px;
         font-size: 32px;
 
         &::after {
-                top: -7px;
-                right: 111px;
+                top: 0px;
+                right: 105px;
                 width: 77px;
                 height: 55px;
         

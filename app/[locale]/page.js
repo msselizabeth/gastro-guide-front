@@ -26,40 +26,49 @@ export default function Home() {
       <section className={`section ${styles.hero}`}>
         <div className={`container ${styles.heroContainer}`}>
           <WorldMap />
-          <Link
-            className={`${styles.heroLink} ${styles.heroLinkGreenland}`}
-            href="#"
-          >
-            {t("greenland")}
+            <Link
+              className={`${styles.heroLink} ${styles.heroLinkGreenland}`}
+              href="#"
+            >
+              {t("greenland")}
+            </Link>
+            <Link
+              className={`${styles.heroLink} ${styles.heroLinkNA}`}
+              href="#"
+            >
+              {t("na")}
+            </Link>
+            <Link
+              className={`${styles.heroLink} ${styles.heroLinkSA}`}
+              href="#"
+            >
+              {t("sa")}
+            </Link>
+            <Link
+              className={`${styles.heroLink} ${styles.heroLinkAfrica}`}
+              href="#"
+            >
+              {t("africa")}
+            </Link>
+            <Link
+              className={`${styles.heroLink} ${styles.heroLinkEurope}`}
+              href="#"
+            >
+              {t("eu")}
+            </Link>
+            <Link
+              className={`${styles.heroLink} ${styles.heroLinkAsia}`}
+              href="#"
+            >
+              {t("asia")}
+            </Link>
+            <Link
+              className={`${styles.heroLink} ${styles.heroLinkAU}`}
+              href="#"
+            >
+              {t("au")}
           </Link>
-          <Link className={`${styles.heroLink} ${styles.heroLinkNA}`} href="#">
-            {t("na")}
-          </Link>
-          <Link className={`${styles.heroLink} ${styles.heroLinkSA}`} href="#">
-            {t("sa")}
-          </Link>
-          <Link
-            className={`${styles.heroLink} ${styles.heroLinkAfrica}`}
-            href="#"
-          >
-            {t("africa")}
-          </Link>
-          <Link
-            className={`${styles.heroLink} ${styles.heroLinkEurope}`}
-            href="#"
-          >
-            {t("eu")}
-          </Link>
-          <Link
-            className={`${styles.heroLink} ${styles.heroLinkAsia}`}
-            href="#"
-          >
-            {t("asia")}
-          </Link>
-          <Link className={`${styles.heroLink} ${styles.heroLinkAU}`} href="#">
-            {t("au")}
-          </Link>
-
+          
           <h1 className={`${styles.heroTitle} ${monsA.className}`}>
             {t("title")}
           </h1>
