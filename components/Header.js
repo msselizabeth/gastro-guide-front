@@ -2,13 +2,11 @@
 // import Link from "next/link";
 import Image from "next/image";
 import logo from "../public/logo-icon.svg";
-import { LoginIcon } from "./icons/LoginIcon";
-import { RegisterIcon } from "./icons/RegisterIcon";
 import { MobileMenu } from "./MobileMenu";
 import { MainNavList } from "./MainNavList";
 import styles from "../styles/Header.module.scss";
 import { daysOne } from "@/app/[locale]/layout";
-import { LogoIcon } from "./icons/LogoIcon";
+
 
 import { useTranslations } from "next-intl";
 import Link from "next-intl/link";

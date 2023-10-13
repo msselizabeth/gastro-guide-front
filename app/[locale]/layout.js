@@ -6,18 +6,40 @@ import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 
 
-export const mons = Montserrat({ subsets: ["cyrillic"] });
+export const mons = Montserrat({
+  subsets: ["cyrillic"],
+  variable: "--font-primary",
+});
 export const monsA = Montserrat_Alternates({
   subsets: ["cyrillic", "latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-titles",
 });
 
 export const daysOne = Days_One({
   subsets: ["latin"],
   weight: "400",
+  variable: "--font-logo",
 });
 
 const locales = ["en", "ua"];
+
+export const metadata = {
+  icons: [
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "16x16",
+      url: "/favicon.png",
+    },
+    {
+      rel: "icon",
+      type: "image/svg",
+      sizes: "16x16",
+      url: "/favicon.svg",
+    },
+  ],
+};
 
 
 export default function RootLayout({ children, params}) {
@@ -26,8 +48,8 @@ export default function RootLayout({ children, params}) {
   if (!isValidLocale) notFound();
   
   return (
-    <html lang={params.locale}>
-      <body className={mons.className}>
+    <html lang={params.locale} className={`${mons.variable} ${daysOne.variable} ${monsA.variable}`}>
+      <body>
         <Header></Header>
         <main>{children}</main>
         <Footer></Footer>

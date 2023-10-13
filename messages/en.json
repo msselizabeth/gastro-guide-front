@@ -20,6 +20,28 @@
     "asia": "Asia",
     "eu": "Europe",
     "africa": "Africa",
-    "au": "Australia"
+    "au": "Australia",
+    "about":{
+      "title": "About resource",
+      "descriptions": {
+        "global": "- your personal culinary guide in the world, offering an exiting journey through diverse gastronomic cultures. It’s a famous fact that food is an essential need of life and it also has social and cultural significance. Moreover, we can enjoy the taste and smell of food which lifts our mood and improves our well-being . In the different countries there are unique traditions of cooking food, features of the use of products and culinary arts with rich story." ,
+        "info": "is a source of information, filled with interesting facts of different cultures and food traditions around the world. The second topic in this application is information about benefits of nutrition and the effect of products on the human body. You need to remember that nutrition is more important than anything else.",
+        "pages": "On each county page you can find really exiting information about that county’s food, traditional dishes, local products and culture. A detailed recipe and useful properties of this dish are described on each page of the dish. You can use this app to determine the benefits of your own food intake.",
+        "data": "In addition , other pages present valuable macronutrient and micronutrient data that are included in the products. You can also find the full chemical composition of the most popular products. This data will be added and updated regularly."
+      }
+    }
+  },
+  "Footer": {
+    "navigation": "Site navigation",
+    "home": "Home",
+       "continents": "Continents",
+       "countries": "Countries",
+       "recipes": "Recipes",
+       "products": "Products",
+       "manual": "Manual",
+       "contacts": "Contacts",
+       "author": "About author",
+       "resource": "About resource",
+       "feedback": "Feedback"
   }
 }
