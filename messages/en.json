@@ -22,12 +22,26 @@
     "africa": "Africa",
     "au": "Australia",
     "about":{
-      "title": "About resource",
+      "title": "About the resource",
       "descriptions": {
         "global": "- your personal culinary guide in the world, offering an exiting journey through diverse gastronomic cultures. It’s a famous fact that food is an essential need of life and it also has social and cultural significance. Moreover, we can enjoy the taste and smell of food which lifts our mood and improves our well-being . In the different countries there are unique traditions of cooking food, features of the use of products and culinary arts with rich story." ,
         "info": "is a source of information, filled with interesting facts of different cultures and food traditions around the world. The second topic in this application is information about benefits of nutrition and the effect of products on the human body. You need to remember that nutrition is more important than anything else.",
-        "pages": "On each county page you can find really exiting information about that county’s food, traditional dishes, local products and culture. A detailed recipe and useful properties of this dish are described on each page of the dish. You can use this app to determine the benefits of your own food intake.",
+        "pages": "On each county page you can find really exciting information about that county’s food, traditional dishes, local products and culture. A detailed recipe and useful properties of this dish are described on each page of the dish. You can use this app to determine the benefits of your own food intake.",
         "data": "In addition , other pages present valuable macronutrient and micronutrient data that are included in the products. You can also find the full chemical composition of the most popular products. This data will be added and updated regularly."
+      }
+    },
+    "author":{
+      "title": "About the author",
+      "description": {
+        "greatest": "Hello there! I'm pleased to welcome you to my unique informative resource. My name is Elizabeth, I’m from Ukraine, from beautiful city Odesa.",
+        "education": "I have two higher degrees, one in the field of food technology and the other in computer science. This website is my personal project for my master's diploma in my second field of study. I believe that both of these fields are truly important and relevant in our lives, so I decided to merge them and create an engaging informational resource. I've incorporated all of my knowledge from both directions into this application, complementing it with data from the internet and literature.",
+        "meaning": "This application is not just a diploma or a simple project for me, because I put my heart into every word that I want to convey to society. I believe that the resource will be a real find for travelers, food enthusiasts and everyone who is interested in learning new things.",
+        "experience": "My knowledge in the food industry is supported by both theory and practice. I tested and applied a lot of theoretical knowledge while cooking, conducted various experiments, which I took into account when collecting all the necessary information that I share with you here.",
+        "blog": {
+          "part1": "I also have a personal culinary blog on ",
+          "part2": " where you can see the cooking processes of some of the dishes presented on this website. I'm always open to any suggestions and comments because it will help make the resource as useful as possible for everyone. I would like to continue to develop this project, improve the interface, add new features, fill it with new recipes, update product data, which is why I'll be glad for any feedback. I think we need to develop together."
+        },
+        "gratitude": "Thank you for your attention and getting to know me. I hope you will like my gastronomic guide. Enjoy your journey through the world of flavors!"
       }
     }
   },
