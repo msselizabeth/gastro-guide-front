@@ -45,6 +45,19 @@
       }
     }
   },
+  "Travel": {
+    "title": "Let's start you journey!",
+    "choose": {
+      "continent": "Choose continent",
+      "country": "Choose country"
+    }
+  },
+   "Contacts": {
+         "title": "Contacts",
+         "feedback": "Feedback",
+         "socialmedia": "Social Media",
+         "socialAuthor": "Author's social networks"
+  },
   "Footer": {
     "navigation": "Site navigation",
     "home": "Home",

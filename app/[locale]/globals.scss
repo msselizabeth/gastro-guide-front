@@ -5,6 +5,7 @@
     --icons-gradient: linear-gradient(rgba(196, 194, 61, 0.85), rgba(251, 152, 3, 0.85));
     --hover-gradient: linear-gradient(180deg, rgba(5, 177, 95, 0.90) 0%, rgba(255, 251, 3, 0.90) 100%);
     --color-shadow: rgba(90, 3, 25, 0.25);
+    --color-border: #5A0319;
 
     --background-color-primary: rgba(245, 242, 142, 0.10);
     --background-color-header-footer: rgba(255, 168, 0, 0.85);
@@ -80,7 +81,7 @@ img {
     font-family: var(--font-titles);
     font-size: 18px;
     color: var(--color-titles-section);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .section {
@@ -113,7 +114,7 @@ img {
     .sectionTitle {
         max-width: 768px;
         font-size: 24px;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
 
         &::after {
             top: 40px;
@@ -140,7 +141,7 @@ img {
     .sectionTitle {
         max-width: 1000px;
         font-size: 26px;
-        margin-bottom: 25px;
+        margin-bottom: 30px;
 
         &::after {
             top: 40px;
@@ -169,6 +170,7 @@ img {
 
     .sectionTitle {
         max-width: 1200px;
+        margin-bottom: 35px;
 
         &::after {
             top: 45px;
@@ -190,7 +192,7 @@ img {
     .sectionTitle {
         max-width: 1440px;
         font-size: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
 
         &::after {
             top: 50px;

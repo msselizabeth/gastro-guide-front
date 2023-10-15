@@ -367,19 +367,17 @@
         gap: 15px;
     }
 
-    .headerLogo {
-        width: 360px;
+    .footerLogo {
+        width: 450px;
         font-size: 36px;
-    
-        &Icon {
-            width: 135px;
-            height: 85px;
-            }
+        &::after {
+            right: 176px;
+        }
     }
 
     .footerNavContainer,
     .footerContactsContainer {
-        width: 500px;
+        width: 450px;
         display: flex;
         flex-direction: column;
         justify-content: center;

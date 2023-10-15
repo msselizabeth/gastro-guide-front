@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Montserrat, Days_One, Montserrat_Alternates } from "next/font/google";
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
+import { ContactsSection } from '@/components/ContactsSection';
 
 
 export const mons = Montserrat({
@@ -51,7 +52,10 @@ export default function RootLayout({ children, params}) {
     <html lang={params.locale} className={`${mons.variable} ${daysOne.variable} ${monsA.variable}`}>
       <body>
         <Header></Header>
-        <main>{children}</main>
+        <main>
+          {children}
+          <ContactsSection />
+        </main>
         <Footer></Footer>
       </body>
     </html>
