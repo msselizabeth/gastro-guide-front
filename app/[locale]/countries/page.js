@@ -1,3 +1,7 @@
+import { PagesHero } from "@/components/PagesHero";
+import imageUrl from "../../../public/countries/countries-2.jpg";
+import { useTranslations } from "next-intl";
+
 export const metadata = {
   title: "Країни світу",
   description:
@@ -5,5 +9,8 @@ export const metadata = {
 };
 
 export default function CountriesPage() {
-  return <h1>Країни список</h1>;
+  const t = useTranslations("CountriesPage");
+  return (
+    <PagesHero image={imageUrl} title={t("title")}/>
+  );
 }

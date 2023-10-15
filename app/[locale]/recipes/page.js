@@ -1,3 +1,7 @@
+import { PagesHero } from "@/components/PagesHero";
+import { useTranslations } from "next-intl";
+import imageUrl from "../../../public/recipes/recipes-2.jpg";
+
 export const metadata = {
   title: "Рецепти країн світу",
   description:
@@ -5,5 +9,8 @@ export const metadata = {
 };
 
 export default function RecipesPage() {
-  return <h1>Рецептиe</h1>;
+  const t = useTranslations("RecipesPage");
+  return (
+    <PagesHero image={imageUrl} title={t("title")} />
+  );
 }

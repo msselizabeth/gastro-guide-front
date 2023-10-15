@@ -1,3 +1,7 @@
+import { PagesHero } from "@/components/PagesHero";
+import imageUrl from "../../../public/manual/manual-2.jpg";
+import { useTranslations } from "next-intl";
+
 export const metadata = {
   title: "Довідник гастро гіда",
   description:
@@ -5,5 +9,8 @@ export const metadata = {
 };
 
 export default function ManualPage() {
-  return <h1>Довідник</h1>;
+  const t = useTranslations("ManualPage");
+  return (
+    <PagesHero image={imageUrl} title={t("title")} />
+  );
 }

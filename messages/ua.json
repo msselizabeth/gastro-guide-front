@@ -71,5 +71,20 @@
        "resource": "Про ресурс",
        "feedback": "Зворотній звʼязок"
 
+  },
+  "ContinentsPage": {
+    "title": "Кухня континентів"
+  },
+   "CountriesPage": {
+    "title": "Кухня країн світу"
+  },
+   "RecipesPage": {
+    "title": "Рецепти народів"
+  },
+   "ProductsPage": {
+    "title": "Харчові продукти"
+  },
+   "ManualPage": {
+    "title": "Довідник"
   }
 }

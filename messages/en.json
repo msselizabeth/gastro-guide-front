@@ -70,5 +70,20 @@
        "author": "About author",
        "resource": "About resource",
        "feedback": "Feedback"
+  },
+  "ContinentsPage": {
+    "title": "Сontinental cuisine"
+  },
+   "CountriesPage": {
+    "title": "Cuisine of the countries"
+  },
+   "RecipesPage": {
+    "title": "Recipes of the world"
+  },
+   "ProductsPage": {
+    "title": "Food products"
+  },
+   "ManualPage": {
+    "title": "Manual"
   }
 }

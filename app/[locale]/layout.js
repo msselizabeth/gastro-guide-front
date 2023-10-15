@@ -1,5 +1,4 @@
 import './globals.scss';
-import { useLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { Montserrat, Days_One, Montserrat_Alternates } from "next/font/google";
 import { Header } from "../../components/Header";
