@@ -1,6 +1,7 @@
 import { PagesHero } from "@/components/PagesHero";
 import imageUrl from "../../../public/continents/continents-page.jpg";
 import { useTranslations } from "next-intl";
+import { ContinentalCuisine } from "@/components/continentalCuisine";
 
 export const metadata = {
   title: "Континенти",
@@ -12,9 +13,9 @@ export const metadata = {
 export default function ContinentsPage() {
   const t = useTranslations("ContinentsPage");
   return (
-    <PagesHero
-      image={imageUrl}
-      title={t("title")}
-    />
+    <>
+      <PagesHero image={imageUrl} title={t("title")} />
+      <ContinentalCuisine/>
+    </>
   );
 }

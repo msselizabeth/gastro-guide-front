@@ -72,7 +72,23 @@
        "feedback": "Feedback"
   },
   "ContinentsPage": {
-    "title": "Сontinental cuisine"
+    "title": "Сontinental cuisine",
+    "section": {
+        "title": "Continental cuisine",
+        "description": {
+          "part1": "Historically, our huge and rich planet Earth has been divided into different areas - continents. Each of them has its own unique features, traditions of food, growing products and breeding livestock and birds. However, there is one of the continents that is not suitable either for growing food, or for breeding livestock, or for the development of food culture in general.",
+          "part2": "This continent is Antarctica, which is associated with permafrost. Due to the peculiarities of the geographical location and climate in Antarctica, it is impossible to enjoy the processes of cooking and creating culinary masterpieces. The main way of eating in Antarctica is the import of various canned goods and frozen semi-finished products. While other continents have a rich culinary history, unique traditions of eating and cooking. Let's consider each of them in more detail, because every corner of our beautiful world deserves attention and contributes to the culinary history of the world community."
+        },
+        "europe":{
+          "title":"Європа",
+          "features": {
+            "first": "Велике розмаїття кухонь у різних країнах Європи: французька, італійська, іспанська, грецька, німецька та багато інших.",
+            "second": "Використання м'яса: яловичина, свинина, ягнятина та птиці, споживання молочних продуктів, як важливого джерела білка та кальцію.",
+            "third": "Використання оливок, оливкової олії, винограду, хліба та пшениці."
+          }
+        },
+        "textbtn": "Відвідати континент"
+    }
   },
    "CountriesPage": {
     "title": "Cuisine of the countries"
