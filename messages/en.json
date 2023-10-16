@@ -80,14 +80,55 @@
           "part2": "This continent is Antarctica, which is associated with permafrost. Due to the peculiarities of the geographical location and climate in Antarctica, it is impossible to enjoy the processes of cooking and creating culinary masterpieces. The main way of eating in Antarctica is the import of various canned goods and frozen semi-finished products. While other continents have a rich culinary history, unique traditions of eating and cooking. Let's consider each of them in more detail, because every corner of our beautiful world deserves attention and contributes to the culinary history of the world community."
         },
         "europe":{
-          "title":"Європа",
+          "title":"Europe",
           "features": {
-            "first": "Велике розмаїття кухонь у різних країнах Європи: французька, італійська, іспанська, грецька, німецька та багато інших.",
-            "second": "Використання м'яса: яловичина, свинина, ягнятина та птиці, споживання молочних продуктів, як важливого джерела білка та кальцію.",
-            "third": "Використання оливок, оливкової олії, винограду, хліба та пшениці."
+            "first": "A wide variety of cuisines in different European countries: French, Italian, Spanish, Greek, German and many others.",
+            "second": "Use of meat: beef, pork, lamb and poultry, consumption of dairy products as an important source of protein and calcium.",
+            "third": "Use of olives, olive oil, grapes, bread and wheat."
           }
         },
-        "textbtn": "Відвідати континент"
+        "africa":{
+          "title":"Africa",
+          "features": {
+            "first": "The use of meat such as goat, ram, crocodile, zebra and other wild animals.",
+            "second": "The most popular dishes: couscous, jollof rice, boboti, braai (East African barbecue).",
+            "third": "A wealth of tropical fruits and vegetables, including bananas, mangoes, papayas, ailanthus, coconuts.",
+            "fourth": "Use lots of spices like curry and harissa."
+          }
+        },
+        "asia":{
+          "title":"Asia",
+          "features": {
+            "first": "Variety of Asian cuisine: Chinese, Indian, Japanese, Thai, Korean, Vietnamese.",
+            "second": "The use of rice, soybeans, fish, seafood, the use of various spices: turmeric, curry, ginger, lemongrass and other traditional ingredients.",
+            "third": "A variety of cooking techniques such as boiling, roasting, steaming and fermenting."
+          }
+        },
+        "northamerica":{
+          "title":"North America",
+          "features": {
+            "first": "High consumption of meat: beef, pork and poultry, as well as seafood: lobster, shrimp and mussels.",
+            "second": "The use of wheat for the production of bread, pasta and other bakery products.",
+            "third": "Traditional dishes: hamburgers, hot dogs, steaks, Mexican cuisine (tacos and burritos), seafood (lobsters, mussels, shrimp)."
+          }
+        },
+        "southamerica":{
+          "title":"South America",
+          "features": {
+            "first": "Enriched with a variety of foods, including potatoes, corn, beans, pumpkin, meat, fish and tropical fruits.",
+            "second": "Using traditional ingredients: quinoa, aleuros, quintales.",
+            "third": "Traditional dishes: arroz con pollo (meat with rice), asado (steamed meat), guacamole, empanadas (stuffed pies)."
+          }
+        },
+        "australia":{
+          "title":"Australia(Oceania)",
+          "features": {
+            "first": "Plenty of meat, including lamb, beef, kangaroo and fish from the Pacific ocean, used in Australian cuisine.",
+            "second": "Popular dishes: barbecue, lamb chops, kangaroo burgers, seafood.",
+            "third": "Eating many tropical fruits that grow in this region."
+          }
+        },
+        "textbtn": "Visit the continent"
     }
   },
    "CountriesPage": {
