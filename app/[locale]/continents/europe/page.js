@@ -1,12 +1,24 @@
+import imageMobile from "../../../../public/continents/europe-mob.jpg";
+import imageTablet from "../../../../public/continents/europe-tablet.jpg";
+import imageDesktop from "../../../../public/continents/europe-desktop.jpg";
+import { useTranslations } from "next-intl";
+import { ContinentHeroLeft } from "@/components/ContinentsHeroLeft";
+
 export const metadata = {
   title: "European cuisine",
 };
 
 export default function Europe() {
-  //   const t = useTranslations("SouthAmerica");
+    const t = useTranslations("Europe");
   return (
     <>
-      <h1>EUROPE WELCOME</h1>
+      <ContinentHeroLeft
+        imageMobile={imageMobile}
+        imageTablet={imageTablet}
+        imageDesktop={imageDesktop}
+        titlefirst={t("title.part1")}
+        titlesecond={t("title.part2")}
+      />
     </>
   );
 }

@@ -1,12 +1,24 @@
+import imageMobile from "../../../../public/continents/asia-mob.jpg";
+import imageTablet from "../../../../public/continents/asia-tablet.jpg";
+import imageDesktop from "../../../../public/continents/asia-desktop.jpg";
+import { useTranslations } from "next-intl";
+import { ContinentHeroLeft } from "@/components/ContinentsHeroLeft";
+
 export const metadata = {
   title: "Asia",
 };
 
 export default function Asia() {
-  //   const t = useTranslations("SouthAmerica");
+  const t = useTranslations("Asia");
   return (
     <>
-      <h1>Asia WELCOME</h1>
+      <ContinentHeroLeft
+        imageMobile={imageMobile}
+        imageTablet={imageTablet}
+        imageDesktop={imageDesktop}
+        titlefirst={t("title.part1")}
+        titlesecond={t("title.part2")}
+      />
     </>
   );
 }
