@@ -15,7 +15,7 @@ export const ContinentalCuisine = () => {
 
           <ul className={styles.continentsList}>
             <li className={styles.continentsItem}>
-              <Link href="#" className={styles.continentsLink}>
+              <Link href="/continents/europe" className={styles.continentsLink}>
                 <Image
                   src="/continents/europe.svg"
                   alt="Picture of the author"
@@ -40,13 +40,16 @@ export const ContinentalCuisine = () => {
                 </li>
               </ul>
               <div className={styles.continentLinkContainer}>
-                <Link href="#" className={styles.continentLinkButton}>
+                <Link
+                  href="/continents/europe"
+                  className={styles.continentLinkButton}
+                >
                   {t("textbtn")}
                 </Link>
               </div>
             </li>
             <li className={styles.continentsItem}>
-              <Link href="#" className={styles.continentsLink}>
+              <Link href="/continents/africa" className={styles.continentsLink}>
                 <Image
                   src="/continents/africa.svg"
                   alt="Picture of the author"
@@ -74,13 +77,16 @@ export const ContinentalCuisine = () => {
                 </li>
               </ul>
               <div className={styles.continentLinkContainer}>
-                <Link href="#" className={styles.continentLinkButton}>
+                <Link
+                  href="/continents/africa"
+                  className={styles.continentLinkButton}
+                >
                   {t("textbtn")}
                 </Link>
               </div>
             </li>
             <li className={styles.continentsItem}>
-              <Link href="#" className={styles.continentsLink}>
+              <Link href="/continents/asia" className={styles.continentsLink}>
                 <Image
                   src="/continents/asia.svg"
                   alt="Picture of the author"
@@ -90,9 +96,7 @@ export const ContinentalCuisine = () => {
                 />
               </Link>
 
-              <h3 className={styles.continentsItemTitle}>
-                {t("asia.title")}
-              </h3>
+              <h3 className={styles.continentsItemTitle}>{t("asia.title")}</h3>
               <ul className={styles.continentList}>
                 <li className={styles.continentItem}>
                   {t("asia.features.first")}
@@ -105,13 +109,19 @@ export const ContinentalCuisine = () => {
                 </li>
               </ul>
               <div className={styles.continentLinkContainer}>
-                <Link href="#" className={styles.continentLinkButton}>
+                <Link
+                  href="/continents/asia"
+                  className={styles.continentLinkButton}
+                >
                   {t("textbtn")}
                 </Link>
               </div>
             </li>
             <li className={styles.continentsItem}>
-              <Link href="#" className={styles.continentsLink}>
+              <Link
+                href="/continents/north-america"
+                className={styles.continentsLink}
+              >
                 <Image
                   src="/continents/northamerica.svg"
                   alt="Picture of the author"
@@ -136,13 +146,19 @@ export const ContinentalCuisine = () => {
                 </li>
               </ul>
               <div className={styles.continentLinkContainer}>
-                <Link href="#" className={styles.continentLinkButton}>
+                <Link
+                  href="/continents/north-america"
+                  className={styles.continentLinkButton}
+                >
                   {t("textbtn")}
                 </Link>
               </div>
             </li>
             <li className={styles.continentsItem}>
-              <Link href="#" className={styles.continentsLink}>
+              <Link
+                href="/continents/south-america"
+                className={styles.continentsLink}
+              >
                 <Image
                   src="/continents/southamerica.svg"
                   alt="Picture of the author"
@@ -167,13 +183,19 @@ export const ContinentalCuisine = () => {
                 </li>
               </ul>
               <div className={styles.continentLinkContainer}>
-                <Link href="#" className={styles.continentLinkButton}>
+                <Link
+                  href="/continents/south-america"
+                  className={styles.continentLinkButton}
+                >
                   {t("textbtn")}
                 </Link>
               </div>
             </li>
             <li className={styles.continentsItem}>
-              <Link href="#" className={styles.continentsLink}>
+              <Link
+                href="/continents/australia"
+                className={styles.continentsLink}
+              >
                 <Image
                   src="/continents/australia.svg"
                   alt="Picture of the author"
@@ -198,7 +220,10 @@ export const ContinentalCuisine = () => {
                 </li>
               </ul>
               <div className={styles.continentLinkContainer}>
-                <Link href="#" className={styles.continentLinkButton}>
+                <Link
+                  href="/continents/australia"
+                  className={styles.continentLinkButton}
+                >
                   {t("textbtn")}
                 </Link>
               </div>
