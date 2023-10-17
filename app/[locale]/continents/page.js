@@ -1,7 +1,7 @@
 import { PagesHero } from "@/components/PagesHero";
 import imageUrl from "../../../public/continents/continents-page.jpg";
 import { useTranslations } from "next-intl";
-import { ContinentalCuisine } from "@/components/continentalCuisine";
+import { ContinentalCuisine } from "../../../components/ContinentalCuisine";
 
 export const metadata = {
   title: "Континенти",
