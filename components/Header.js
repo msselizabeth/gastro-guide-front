@@ -1,7 +1,5 @@
 
 // import Link from "next/link";
-import Image from "next/image";
-import logo from "../public/logo-icon.svg";
 import { MobileMenu } from "./MobileMenu";
 import { MainNavList } from "./MainNavList";
 import styles from "../styles/Header.module.scss";
@@ -40,11 +38,6 @@ export const Header = () => {
     },
   ];
 
-  const authList = [
-    { id: 1, title: t("auth"), path: "/auth", pathEn: "/en/auth" },
-    { id: 2, title: t("registrate"), path: "/register", pathEn: "/en/register" },
-  ];
-
   return (
     <header className={`${styles.header}`}>
       <div className={`${styles.bgContainer} `}>
@@ -58,6 +51,7 @@ export const Header = () => {
           </Link>
 
           <MainNavList navList={navList} />
+
           <div className={styles.locale}>
             <Link href="/" locale="en" className={styles.localeLink}>
               EN
@@ -67,6 +61,7 @@ export const Header = () => {
               УКР
             </Link>
           </div>
+          
           <MobileMenu
             navList={navList}
             mobileNavList={mobileNavList}

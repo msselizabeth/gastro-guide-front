@@ -142,5 +142,47 @@
   },
    "ManualPage": {
     "title": "Manual"
+  },
+   "SouthAmerica": {
+    "title": {
+      "part1": "Cuisine and traditions of the continent",
+      "part2": "South America"
+    },
+    "countriesTitle": "Countries of the South American continent"
+  },
+   "NorthAmerica": {
+    "title": {
+      "part1": "Cuisine and traditions of the continent",
+      "part2": "North America"
+    },
+    "countriesTitle": "Countries of the North American continent"
+  },
+   "Africa": {
+    "title": {
+      "part1": "Cuisine and traditions of the continent",
+      "part2": "Africa"
+    },
+    "countriesTitle": "Countries of the Africa continent"
+  },
+   "Asia": {
+    "title": {
+      "part1": "Cuisine and traditions of the continent",
+      "part2": "Asia"
+    },
+    "countriesTitle": "Countries of the Asian continent"
+  },
+   "Europe": {
+    "title": {
+      "part1": "Cuisine and traditions of the continent",
+      "part2": "Europe"
+    },
+    "countriesTitle": "Countries of the European continent"
+  },
+   "Australia": {
+    "title": {
+      "part1": "Cuisine and traditions of the continent",
+      "part2": "Australia(Oceania)"
+    },
+    "countriesTitle": "Countries of the Australian continent"
   }
 }

@@ -1,15 +1,20 @@
+
+
 import { ContinentHeroRight } from "@/components/ContinentHeroRight";
 import imageMobile from "../../../../public/continents/south-america-mob.jpg";
 import imageTablet from "../../../../public/continents/south-america-tablet.jpg";
 import imageDesktop from "../../../../public/continents/south-america-desktop.jpg";
 import { useTranslations } from "next-intl";
+import { CountriesOfContinent } from "@/components/CountriesOfContinent";
 
 export const metadata = {
   title: "Південна Америка",
 };
 
+
 export default function SouthAmerica() {
   const t = useTranslations("SouthAmerica");
+
   return (
     <>
       <ContinentHeroRight
@@ -19,6 +24,7 @@ export default function SouthAmerica() {
         titlefirst={t("title.part1")}
         titlesecond={t("title.part2")}
       />
+      <CountriesOfContinent title={t("countriesTitle")} />
     </>
   );
 }

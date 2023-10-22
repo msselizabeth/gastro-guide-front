@@ -1,6 +1,7 @@
 import imageMobile from "../../../../public/continents/north-america-mob.jpg";
 import imageTablet from "../../../../public/continents/north-america-tablet.jpg";
 import imageDesktop from "../../../../public/continents/north-america-desktop.jpg";
+import { CountriesOfContinent } from "@/components/CountriesOfContinent";
 import { useTranslations } from "next-intl";
 import { ContinentHeroLeft } from "@/components/ContinentsHeroLeft";
 
@@ -19,6 +20,7 @@ export default function NorthAmerica() {
         titlefirst={t("title.part1")}
         titlesecond={t("title.part2")}
       />
+      <CountriesOfContinent title={t("countriesTitle")} />
     </>
   );
 }
