@@ -184,5 +184,11 @@
       "part2": "Australia(Oceania)"
     },
     "countriesTitle": "Countries of the Australian continent"
+  },
+  "CountryPage": {
+    "featuresTitle": "Features of the country",
+    "historyTitle": "History of the origin of cooking in the country",
+    "seasonsTitle": "Seasonal products",
+    "dishesTitle": "Traditional dishes of the country"
   }
 }

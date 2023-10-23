@@ -4,6 +4,7 @@ import { Montserrat, Days_One, Montserrat_Alternates } from "next/font/google";
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 import { ContactsSection } from '@/components/ContactsSection';
+import { NextIntlClientProvider, useMessages } from 'next-intl';
 
 
 export const mons = Montserrat({
@@ -46,16 +47,23 @@ export default function RootLayout({ children, params}) {
   
   const isValidLocale = locales.some((cur) => cur === params.locale);
   if (!isValidLocale) notFound();
+
+  const messages = useMessages();
   
   return (
-    <html lang={params.locale} className={`${mons.variable} ${daysOne.variable} ${monsA.variable}`}>
+    <html
+      lang={params.locale}
+      className={`${mons.variable} ${daysOne.variable} ${monsA.variable}`}
+    >
       <body>
-        <Header></Header>
-        <main>
-          {children}
-          <ContactsSection />
-        </main>
-        <Footer></Footer>
+        <NextIntlClientProvider locale={params.locale} messages={messages}>
+          <Header></Header>
+          <main>
+            {children}
+            <ContactsSection />
+          </main>
+          <Footer></Footer>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

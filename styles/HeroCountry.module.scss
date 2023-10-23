@@ -1,0 +1,94 @@
+.countryHeroContainer {
+    height: 290px;
+    background-size: 100% 290px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.countryHeroTitle {
+    text-transform: uppercase;
+        font-size: 33px;
+        color: transparent;
+            background-clip: text;
+            background-image: var(--color-continents-titles-gradient);
+        font-family: var(--font-titles);
+        text-align: center;
+}
+
+.countryHeroCapital {
+    display: block;
+        font-size: 18px;
+        text-transform: none;
+}
+
+
+
+@media screen and (min-width:768px) {
+    .countryHeroContainer {
+        height: 450px;
+        background-size: 100% 450px;
+    }
+
+        .countryHeroTitle {
+            font-size: 44px;
+        }
+    
+        .countryHeroCapital {
+            font-size: 24px;
+        }
+
+
+
+}
+
+@media screen and (min-width:1000px) {
+
+    .countryHeroContainer {
+        height: 560px;
+        background-size: 100% 560px;
+    }
+
+                 .countryHeroTitle {
+                     font-size: 49px;
+                 }
+        
+                 .countryHeroCapital {
+                     font-size: 27px;
+                 }
+
+  
+}
+
+@media screen and (min-width:1200px) {
+    .countryHeroContainer {
+        height: 620px;
+        background-size: 100% 620px;
+    }
+         .countryHeroTitle {
+             font-size: 52px;
+         }
+    
+         .countryHeroCapital {
+             font-size: 30px;
+         }
+    
+
+}
+
+@media screen and (min-width:1440px) {
+    .countryHeroContainer {
+        height: 800px;
+        background-size: 100% 800px;
+    }
+
+                .countryHeroTitle {
+                    font-size: 66px;
+                }
+        
+                .countryHeroCapital {
+                    font-size: 35px;
+                }
+}
