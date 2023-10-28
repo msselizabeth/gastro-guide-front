@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export async function FetchCountries(pathname) {
   const response = await fetch(
-    `https://gastro-guide-cb84aa2b2322.herokuapp.com//api${pathname}/countries`
+    `https://gastro-guide-cb84aa2b2322.herokuapp.com/api${pathname}/countries`
   );
   const countries = await response.json();
   return countries;

@@ -10,7 +10,7 @@ import { SeasonsProducts } from "./SeasonsProducts";
 export async function FetchCountry(pathname) {
     console.log(pathname);
   const response = await fetch(
-    `https://gastro-guide-cb84aa2b2322.herokuapp.com//api/${pathname.locale}/countries/${pathname.slug}`
+    `https://gastro-guide-cb84aa2b2322.herokuapp.com/api/${pathname.locale}/countries/${pathname.slug}`
   );
   const countries = await response.json();
   return countries;
