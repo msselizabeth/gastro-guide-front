@@ -1,40 +1,77 @@
-
-// import Link from "next/link";
 import { MobileMenu } from "./MobileMenu";
 import { MainNavList } from "./MainNavList";
 import styles from "../styles/Header.module.scss";
 import { daysOne } from "@/app/[locale]/layout";
-
-
 import { useTranslations } from "next-intl";
 import Link from "next-intl/link";
+import { Locale } from "./Locale";
 
- 
 export const Header = () => {
   const t  = useTranslations("Header");
 
   const navList = [
-    { id: 1, title: t("home"), path: "/", pathEn: "/en" },
-    { id: 2, title: t("continents"), path: "/continents", pathEn: "/en/continents" },
-    { id: 3, title: t("countries"), path: "/countries", pathEn: "en/countries" },
-    { id: 4, title: t("recipes"), path: "/recipes", pathEn: "en/recipes" },
-    { id: 5, title: t("products"), path: "/products", pathEn: "en/products" },
-    { id: 6, title: t("manual"), path: "/manual", pathEn: "en/manual" },
+    {
+      id: 1,
+      title: t("home"),
+      path: "/",
+      pathUA: "/ua",
+      pathEN: "/en"
+    },
+    {
+      id: 2,
+      title: t("continents"),
+      path: "/continents",
+      pathUA: "/ua/continents",
+      pathEN: "/en/continents",
+    },
+    {
+      id: 3,
+      title: t("countries"),
+      path: "/countries",
+      pathUA: "/ua/countries",
+      pathEN: "/en/countries",
+    },
+    {
+      id: 4,
+      title: t("recipes"),
+      path: "/recipes",
+      pathUA: "/ua/recipes",
+      pathEN: "/en/recipes",
+    },
+    {
+      id: 5,
+      title: t("products"),
+      path: "/products",
+      pathUA: "/ua/products",
+      pathEN: "/en/products",
+    },
+    {
+      id: 6,
+      title: t("manual"),
+      path: "/manual",
+      pathUA: "/ua/manual",
+      pathEN: "/en/manual",
+    },
   ];
 
   const mobileNavList = [
-    { id: 1, title: t("contacts"), path: "/#contacts", pathEn: "/en#contacts" },
+    {
+      id: 1,
+      title: t("contacts"),
+      path: "/ua#contacts",
+      pathEn: "/en#contacts"
+    },
     {
       id: 2,
       title: t("author"),
-      path: "/#author",
+      path: "/ua#author",
       pathEn: "/en#author",
     },
     {
       id: 3,
       title: t("resource"),
-      path: "/#resource",
-      pathEn: "/#resource",
+      path: "/ua#resource",
+      pathEn: "/en#resource",
     },
   ];
 
@@ -52,16 +89,7 @@ export const Header = () => {
 
           <MainNavList navList={navList} />
 
-          <div className={styles.locale}>
-            <Link href="/" locale="en" className={styles.localeLink}>
-              EN
-            </Link>
-
-            <Link href="/" locale="ua" className={styles.localeLink}>
-              УКР
-            </Link>
-          </div>
-          
+         <Locale navList={navList} />          
           <MobileMenu
             navList={navList}
             mobileNavList={mobileNavList}

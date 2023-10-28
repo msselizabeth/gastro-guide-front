@@ -9,13 +9,13 @@ export const MainNavList = ({navList}) => {
 
     return (
       <ul className={styles.navList}>
-        {navList.map(({ id, title, path, pathEn }) => {
+        {navList.map(({ id, title, path, pathEN, pathUA }) => {
           return (
             <li key={id} className={styles.navListItem}>
               <Link
                 href={path}
                 className={`${styles.navListLink} ${
-                  pathname === path || pathname === pathEn
+                  pathname === pathUA || pathname === pathEN
                     ? `${styles.current}`
                     : ""
                 }`}

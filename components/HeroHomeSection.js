@@ -12,32 +12,44 @@ export const HeroHomeSection = () => {
         <WorldMap />
         <Link
           className={`${styles.heroLink} ${styles.heroLinkGreenland}`}
-          href="#"
+          href="/continents/north-america"
         >
           {t("greenland")}
         </Link>
-        <Link className={`${styles.heroLink} ${styles.heroLinkNA}`} href="#">
+        <Link
+          className={`${styles.heroLink} ${styles.heroLinkNA}`}
+          href="/continents/north-america"
+        >
           {t("na")}
         </Link>
-        <Link className={`${styles.heroLink} ${styles.heroLinkSA}`} href="#">
+        <Link
+          className={`${styles.heroLink} ${styles.heroLinkSA}`}
+          href="/continents/south-america"
+        >
           {t("sa")}
         </Link>
         <Link
           className={`${styles.heroLink} ${styles.heroLinkAfrica}`}
-          href="#"
+          href="/continents/africa"
         >
           {t("africa")}
         </Link>
         <Link
           className={`${styles.heroLink} ${styles.heroLinkEurope}`}
-          href="#"
+          href="/continents/europe"
         >
           {t("eu")}
         </Link>
-        <Link className={`${styles.heroLink} ${styles.heroLinkAsia}`} href="#">
+        <Link
+          className={`${styles.heroLink} ${styles.heroLinkAsia}`}
+          href="/continents/asia"
+        >
           {t("asia")}
         </Link>
-        <Link className={`${styles.heroLink} ${styles.heroLinkAU}`} href="#">
+        <Link
+          className={`${styles.heroLink} ${styles.heroLinkAU}`}
+          href="/continents/australia"
+        >
           {t("au")}
         </Link>
 
