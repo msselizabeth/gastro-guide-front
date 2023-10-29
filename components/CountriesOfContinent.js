@@ -1,15 +1,17 @@
-"use client";
+"use client"
 import { usePathname } from "next/navigation";
 import { RenderListOfCountries } from "./FetchCountriesOfContinent";
 
-export const CountriesOfContinent = ({title}) => {
-  const pathname = usePathname();
+export const CountriesOfContinent = ({ title }) => {
   
+  const pathname = usePathname();
+  console.log(pathname);
+ 
     return (
       <section className="section">
         <div className="container">
           <h1 className="sectionTitle">{title}</h1>
-          <RenderListOfCountries pathname={pathname}/>
+          <RenderListOfCountries pathname={pathname} />
         </div>
       </section>
     );

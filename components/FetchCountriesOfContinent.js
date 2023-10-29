@@ -1,17 +1,33 @@
+"use client"
 import styles from "../styles/CountriesOfContinent.module.scss";
 import Link from "next/link";
 import Image from "next/image";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
-export async function FetchCountries(pathname) {
-  const response = await fetch(
-    `https://gastro-guide-cb84aa2b2322.herokuapp.com/api${pathname}/countries`
-  );
-  const countries = await response.json();
-  return countries;
-}
+// export async function FetchCountries(pathname) {
 
-export const RenderListOfCountries = async ({ pathname }) => {
-    const countries = await FetchCountries(pathname);
+//    const response = await fetch(
+//       `https://gastro-guide-cb84aa2b2322.herokuapp.com/api/${pathname}/countries`
+//     )
+//   const countries = await response.json();
+//   return countries;
+// }
+
+export const RenderListOfCountries = ({pathname}) => {
+
+  const [countries, setCountries] = useState(null);
+
+  useEffect(() => {
+    // Вызываем API вашего стороннего бекенда
+    axios
+      .get(
+        `https://gastro-guide-cb84aa2b2322.herokuapp.com/api${pathname}/countries`)
+      .then((response) => setCountries(response.data))
+      .catch((error) => console.error(error));
+  }, []);
+
+  // const countries = FetchCountries(params);
     
   return (
     <ul className={styles.countriesList}>

@@ -1,5 +1,3 @@
-
-
 import { ContinentHeroRight } from "@/components/ContinentHeroRight";
 import imageMobile from "../../../../public/continents/south-america-mob.jpg";
 import imageTablet from "../../../../public/continents/south-america-tablet.jpg";

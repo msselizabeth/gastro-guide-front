@@ -7,18 +7,18 @@ import {HistoryCountry} from "./HistoryCountry";
 import { SeasonsProducts } from "./SeasonsProducts";
 
 
-export async function FetchCountry(pathname) {
-    console.log(pathname);
+export async function FetchCountry(params) {
+
   const response = await fetch(
-    `https://gastro-guide-cb84aa2b2322.herokuapp.com/api/${pathname.locale}/countries/${pathname.slug}`
+    `https://gastro-guide-cb84aa2b2322.herokuapp.com/api/${params.locale}/countries/${params.slug}`
   );
   const countries = await response.json();
   return countries;
 }
 
 
-export const CountryData = async ({pathname, featuresTitle, historyTitle, seasonsTitle, dishesTitle}) => {
-    const country = await FetchCountry(pathname);
+export const CountryData = async ({params, featuresTitle, historyTitle, seasonsTitle, dishesTitle}) => {
+    const country = await FetchCountry(params);
    
   return (
     <>

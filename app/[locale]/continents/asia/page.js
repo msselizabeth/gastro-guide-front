@@ -3,6 +3,7 @@ import imageTablet from "../../../../public/continents/asia-tablet.jpg";
 import imageDesktop from "../../../../public/continents/asia-desktop.jpg";
 import { useTranslations } from "next-intl";
 import { ContinentHeroLeft } from "@/components/ContinentsHeroLeft";
+import { CountriesOfContinent } from "@/components/CountriesOfContinent";
 
 export const metadata = {
   title: "Asia",
@@ -19,6 +20,7 @@ export default function Asia() {
         titlefirst={t("title.part1")}
         titlesecond={t("title.part2")}
       />
+      <CountriesOfContinent title={t("countriesTitle")} />
     </>
   );
 }
