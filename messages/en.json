@@ -190,5 +190,9 @@
     "historyTitle": "History of the origin of cooking in the country",
     "seasonsTitle": "Seasonal products",
     "dishesTitle": "Traditional dishes of the country"
+  },
+  "Buttons": {
+    "more": "Show more",
+    "collapse": "Collapse"
   }
 }
