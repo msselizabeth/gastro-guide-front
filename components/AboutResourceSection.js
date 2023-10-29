@@ -17,7 +17,7 @@ export const AboutResourceSection = () => {
                 <PlanetIcon />
               </div>
               <p className={styles.aboutListText}>
-                <span className={styles.aboutBoldText}>Gastro Guide </span>
+                <span className={styles.aboutBoldText}>Gastro Guide</span>
                 {t("descriptions.global")}
               </p>
             </li>
