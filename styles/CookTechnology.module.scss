@@ -1,0 +1,106 @@
+.cook__container{
+    padding: 12px 5px;
+    border-radius: 25px;
+        margin-top: 15px;
+        background: var(--background-color-primary);
+        box-shadow: 0px 4px 4px 0px var(--color-shadow);
+        backdrop-filter: blur(2.2px);
+}
+
+.cook__title{
+  font-size: 18px;
+  font-family: var(--font-titles);
+   color: var(--color-titles-section);  
+  &::after {
+        content: '';
+        position: absolute;
+        top: 38px;
+        left: 10px;
+        transform: translateY(50%);
+        display: block;
+        width: calc(100% - 20px);
+        height: 2px;
+        border-radius: 25px;
+        background-color: var(--color-titles-section);
+
+    }
+}
+
+.cook__list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    font-size: 17px;
+    gap: 12px;
+}
+
+.cook__item{
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,
+        &:focus {
+            font-weight: 600;
+            color: transparent;
+            background-clip: text;
+            background-image: var(--color-hover-text);
+            transform: scale(1.02);
+        }
+}
+
+
+@media screen and (min-width:768px) {
+   .cook__container{
+    padding: 15px 7px;
+   }
+
+   .cook__list{
+    font-size: 19px;
+    gap: 15px;
+   }
+   .cook__title {
+
+       font-size: 20px;
+       &::after {
+            top: 47px;
+            left: 7px
+        }
+   }
+}
+
+@media screen and (min-width:1000px) {
+    .cook__container {
+        padding: 20px 10px;
+    }
+    .cook__list {
+        font-size: 20px;
+        gap: 18px;
+    }
+    
+    .cook__title {
+        font-size: 21px;
+        &::after {
+                top: 50px;
+                left: 10px
+            }
+    }
+}
+
+@media screen and (min-width:1200px) {
+   .cook__container {
+        padding: 25px 15px;
+    }
+
+    .cook__list {
+        font-size: 22px;
+        gap: 20px;
+    }
+    
+    .cook__title {
+        font-size: 23px;
+        &::after {
+                top: 57px;
+                left: 15px
+            }
+    }
+
+}

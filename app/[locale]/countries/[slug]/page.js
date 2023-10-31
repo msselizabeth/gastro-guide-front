@@ -2,7 +2,7 @@ import { CountryData } from "@/components/FetchCountry";
 import { useTranslations } from "next-intl";
 
 export default function Country({ params }) {
-
+ 
   const t = useTranslations("CountryPage");
  
   return (

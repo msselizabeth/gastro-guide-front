@@ -1,6 +1,6 @@
 import styles from "../styles/HeroCountry.module.scss";
 
-export const HeroCountry = ({img, title, capital}) => {
+export const HeroCountryAndRecipe = ({img, title, capital}) => {
 
     return (
       <section>
@@ -14,9 +14,9 @@ export const HeroCountry = ({img, title, capital}) => {
         >
           <h1 className={styles.countryHeroTitle}>
             {title}
-            <span className={styles.countryHeroCapital}>
-              {capital}
-            </span>
+            {capital && (
+              <span className={styles.countryHeroCapital}>{capital}</span>
+            )}
           </h1>
         </div>
       </section>

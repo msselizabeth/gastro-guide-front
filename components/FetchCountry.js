@@ -1,4 +1,4 @@
-import { HeroCountry } from "./HeroCountry";
+import { HeroCountryAndRecipe } from "./HeroCountryAndRecipe";
 import { FeaturesCountryList } from "./FeaturesCountryList";
 import {HistoryCountry} from "./HistoryCountry";
 import { SeasonsProducts } from "./SeasonsProducts";
@@ -30,7 +30,7 @@ export const CountryData = async ({params, featuresTitle, historyTitle, seasonsT
    
   return (
     <>
-      <HeroCountry
+      <HeroCountryAndRecipe
         img={country.imageHero}
         title={country.countryName}
         capital={country.capitalCountry}

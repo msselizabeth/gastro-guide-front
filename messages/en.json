@@ -191,6 +191,13 @@
     "seasonsTitle": "Seasonal products",
     "dishesTitle": "Traditional dishes of the country"
   },
+  "RecipePage": {
+    "featuresTitle": "Features of the dish",
+    "measures": "g",
+    "recipeTitle": "Recipe of the dish",
+    "cookTitle": "Cooking technology",
+    "nutritionalTitle": "Nutritional value"
+  },
   "Buttons": {
     "more": "Show more",
     "collapse": "Collapse"

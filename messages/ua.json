@@ -192,6 +192,13 @@
     "seasonsTitle": "Сезонні продукти",
     "dishesTitle": "Традиційні страви країни"
   },
+   "RecipePage": {
+    "featuresTitle": "Особливості страви",
+    "measures": "г",
+    "recipeTitle": "Рецептура страви",
+    "cookTitle": "Технологія приготування",
+    "nutritionalTitle": "Харчова цінність"
+  },
   "Buttons": {
     "more": "Показати більше",
     "collapse": "Згорнути"
