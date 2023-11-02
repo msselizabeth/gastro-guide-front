@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "../styles/RecipeList.module.scss";
 import { CookTechnology } from "./CookTechnology";
 import { NutritionalValues } from "./NutritionalValues";
+import { CalcCaloriesAndMacronutrients } from "./CalcCaloriesAndMarconutrients";
 
 export const RecipeList = ({
   img,
@@ -13,6 +14,7 @@ export const RecipeList = ({
   cookTechnology,
   nutritionalTitle,
   nutritionalValues,
+  products,
 }) => {
   return (
     <section className="section">
@@ -40,6 +42,10 @@ export const RecipeList = ({
         <NutritionalValues
           nutritionalTitle={nutritionalTitle}
           nutritionalValues={nutritionalValues}
+        />
+        <CalcCaloriesAndMacronutrients
+          dish={recipe}
+          products={products}
         />
       </div>
     </section>

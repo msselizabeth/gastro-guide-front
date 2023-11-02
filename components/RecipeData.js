@@ -11,6 +11,14 @@ export async function FetchRecipe(params) {
   return recipe;
 }
 
+export async function FetchProducts(params) {
+  const response = await fetch(
+    `https://gastro-guide-cb84aa2b2322.herokuapp.com/api/${params.locale}/products`
+  );
+  const products = await response.json();
+  return products;
+}
+
 export const RecipeData = async ({
   params,
   featuresTitle,
@@ -20,6 +28,7 @@ export const RecipeData = async ({
   nutritionalTitle,
 }) => {
   const recipe = await FetchRecipe(params);
+  const products = await FetchProducts(params);
 
   return (
     <>
@@ -41,6 +50,7 @@ export const RecipeData = async ({
         cookTechnology={recipe.cookTechnology}
         nutritionalTitle={nutritionalTitle}
         nutritionalValues={recipe.nutritionalValues}
+        products={products}
       />
     </>
   );
