@@ -140,7 +140,12 @@
     }
   },
    "RecipesPage": {
-    "title": "Recipes of the world"
+    "title": "Recipes of the world",
+     "recipesSection": {
+      "title": "Recipes of the world",
+      "placeholder": "Enter a name of recipe/dish",
+      "buttonMore": "Load more"
+    }
   },
    "ProductsPage": {
     "title": "Food products"

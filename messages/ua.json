@@ -141,7 +141,12 @@
     }
   },
    "RecipesPage": {
-    "title": "Рецепти народів"
+    "title": "Рецепти народів",
+    "recipesSection": {
+      "title": "Рецепти країн світу",
+      "placeholder": "Введіть назву страви",
+      "buttonMore": "Завантажити ще"
+    }
   },
    "ProductsPage": {
     "title": "Харчові продукти"
