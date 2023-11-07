@@ -132,7 +132,12 @@
     }
   },
    "CountriesPage": {
-    "title": "Cuisine of the countries"
+    "title": "Cuisine of the countries",
+     "countriesSection": {
+      "title": "Countries of the world",
+      "placeholder": "Enter a name of country",
+      "buttonMore": "Load more"
+    }
   },
    "RecipesPage": {
     "title": "Recipes of the world"

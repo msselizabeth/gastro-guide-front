@@ -6,7 +6,6 @@ export default function Country({ params }) {
   const t = useTranslations("CountryPage");
  
   return (
-    <>
       <CountryData
         params={params}
         featuresTitle={t("featuresTitle")}
@@ -14,6 +13,5 @@ export default function Country({ params }) {
         seasonsTitle={t("seasonsTitle")}
         dishesTitle={t("dishesTitle")}
       />
-    </>
   );
 }

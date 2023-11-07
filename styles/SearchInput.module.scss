@@ -1,0 +1,28 @@
+.search__input {
+    width: calc(100% - 10px);
+    margin-top: 20px;
+    padding: 7px;
+    background-color: var(--background-color-primary);
+    box-shadow: 3px 3px 5px 0px var(--color-shadow);
+    border: 1.5px solid var(--color-primary-text);
+    border-radius: 25px;
+
+}
+
+.search__input::placeholder {
+    color: var(--color-primary-text);
+    font-family: var(--font-titles);
+
+}
+
+@media screen and (min-width:1000px) {
+    .search__input {
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .search__input {
+        padding: 12px;
+    }
+}

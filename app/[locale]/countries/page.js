@@ -1,6 +1,7 @@
 import { PagesHero } from "@/components/PagesHero";
 import imageUrl from "../../../public/countries/countries-2.jpg";
 import { useTranslations } from "next-intl";
+import { CountriesList } from "@/components/CountriesList";
 
 export const metadata = {
   title: "Країни світу",
@@ -11,6 +12,13 @@ export const metadata = {
 export default function CountriesPage() {
   const t = useTranslations("CountriesPage");
   return (
-    <PagesHero image={imageUrl} title={t("title")}/>
+    <>
+      <PagesHero image={imageUrl} title={t("title")} />
+      <CountriesList
+        sectionTitle={t("countriesSection.title")}
+        placeholder={t("countriesSection.placeholder")}
+        textBtnMore={t("countriesSection.buttonMore")}
+      />
+    </>
   );
 }

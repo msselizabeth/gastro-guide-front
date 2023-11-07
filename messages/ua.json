@@ -133,7 +133,12 @@
     }
   },
    "CountriesPage": {
-    "title": "Кухня країн світу"
+    "title": "Кухня країн світу",
+    "countriesSection": {
+      "title": "Країни світу",
+      "placeholder": "Введіть назву країни",
+      "buttonMore": "Завантажити ще"
+    }
   },
    "RecipesPage": {
     "title": "Рецепти народів"
