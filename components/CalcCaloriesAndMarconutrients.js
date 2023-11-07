@@ -1,4 +1,4 @@
-
+import styles from "../styles/CalcCaloriesAndMacronutrients.module.scss";
 async function calculateCalories(products, recipe) {
   let totalCal = 0;
   let weightDish = 0;
@@ -48,7 +48,7 @@ async function calculateCalories(products, recipe) {
   };
 }
 
-export async function CalcCaloriesAndMacronutrients({ dish, products }) {
+export async function CalcCaloriesAndMacronutrients({ dish, products, staticText }) {
 
   let calOfDish;
   if (dish) {
@@ -58,29 +58,23 @@ export async function CalcCaloriesAndMacronutrients({ dish, products }) {
   }
 
   return (
-    <>
-      <h4 className="technology__title kcal__title">На порцію(~300г):</h4>
-      <ul>
+    <div>
+      <h4 className={styles.nutritionTitle}>{staticText.portion}</h4>
+      <ul className={styles.nutritionList}>
         <li>
-          <h5 className="technology__title kcal__title">{`Білки: ${calOfDish.totalProteins} г`}</h5>
+          <h5>{`${staticText.proteins} ${calOfDish.totalProteins} ${staticText.g}*`}</h5>
         </li>
         <li>
-          <h5 className="technology__title kcal__title">{`Жири: ${calOfDish.totalFats} г`}</h5>
+          <h5>{`${staticText.fats} ${calOfDish.totalFats} ${staticText.g}*`}</h5>
         </li>
         <li>
-          <h5 className="technology__title kcal__title">{`Вуглеводи: ${calOfDish.totalCarbohydrates} г`}</h5>
+          <h5>{`${staticText.carbohydrates} ${calOfDish.totalCarbohydrates} ${staticText.g}*`}</h5>
         </li>
         <li>
-          <h5 className="technology__title kcal__title">{`Енергетична цінність: ${calOfDish.totalCalories} ккал`}</h5>
+          <h5>{`${staticText.calories} ${calOfDish.totalCalories} ${staticText.cal}*`}</h5>
         </li>
       </ul>
-      <p className="attention-paragraph">
-        Важливо памʼятати! Усі розрахунки щодо вмісту білків, жирів, вуглеводів
-        і калорійності продуктів відрізняються залежно від якості компонентів,
-        процесу приготування та інших чинників. Таким чином, всі обчислення
-        можуть бути максимально приближенними до реальних, але не можуть бути на
-        100% точними.
-      </p>
-    </>
+      <p className={styles.attention}>{staticText.attention}</p>
+    </div>
   );
 };

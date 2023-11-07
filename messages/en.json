@@ -196,8 +196,21 @@
     "measures": "g",
     "recipeTitle": "Recipe of the dish",
     "cookTitle": "Cooking technology",
-    "nutritionalTitle": "Nutritional value"
-  },
+    "nutritionalTitle": "Nutritional value",
+    "nutritionalValues": {
+      "portion": "Portion(~300g):",
+      "proteins": "Proteins:",
+      "fats": "Fats:",
+      "carbohydrates": "Carbohydrates:",
+      "calories": "Energy:",
+      "attention": "*Attention! It is important to remember! All proteins, fats, carbohydrates and caloric content calculations vary depending on the quality of the ingredients, the cooking process and other factors. This means that all calculations can be as close as possible to real ones, but cannot be 100% accurate.",
+      "measures":{
+        "g": "g",
+        "mg": "mg",
+        "cal": "cal"
+      }
+      } 
+    },
   "Buttons": {
     "more": "Show more",
     "collapse": "Collapse"

@@ -1,6 +1,7 @@
 import styles from "../styles/NutritionValues.module.scss";
+import { CalcCaloriesAndMacronutrients } from "./CalcCaloriesAndMarconutrients";
 
-export const NutritionalValues = ({ nutritionalValues, nutritionalTitle }) => {
+export const NutritionalValues = ({ nutritionalValues, nutritionalTitle, dish, products, staticText }) => {
   return (
     <div className={styles.nutritional__container}>
       <h2 className={styles.nutritional__section_title}>{nutritionalTitle}</h2>
@@ -13,6 +14,11 @@ export const NutritionalValues = ({ nutritionalValues, nutritionalTitle }) => {
             </li>
           ))}
       </ul>
+      <CalcCaloriesAndMacronutrients
+        dish={dish}
+        products={products}
+        staticText={staticText}
+      />
     </div>
   );
 };

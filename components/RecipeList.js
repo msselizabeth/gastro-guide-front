@@ -15,6 +15,7 @@ export const RecipeList = ({
   nutritionalTitle,
   nutritionalValues,
   products,
+  staticTextNutritionalValues,
 }) => {
   return (
     <section className="section">
@@ -42,11 +43,11 @@ export const RecipeList = ({
         <NutritionalValues
           nutritionalTitle={nutritionalTitle}
           nutritionalValues={nutritionalValues}
-        />
-        <CalcCaloriesAndMacronutrients
           dish={recipe}
           products={products}
+          staticText={staticTextNutritionalValues}
         />
+    
       </div>
     </section>
   );

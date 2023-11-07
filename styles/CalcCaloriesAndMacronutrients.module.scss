@@ -1,0 +1,54 @@
+.nutritionTitle{
+    font-family: var(--font-titles);
+    color: var(--color-titles-section);
+    font-weight: 600;
+    margin-top: 15px;
+}
+.nutritionList{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.attention{
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+@media screen and (min-width:768px) {
+    .nutritionTitle {
+            margin-top: 17px;
+        }
+    
+        .nutritionList {
+            gap: 12px;
+            margin-top: 12px;
+            margin-left: 12px;
+        }
+    
+        .attention {
+            padding: 7px;
+            margin-top: 12px;
+            font-size: 13px;
+        }
+}
+
+@media screen and (min-width:1000px) {
+    .nutritionTitle {
+        margin-top: 20px;
+    }
+
+    .nutritionList {
+        gap: 14px;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    .attention {
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+}

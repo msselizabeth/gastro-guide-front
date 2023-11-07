@@ -43,7 +43,7 @@
         color: transparent;
         background-clip: text;
         background-image: var(--color-hover-text);
-        transform: scale(1.02);
+        transform: scale(1.015);
     }
 }
 
@@ -101,7 +101,7 @@
 
 @media screen and (min-width:1200px) {
     .nutritional__container {
-        padding: 25px 15px;
+        padding: 25px 20px;
     }
 
     .nutritional__list {

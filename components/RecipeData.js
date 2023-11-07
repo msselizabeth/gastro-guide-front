@@ -26,6 +26,7 @@ export const RecipeData = async ({
   measure,
   cookTitle,
   nutritionalTitle,
+  staticTextNutritionalValues,
 }) => {
   const recipe = await FetchRecipe(params);
   const products = await FetchProducts(params);
@@ -51,6 +52,7 @@ export const RecipeData = async ({
         nutritionalTitle={nutritionalTitle}
         nutritionalValues={recipe.nutritionalValues}
         products={products}
+        staticTextNutritionalValues={staticTextNutritionalValues}
       />
     </>
   );
