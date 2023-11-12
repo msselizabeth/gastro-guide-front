@@ -5,6 +5,7 @@ import { daysOne } from "@/app/[locale]/layout";
 import { useTranslations } from "next-intl";
 import Link from "next-intl/link";
 import { Locale } from "./Locale";
+import { AuthHeader } from "./AuthHeader";
 
 export const Header = () => {
   const t  = useTranslations("Header");
@@ -58,20 +59,17 @@ export const Header = () => {
     {
       id: 1,
       title: t("contacts"),
-      path: "/ua#contacts",
-      pathEn: "/en#contacts"
+      path: "/#contacts",
     },
     {
       id: 2,
       title: t("author"),
-      path: "/ua#author",
-      pathEn: "/en#author",
+      path: "/#author",
     },
     {
       id: 3,
       title: t("resource"),
-      path: "/ua#resource",
-      pathEn: "/en#resource",
+      path: "/#resource",
     },
   ];
 
@@ -89,31 +87,21 @@ export const Header = () => {
 
           <MainNavList navList={navList} />
 
-         <Locale navList={navList} />          
+          <Locale navList={navList} />
           <MobileMenu
             navList={navList}
             mobileNavList={mobileNavList}
             auth={t("auth")}
             registrate={t("registrate")}
+            textExit={t("exit")}
+            textProfile={t("profile")}
           />
-          <ul className={styles.authList}>
-            <li>
-              <Link
-                href="#"
-                className={`${styles.authListLink} ${styles.authListLinkAuth}`}
-              >
-                {t("auth")}
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="#"
-                className={`${styles.authListLink} ${styles.authListLinkRegister}`}
-              >
-                {t("registrate")}
-              </Link>
-            </li>
-          </ul>
+          <AuthHeader
+            textAuth={t("auth")}
+            textRegister={t("registrate")}
+            textExit={t("exit")}
+            textProfile={t("profile")}
+          />
         </nav>
       </div>
     </header>

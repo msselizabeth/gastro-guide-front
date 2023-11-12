@@ -3,10 +3,9 @@ import styles from "../styles/MobileMenu.module.scss";
 import { useEffect, useState, useRef } from "react";
 import Link from "next-intl/link";
 import { usePathname } from "next/navigation";
+import { AuthMobile } from "./AuthMobile";
 
-
-
-export const MobileMenu = ({ navList, mobileNavList, registrate , auth}) => {
+export const MobileMenu = ({ navList, mobileNavList, registrate , auth, textExit, textProfile}) => {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
   const pathname = usePathname();
@@ -14,7 +13,6 @@ export const MobileMenu = ({ navList, mobileNavList, registrate , auth}) => {
   const openMenu = () => {
     setIsOpen(true);
   };
-
   const closeMenu = () => {
     setIsOpen(false);
   };
@@ -40,26 +38,22 @@ export const MobileMenu = ({ navList, mobileNavList, registrate , auth}) => {
   return (
     <>
       <button className={styles.mobMenuBtn} onClick={openMenu}></button>
-
       <div
         className={`${styles.mobileMenu} ${isOpen ? `${styles.open}` : ""}`}
         ref={menuRef}
       >
         <div className={styles.mobileMenuContainer}>
-          <button
-            className={styles.mobileMenuBtnClose}
-            onClick={closeMenu}
-          ></button>
-
+          <button className={styles.mobileMenuBtnClose} onClick={closeMenu}></button>
           <div>
             <ul className={styles.mobileMenuNavList}>
-              {navList.map(({ id, title, path, pathEn }) => {
+              {navList.map(({ id, title, path, pathEN, pathUA }) => {
                 return (
                   <li key={id} className={styles.mobileMenuNavListItem}>
                     <Link
+                      onClick={closeMenu}
                       href={path}
                       className={`${styles.mobileMenuNavListLink} ${
-                        pathname === path || pathname === pathEn
+                        pathname === pathEN || pathname === pathUA
                           ? `${styles.current}`
                           : ""
                       }`}
@@ -75,7 +69,12 @@ export const MobileMenu = ({ navList, mobileNavList, registrate , auth}) => {
               {mobileNavList.map(({ id, title, path }) => {
                 return (
                   <li key={id} className={styles.mobileMenuNavListItem}>
-                    <Link href={path} className={styles.mobileMenuNavListLink}>
+                    <Link
+                      href={path}
+                      onClick={closeMenu}
+                      className={`${styles.mobileMenuNavListLink} 
+                    ${pathname === path ? `${styles.current}` : ""}`}
+                    >
                       {title}
                     </Link>
                   </li>
@@ -83,24 +82,7 @@ export const MobileMenu = ({ navList, mobileNavList, registrate , auth}) => {
               })}
             </ul>
 
-            <ul className={styles.mobileMenuAuthList}>
-              <li className={styles.mobileMenuAuthListItem}>
-                <Link
-                  href=""
-                  className={`${styles.mobileMenuAuthListLink} ${styles.mobileMenuAuthListLinkAuth}`}
-                >
-                 {auth}
-                </Link>
-              </li>
-              <li className={styles.mobileMenuAuthListItem}>
-                <Link
-                  href=""
-                  className={`${styles.mobileMenuAuthListLink} ${styles.mobileMenuAuthListLinkRegister}`}
-                >
-                 {registrate}
-                </Link>
-              </li>
-            </ul>
+            <AuthMobile registrate={registrate} auth={auth} onClick={closeMenu} textExit={textExit} textProfile={textProfile} /> 
 
             <ul className={styles.mobContactsList}>
               <li>

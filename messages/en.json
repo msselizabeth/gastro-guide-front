@@ -10,7 +10,9 @@
        "author": "About author",
        "resource": "About resource",
        "auth": "Log in",
-       "registrate": "Registration"
+       "registrate": "Registration",
+       "profile": "Profile",
+       "exit": "Logout"
     },
   "Home": {
     "title": "World cuisine Traditions and Benefits",
@@ -224,5 +226,144 @@
   "Buttons": {
     "more": "Show more",
     "collapse": "Collapse"
+  },
+  "AuthPage": {
+    "majorTitle": "Authorization page",
+    "form": {
+      "email": "Your email",
+      "emailPlaceholder": "Enter your email",
+      "password": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "btn": "Login"
+    },
+    "additionText": {
+      "register": "Don't have a personal profile yet? Don't worry!",
+      "btn": "Registration here!"
+    },
+    "loggedInText": "Congratulations! Authorization successful. You can now log into your profile and leave comments on the site.",
+    "profileLink": "Profile",
+    "errors": {
+      "auth": "Email or password invalid.",
+      "verify": "User isn't verificated."
+    },
+    "support": {
+      "problem": "Problem with authorization?",
+      "sendText": "Thank you. Your email has already sent to support! Wait for a reply to the mail you specified in the request.",
+      "supportForm": {
+        "openBtn": "I need help!",
+        "email": "Enter your valid email for feedback:",
+        "emailPlaceholder": "Enter your email",
+        "emailErr": "Enter a valid email",
+        "message": "Please, describe your problem:",
+        "messagePlaceholder": "Type message here...",
+        "sendBtn": "Send message"
+      }
+    },
+    "verify": {
+      "message": "Didn't recieve a verification letter?",
+      "btn": "Send again!",
+      "errors":{
+        "notFound": "Email not found. Enter the email you registered with.",
+        "inUse": "Email has already been verificated. You can login!",
+        "invalidEmail": "Enter a valid email."
+      },
+      "form":{
+        "email": "The email you registered with.",
+        "emailPlaceholder": "Enter the email you registered with.",
+        "btn": "Verify!"
+      },
+      "sendText": "Thank you! Your letter has already been sent. Check your mail!"
+    },
+    "wrong": {
+       "whatsWrong": "What could have gone wrong?",
+       "openList": "Find out",
+       "list": {
+          "title": "Here are some reasons why this might not be the case:",
+          "fields": {
+            "first": "You entered an incorrect email address during registration. Try filling out the form again.",
+            "firstBtn": "Try again",
+            "second": "You did not confirm the mail with the letter I sent you. Please check your email and try logging in again.",
+            "third": "For some reason you did not receive a confirmation email? Try sending the email again.",
+            "fourth": "If the above options are not suitable for solving your problem, then contact my support service."
+          }
+       }
+    }
+  },
+  "RegisterPage": {
+    "majorTitle": "Registration page",
+    "confidential": "By completing and submitting this form, you agree to the terms of our privacy policy and use of the application.",
+    "confidentialLink": "Terms and conditions can be found here.",
+    "form": {
+      "name": "Your name",
+      "namePlaceholder": "Enter your name",
+      "email": "Your email",
+      "emailPlaceholder": "Enter your email",
+      "password": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "confirmPswr": "Confirm password",
+      "confirmPswrPlaceholder": "Confirm your password",
+      "btn": "Registration"
+    },
+    "additionText": {
+      "register": "You already have profile?",
+      "btn": "Login here!"
+    },
+    "successful": {
+      "message": "Congratulations, it's almost done! Check your mail, which was specified during registration! I have sent you a confirmation email, please confirm your email and come back to login!",
+      "loginLink": "Login"
+    },
+    "verify": {
+      "message": "Didn't recieve a verification letter?",
+      "btn": "Send again!",
+      "errors":{
+        "notFound": "Email not found. Enter the email you registered with.",
+        "inUse": "Email has already been verificated. You can login!",
+        "invalidEmail": "Enter a valid email."
+      },
+      "form":{
+        "email": "The email you registered with.",
+        "emailPlaceholder": "Enter the email you registered with.",
+        "btn": "Verify!"
+      },
+      "sendText": "Thank you! Your letter has already been sent. Check your mail!"
+    },
+    "errors": {
+      "auth": "Email has already been use.",
+      "email": "Enter a valid email.",
+      "password": "The password must contain at least 6 characters",
+      "confirmPass": "Passwords don't match"
+    },
+     "support": {
+      "problem": "Do you have a problem?",
+      "sendText": "Thank you. Your email has already sent to support! Wait for a reply to the mail you specified in the request.",
+      "supportForm": {
+        "openBtn": "I need help!",
+        "email": "Enter your valid email for feedback:",
+        "emailPlaceholder": "Enter your email",
+        "emailErr": "Enter a valid email",
+        "message": "Please, describe your problem:",
+        "messagePlaceholder": "Type message here...",
+        "sendBtn": "Send message"
+      }
+    },
+     "wrong": {
+       "whatsWrong": "What could have gone wrong?",
+       "openList": "Find out",
+       "list": {
+          "title": "Here are some reasons why this might not be the case:",
+          "fields": {
+            "first": "You entered an incorrect email address during registration. Try filling out the form again.",
+            "firstBtn": "Try again",
+            "second": "You did not confirm the mail with the letter I sent you. Please check your email and try logging in again.",
+            "third": "For some reason you did not receive a confirmation email? Try sending the email again.",
+            "fourth": "If the above options are not suitable for solving your problem, then contact my support service."
+          }
+       }
+    }
+  },
+  "UserProfile": {
+    "majorTitle": "Your profile",
+    "greatestMess": "Hello, ",
+    "exit": "Logout"
   }
 }

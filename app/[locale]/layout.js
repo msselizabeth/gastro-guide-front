@@ -7,6 +7,7 @@ import { ContactsSection } from '@/components/ContactsSection';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 
 
+
 export const mons = Montserrat({
   subsets: ["cyrillic"],
   variable: "--font-primary",
@@ -56,14 +57,14 @@ export default function RootLayout({ children, params}) {
       className={`${mons.variable} ${daysOne.variable} ${monsA.variable}`}
     >
       <body>
-        <NextIntlClientProvider locale={params.locale} messages={messages}>
-          <Header></Header>
-          <main>
-            {children}
-            <ContactsSection />
-          </main>
-          <Footer></Footer>
-        </NextIntlClientProvider>
+          <NextIntlClientProvider locale={params.locale} messages={messages}>
+            <Header></Header>
+            <main>
+              {children}
+              <ContactsSection />
+            </main>
+            <Footer></Footer>
+          </NextIntlClientProvider>
       </body>
     </html>
   );
