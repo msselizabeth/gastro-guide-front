@@ -309,7 +309,7 @@
       "btn": "Login here!"
     },
     "successful": {
-      "message": "Congratulations, it's almost done! Check your mail, which was specified during registration! I have sent you a confirmation email, please confirm your email and come back to login!",
+      "message": "Congratulations, it's almost done! Check your mail, which was specified during registration! I have sent you a confirmation email, please confirm your email and come back to login! Also check your spam folder.",
       "loginLink": "Login"
     },
     "verify": {

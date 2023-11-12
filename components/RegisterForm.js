@@ -8,6 +8,7 @@ import { HaveProfile } from "./HaveProfile";
 
 
 
+
 export const RegistrationForm = ({textContent}) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -16,6 +17,7 @@ export const RegistrationForm = ({textContent}) => {
   const [registrationError, setRegistrationError] = useState(null);
   const [errors, setErrors] = useState({});
   const [registrationSuccess, setRegistrationSuccess] = useState(false);
+
   const url = "https://gastro-guide-cb84aa2b2322.herokuapp.com/api/auth/register";
 
   const handleChange = (e) => {
@@ -102,10 +104,10 @@ export const RegistrationForm = ({textContent}) => {
             <p className={styles.register__text}>
               {textContent.successful.message}
             </p>
-            <div className={styles.register__btn__container}>
-              <Link href="/authorization" className={styles.register__btn}>
+            <div className={`${styles.successful__btn__container} ${styles.register__btn__container}`}>
+              {/* <Link href="/authorization" className={styles.register__btn}>
                 {textContent.successful.loginLink}
-              </Link>
+              </Link> */}
             </div>
 
             <VerifyAgain textContent={textContent} />

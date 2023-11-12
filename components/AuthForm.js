@@ -93,11 +93,17 @@ export const AuthForm = ({textContent}) => {
     <div>
       {loggedInUser ? (
         <div>
-          <p>
+          <p className={styles.loggedInText}>
             {textContent.loggedInText}
-            <Link href={"/user-profile"} target="_blank">
-              {textContent.profileLink}
-            </Link>
+            <div className={`${styles.login__btn__container} ${styles.auth__btn__container}`}>
+              <Link
+                href={"/user-profile"}
+                target="_blank"
+                className={`${styles.login__btn} ${styles.auth__btn}`}
+              >
+                {textContent.profileLink}
+              </Link>
+            </div>
           </p>
         </div>
       ) : (
@@ -134,7 +140,7 @@ export const AuthForm = ({textContent}) => {
             </div>
             {error && <p style={{ color: "red" }}>{error}</p>}
           </form>
-         <NotHaveProfile textContent={textContent} />
+          <NotHaveProfile textContent={textContent} />
         </>
       )}
     </div>

@@ -82,13 +82,20 @@
 
 .register__text{
     font-family: var(--font-titles);
-        margin-top: 30px;
+        margin: 30px auto 0px auto;
         text-align: center;
+        font-weight: 500;
+        width: 300px;
 }
 
 .register__error{
     font-family: var(--font-titles);
     color: red;
+}
+
+.successful__btn__container{
+    width: 290px;
+    margin-bottom: 70px;
 }
 
 @media screen and (min-width:1000px){
@@ -110,15 +117,19 @@
     }
     .register__btn__container{
         width: 220px;
-        margin-top: 25px;
+        margin-top: 15px;
     }
     .register__btn{
         padding: 12px;
     }
     .register__text{
-        margin-top: 55px;
+        width: 610px;
+        margin: 35px auto 0 auto;
     }
-   
+   .successful__btn__container {
+    width: 600px;
+       margin-bottom: 100px;
+   }
 }
 @media screen and (min-width:1440px){
 .register__form {
@@ -151,5 +162,13 @@
         font-size: 18px;
         padding: 15px;
     }
+    .register__text{
+        width: 800px;
+        margin-top: 45px;
+    }
+         .successful__btn__container {
+            width: 790px;
+            margin-bottom: 120px;
+         }
 }
 

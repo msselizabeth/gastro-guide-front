@@ -1,13 +1,29 @@
 
 .confidential{
-
+    max-width: 350px;
+    margin: 5px auto 0px auto;
     text-align: center;
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 12px;
 }
 
 .confidential__link{
     display: block;
     text-align: center;
     font-weight: 500;
-    margin-top: 7px;
+    margin-top: 2px;
+    font-size: 12px;
+}
+
+@media screen and (min-width:1000px) {
+    .confidential {
+            max-width: 800px;
+            margin: 8px auto 0px auto;
+            font-size: 16px;
+        }
+    
+        .confidential__link {
+            margin-top: 3px;
+            font-size: 16px;
+        }
 }
