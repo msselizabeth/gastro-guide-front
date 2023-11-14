@@ -1,6 +1,13 @@
 import styles from "../styles/CookTechnology.module.scss";
+import { CookingSteps } from "./CookingSteps";
 
-export const CookTechnology = ({ cookTitle, cookTechnology }) => {
+export const CookTechnology = ({
+  cookTitle,
+  cookTechnology,
+  steps,
+  stepsRecipeContent,
+  recipeName,
+}) => {
   return (
     <div className={styles.cook__container}>
       <h2 className={styles.cook__title}>{cookTitle}</h2>
@@ -12,6 +19,15 @@ export const CookTechnology = ({ cookTitle, cookTechnology }) => {
             </li>
           ))}
       </ol>
+      {steps.length > 0 ? (
+        <CookingSteps
+          steps={steps}
+          stepsRecipeContent={stepsRecipeContent}
+          recipeName={recipeName}
+        />
+      ) : (
+        <></>
+      )}
     </div>
   );
 };

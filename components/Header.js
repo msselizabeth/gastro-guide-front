@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import Link from "next-intl/link";
 import { Locale } from "./Locale";
 import { AuthHeader } from "./AuthHeader";
+import Image from "next/image";
 
 export const Header = () => {
   const t  = useTranslations("Header");
@@ -16,7 +17,7 @@ export const Header = () => {
       title: t("home"),
       path: "/",
       pathUA: "/ua",
-      pathEN: "/en"
+      pathEN: "/en",
     },
     {
       id: 2,
@@ -45,6 +46,20 @@ export const Header = () => {
       path: "/products",
       pathUA: "/ua/products",
       pathEN: "/en/products",
+    },
+    {
+      id: 7,
+      title: t("health"),
+      path: "/manual",
+      pathUA: "/ua/manual",
+      pathEN: "/en/manual",
+    },
+    {
+      id: 8,
+      title: t("events"),
+      path: "/manual",
+      pathUA: "/ua/manual",
+      pathEN: "/en/manual",
     },
     {
       id: 6,
@@ -81,7 +96,19 @@ export const Header = () => {
             href="/"
             className={`${styles.headerLogo} ${daysOne.className}`}
           >
-            Gastro
+            <Image
+              src="/logo-8.svg"
+              width={123}
+              height={109}
+              className={styles.logo}
+            />
+            <Image
+              src="/logo-blur.svg"
+              width={123}
+              height={109}
+              className={styles.logo__blur}
+            />
+            <span className={styles.headerLogoDecorWord}>Gastro</span>
             <span className={styles.headerLogoDecorWord}>Guide</span>
           </Link>
 

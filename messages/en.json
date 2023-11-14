@@ -9,6 +9,8 @@
        "contacts": "Contacts",
        "author": "About author",
        "resource": "About resource",
+       "health": "Health",
+       "events": "Events",
        "auth": "Log in",
        "registrate": "Registration",
        "profile": "Profile",
@@ -221,7 +223,55 @@
         "mg": "mg",
         "cal": "cal"
       }
-      } 
+    },
+     "stepsRecipe":{
+      "description": "Description",
+      "note": "The note",
+      "sub": "Substitute",
+      "startBtn": "Start cook",
+      "nextBtn": "Next step",
+      "prevBtn": "Previous step",
+      "endBtn": "End cook",
+      "helpBtn": "How is it work?",
+      "helpTitle": "I can help you with cooking",
+      "helpList": {
+        "one": {
+          "title": "How to work with it?",
+          "text": "I can help you prepare a dish with a step-by-step recipe that is presented in the form of cards. Each card corresponds to a cooking step."
+        },
+         "two":  {
+          "title": "How to start?",
+          "text": "To start, you need to press the Start cooking button. Then read the cooking instructions and follow them step by step."
+        }, 
+        "three":  {
+          "title": "Note block.",
+          "text": "I'm trying to help you with the hints you'll find in the Note block."
+        }, 
+        "four":  {
+          "title": "Can the ingredients be substituted?",
+          "text": "Also, I understand that we all have different tastes, so where possible I provide you with a list of ingredient substitutes, which can be found in the Substitutions section."
+        }, 
+        "five":  {
+          "title": "Media help.",
+          "text": "I have presented you with pictures for a better understanding of the processes. Be careful, not all photos correspond to the actual recipe, but all photos correspond to the required process. I will eventually replace all the photos with real ones when the photos are ready."
+        }
+     }
+    },
+    "comments": {
+      "majorTitle": "Comments",
+      "noComments": "Nobody hasn't left any comments yet. Let's fix it!",
+      "loadMore": "Load more",
+      "noAuth": {
+        "message": "I really like it when you leave your comments, I appreciate your opinion. For more pleasant communication, you need to log in to leave comments.",
+        "authLink": "Login",
+        "registerLink": "Registration"
+      },
+      "commentForm": {
+        "message": "Enter you comment here:",
+        "btn": "Send",
+        "messPlaceholder": "Type text here..."
+      }
+    }   
     },
   "Buttons": {
     "more": "Show more",

@@ -1,3 +1,4 @@
+import { Comments } from "./Comments";
 import { FeaturesDishList } from "./FeaturesDishList";
 import { HeroCountryAndRecipe } from "./HeroCountryAndRecipe";
 import { RecipeList } from "./RecipeList";
@@ -27,6 +28,8 @@ export const RecipeData = async ({
   cookTitle,
   nutritionalTitle,
   staticTextNutritionalValues,
+  commentsContent,
+  stepsRecipeContent,
 }) => {
   const recipe = await FetchRecipe(params);
   const products = await FetchProducts(params);
@@ -53,7 +56,12 @@ export const RecipeData = async ({
         nutritionalValues={recipe.nutritionalValues}
         products={products}
         staticTextNutritionalValues={staticTextNutritionalValues}
+        stepsRecipe={recipe.stepsRecipe}
+        stepsRecipeContent={stepsRecipeContent}
+        recipeName={recipe.recipeName}
       />
+
+      <Comments commentsContent={commentsContent} id={params.slug} />
     </>
   );
 };
