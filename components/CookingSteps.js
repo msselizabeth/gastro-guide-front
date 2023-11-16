@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "../styles/CookingSteps.module.scss";
 
 
@@ -10,21 +10,39 @@ export const CookingSteps = ({ steps, stepsRecipeContent, recipeName }) => {
   const [help, setHelp] = useState(false);
 
   const nextStep = () => {
-    const next = currentStep + 1;
-    setCurrentStep(next);
+     const next = currentStep + 1;
+     setCurrentStep(next);
+     saveStep();
   };
 
   const prevStep = () => {
     const prev = currentStep - 1;
     setCurrentStep(prev >= 0 ? prev : 0);
+    saveStep();
   };
 
   const resetSteps = () => {
     setCurrentStep(0);
     setIsOpen(false);
+    localStorage.removeItem("currentStep");
   };
+
+  useEffect(() => {
+    // Загрузка сохраненного шага из localStorage при монтировании компонента
+    const savedStep = localStorage.getItem("currentStep");
+    if (savedStep) {
+      setCurrentStep(parseInt(savedStep, 10));
+      setIsOpen(true);
+    }
+  }, []);
+
+   const saveStep = () => {
+     // Сохранение текущего шага в localStorage
+     localStorage.setItem("currentStep", currentStep.toString());
+   };
   const handleClick = () => {
     setIsOpen(true);
+     saveStep();
   };
   const handleClickHelp = () => {
     setHelp(!help);
@@ -57,9 +75,9 @@ export const CookingSteps = ({ steps, stepsRecipeContent, recipeName }) => {
             <Image
               src={steps[currentStep].img}
               alt={`Step ${currentStep + 1}`}
-              width={500}
-              height={500}
-              priority={false}
+              width={300}
+              height={300}
+              priority={true}
               className={styles.stepsCook__img}
             />
 

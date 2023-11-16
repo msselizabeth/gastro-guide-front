@@ -8,6 +8,7 @@ import { Locale } from "./Locale";
 import { AuthHeader } from "./AuthHeader";
 import Image from "next/image";
 
+
 export const Header = () => {
   const t  = useTranslations("Header");
 
@@ -96,20 +97,22 @@ export const Header = () => {
             href="/"
             className={`${styles.headerLogo} ${daysOne.className}`}
           >
-            <Image
-              src="/logo-8.svg"
-              width={123}
-              height={109}
-              className={styles.logo}
-            />
-            <Image
-              src="/logo-blur.svg"
-              width={123}
-              height={109}
-              className={styles.logo__blur}
-            />
-            <span className={styles.headerLogoDecorWord}>Gastro</span>
-            <span className={styles.headerLogoDecorWord}>Guide</span>
+
+              <Image
+                src="/logo-guide2.svg"
+                width={120}
+                height={120}
+                className={styles.logo}
+              />
+
+            <div>
+              <span className={styles.headerLogoDecorWord}>Gastro</span>
+              <span
+                className={`${styles.headerLogoDecorWord} ${styles.headerLogo__GuideWord}`}
+              >
+                Guide
+              </span>
+            </div>
           </Link>
 
           <MainNavList navList={navList} />

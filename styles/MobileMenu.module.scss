@@ -1,7 +1,7 @@
 .mobMenuBtn {
     position: relative;
-    width: 44px;
-    height: 38px;
+    width: 60px;
+    height: 52px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,8 +12,8 @@
             position: absolute;
             top: 0px;
             right: 0px;
-            width: 44px;
-            height: 38px;
+            width: 60px;
+            height: 52px;
             background-size: cover;
             background-image: url("/mob-menu-icon.svg");
         }

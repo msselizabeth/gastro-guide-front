@@ -4,9 +4,22 @@ import axios from "axios";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import styles from "../styles/UserProfile.module.scss";
+import { PortraitForm } from "./PortraitForm";
+import { PersonalRecipes } from "./PersonalResipes";
 
 
-export const UserProfile = ({ title, exit, greatestMess }) => {
+
+
+export const UserProfile = ({
+  title,
+  exit,
+  greatestMess,
+  noAuthContent,
+  recipesListTitle,
+  recipesListDescription,
+  notFoundRecipe,
+  portraitContent,
+}) => {
   const router = useRouter();
   const [user, setUser] = useState("");
   const [isAuthenticated, setIsAuthenticated] = useState();
@@ -34,19 +47,6 @@ export const UserProfile = ({ title, exit, greatestMess }) => {
       }
     };
     fetchData();
-    //  const token = localStorage.getItem("authToken");
-    //  if (token) {
-    //    setIsAuthenticated(true);
-
-    //    const userData = axios.get("https://gastro-guide-cb84aa2b2322.herokuapp.com/api/auth/current",
-    //      {
-    //        headers: {
-    //          Authorization: `Bearer ${token}`, // Получаем токен из локального хранилища
-    //        },
-    //      });
-    //    console.log(userData.data);
-    //   //  setUser(userData);
-    //  }
   }, [isAuthenticated, setIsAuthenticated]);
 
   const handleLogout = async () => {
@@ -78,24 +78,39 @@ export const UserProfile = ({ title, exit, greatestMess }) => {
       {isAuthenticated ? (
         <section className="section">
           <div className="container">
-            <h1 className="sectionTitle">{title}</h1>
+            <h2 className="sectionTitle">{title}</h2>
             <div className={styles.name__container}>
               <p>
                 {greatestMess} {user.userName}!
               </p>
-              <button type="button" onClick={handleLogout} className={styles.exit__btn}>
+              <button
+                type="button"
+                onClick={handleLogout}
+                className={styles.exit__btn}
+              >
                 {exit}
               </button>
             </div>
+
+            <PortraitForm
+              portrait={user.portrait}
+              portraitContent={portraitContent}
+            />
+
+            <PersonalRecipes
+              recipesListTitle={recipesListTitle}
+              recipesListDescription={recipesListDescription}
+              notFoundRecipe={notFoundRecipe}
+            />
           </div>
         </section>
       ) : (
         <section className="section">
           <div className="container">
-            <h2>Вам необходимо авторизироваться!</h2>
-            <Link href={"/authorization"}>Войти в свою запись?</Link>
-            <h3>Нет учетной запси?</h3>
-            <Link href={"/registration"}>Зарегистрироваться.</Link>
+            <h2>{noAuthContent.needAuth}</h2>
+            <Link href={"/authorization"}>{noAuthContent.needAuthLink}</Link>
+            <h3>{noAuthContent.needRegistr}</h3>
+            <Link href={"/registration"}>{noAuthContent.needRegistrLink}</Link>
           </div>
         </section>
       )}

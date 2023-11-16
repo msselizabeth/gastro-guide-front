@@ -414,6 +414,94 @@
   "UserProfile": {
     "majorTitle": "Your profile",
     "greatestMess": "Hello, ",
-    "exit": "Logout"
+    "exit": "Logout",
+    "recipesListTitle": "Your personal list",
+    "recipesListDescription": "Your personal selection is ready! Be careful with products to which you are allergic or have other contraindications, check the composition of the recipe. Remember, I'm just a program that helps you reproduce all your thoughts in gastronomy, but health comes first. Bon appetit!",
+    "notFoundRecipe": "I was unable to find any recipe for your request. Maybe you haven't filled out your portrait yet, or fill it out again.",
+    "noAuth": {
+      "needAuth": "You need to be logged in to view your personal profile.",
+      "heedAuthLink": "Login",
+      "needRegistr": "No account?",
+      "needRegistrLink": "Registration"
+    },
+    "portrait": {
+      "getPortraitText": "Would you like to receive a personal selection of recipes?",
+      "changePortraitText": "Do you want to change your personal selection of recipes?",
+      "btn": "Complete a taste portrait!",
+      "sendFormText": "Your answers have been saved. In order to see the results, refresh the page! Thank you for sharing the secrets of your tastes with me.",
+      "form": {
+        "title": "A tasteful portrait!",
+        "description": "Let's create your personal taste profile so I can recommend dishes based on your personal preferences. Answer the next few questions based solely on your personal tastes or what you would like to see on your personal profile.",
+        "firstQ": {
+          "question": "Which world cuisines give you the most pleasure and/or interest?",
+          "options": {
+            "easternEuropean": "Eastern European (Ukraine, Poland, etc.)",
+            "mediterranean": "Mediterranean (Italy, Greece, Spain, France, etc.)",
+            "northernEuropean":"Northern European (Sweden, Norway, Denmark, Finland, etc.)",
+            "eastWestAmerican":"East-West American (USA, Canada, etc.)",
+            "latinAmerican":"Latin American (Caribbean, Mexico, Costa Rica, etc.)",
+            "andean":"Andean cuisine (Peru, Ecuador, etc.)",
+            "southAmerican":"South American (Argentina, Chile, etc.)",
+            "tropical":"Tropical cuisine (Amazon, Colombia, Venezuela, etc.)",
+            "northAfrican":"North African (Morocco, Algeria, Egypt, etc.)",
+            "westAfrican":"West African (Nigeria, Ghana, etc.)",
+            "eastAfrican":"East African (Ethiopia, Kenya, etc.)",
+            "southAfrican":"South African (Mozambique, etc.)",
+            "centralAfrican": "Central African (Cameroon, etc.)",
+            "middleEast": "Middle East (Lebanon, Israel, Turkey, etc.)",
+            "asian": "Asian (Japanese, Chinese, Korean, etc.)",
+            "southeastAsian": "Southeast Asian (India, Thailand, Vietnam)",
+            "indonesian": "Indonesian (Indonesia and islands)",
+            "australian": "Australian (Australia and Islands)"
+          }
+        },
+         "secondQ": {
+          "question": "Choose the categories of dishes that you would like to see in your personal selection.",
+          "options": {
+            "sauces": "Sauces",
+            "garnishes": "Garnishes",
+            "cold":"Cold snacks",
+            "hot":"Hot appetizers",
+            "soups":"Soups",
+            "fish":"Fish dishes",
+            "meat":"Meat dishes",
+            "poultry":"Poultry dishes",
+            "vegetables":"Vegetables (salads and others)",
+            "cereals":"Cereal and legume dishes",
+            "pasta":"Pasta dishes",
+            "desserts":"Desserts",
+            "baking": "Baking"
+          }
+        },
+         "thirdQ": {
+          "question": "Choose the cooking methods you want to see.",
+          "options": {
+            "stew": "Stewing",
+            "bake": "Baking",
+            "boil":"Boiling",
+            "fry":"Frying",
+            "steam":"Steam cooking",
+            "deepFryer":"Deep fryer",
+            "grill":"Grill",
+            "fresh":"Fresh"
+          }
+        },
+          "fourthQ": {
+          "question": "Choose products to which you are allergic or have other contraindications, or you simply do not want to see them in recipes for other reasons?",
+          "options": {
+            "dairy": "Dairy",
+            "eggs": "Eggs",
+            "gluten":"Gluten",
+            "nuts":"Nuts",
+            "seafood":"Seafood",
+            "soya":"Soya",
+            "spicies":"Spicy spices"
+          }
+        },
+        "sendBtn": "Send",
+        "laterBtn": "Later"
+      }
+    }
+   
   }
 }
