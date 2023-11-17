@@ -1,0 +1,207 @@
+.portraitForm__container{
+    margin-top: 10px;
+}
+.portrait__title{
+    margin-top: 20px;
+    font-size: 17px;
+    font-family: var(--font-titles);
+    text-align: center;
+}
+
+.portraitForm__open__btn__container{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    border-radius: 25px;
+    border: 0.5px solid var(--color-primary-text);
+    background: var(--icons-gradient);
+    box-shadow: 3px 3px 5px 0px var(--color-shadow);
+
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background: var(--color-primary-text);
+    }
+}
+.portraitForm__open__btn{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: var(--color-primary-text);
+    font-size: 15px;
+    font-family: var(--font-titles);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: transparent;
+        background-clip: text;
+        background-image: var(--hover-gradient);
+    }
+}
+.portrait__form__container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 3px 3px 5px 0px var(--color-shadow);
+    backdrop-filter: blur(2.2px);
+    background-color: var(--background-color-primary);
+
+}
+.portrait__form__title{
+    text-align: center;
+    font-family: var(--font-titles);
+    font-size: 17px;
+}
+.portrait__form__text{
+    padding: 5px;
+    font-size: 15px;
+}
+
+
+
+@media screen and (min-width:768px) {
+    .portrait__form__container{
+        width: calc(100% - 140px);
+        padding: 20px;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    .portrait__sendText {
+        width: calc(100% - 85px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .portrait__form__buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .portrait__title{
+        font-size: 19px;
+        margin-top: 25px;
+    }
+        .portraitForm__open__btn__container {
+            margin-top: 15px;
+            width: 240px;
+            border-radius: 35px;
+        }
+    
+        .portraitForm__open__btn {
+            padding: 13px;
+            font-size: 16px;
+        }
+}
+
+@media screen and (min-width:1000px) {
+    .portrait__form__container {
+        width: calc(100% - 160px);
+        padding: 25px;
+    }
+
+    .portrait__form__buttons {
+        gap: 45px;
+    }
+
+    .portrait__title{
+         font-size: 19px;
+    }
+
+    .portrait__form__title {
+        font-size: 19px;
+        margin-top: 30px;
+    }
+    
+        .portrait__form__text {
+        padding: 7px;
+        font-size: 17px;
+        }
+
+    .portraitForm__open__btn__container {
+        margin-top: 17px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 270px;
+            border-radius: 40px;
+    }
+    .portraitForm__open__btn{
+        padding: 15px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .portrait__form__container {
+        width: calc(100% - 180px);
+        padding: 28px;
+    }
+    .portrait__sendText {
+            width: calc(100% - 130px);
+    }
+
+    .portrait__form__buttons {
+        gap: 65px;
+    }
+
+    .portrait__title {
+        font-size: 21px;
+    }
+
+    .portrait__form__title {
+        font-size: 21px;
+    }
+
+    .portrait__form__text {
+        padding: 10px;
+        font-size: 19px;
+    }
+          .portraitForm__open__btn__container {
+              margin-top: 22px;
+              margin-left: auto;
+              margin-right: auto;
+              width: 290px;
+              border-radius: 50px;
+          }
+    
+          .portraitForm__open__btn {
+              font-size: 18px;
+          }
+}
+
+@media screen and (min-width:1440px) {
+    .portrait__form__container {
+        width: calc(100% - 210px);
+        padding: 30px;
+    }
+
+    .portrait__form__buttons {
+        gap: 75px;
+    }
+
+    .portrait__title {
+        font-size: 23px;
+    }
+
+    .portrait__form__title {
+        font-size: 22px;
+    }
+
+    .portrait__form__text {
+        padding: 12px;
+        font-size: 20px;
+    }
+}

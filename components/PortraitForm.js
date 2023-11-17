@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { QuestionForPortrait } from "./QuestionForPortrait";
+import styles from "../styles/PortraitForm.module.scss";
 
 export const PortraitForm = ({ portrait, portraitContent }) => {
   const [isOpenPortraitForm, setIsOpenPortraitForm] = useState(false);
@@ -91,22 +92,38 @@ export const PortraitForm = ({ portrait, portraitContent }) => {
   };
 
   return (
-    <div>
-      {portrait.categories.length > 0 ? (
-        <h3>{portraitContent.changePortraitText}</h3>
-      ) : (
-        <h3>{portraitContent.getPortraitText}</h3>
-      )}
+    <div className={styles.portraitForm__container}>
       {!isOpenPortraitForm ? (
-        <button type="button" onClick={handleOpenPortraitFrom}>
-          {portraitContent.btn}
-        </button>
+        <>
+          {portrait.categories.length > 0 ? (
+            <h3 className={styles.portrait__title}>
+              {portraitContent.changePortraitText}
+            </h3>
+          ) : (
+            <h3 className={styles.portrait__title}>
+              {portraitContent.getPortraitText}
+            </h3>
+          )}
+          <div className={styles.portraitForm__open__btn__container}>
+            <button
+              type="button"
+              onClick={handleOpenPortraitFrom}
+              className={styles.portraitForm__open__btn}
+            >
+              {portraitContent.btn}
+            </button>
+          </div>
+        </>
       ) : isSend ? (
-        <h4>{portraitContent.sendFormText}</h4>
+        <h4 className={styles.portrait__sendText}>{portraitContent.sendFormText}</h4>
       ) : (
-        <div>
-          <h4>{portraitContent.form.title}</h4>
-          <p>{portraitContent.form.description}</p>
+        <div className={styles.portrait__form__container}>
+          <h3 className={styles.portrait__form__title}>
+            {portraitContent.form.title}
+          </h3>
+          <p className={styles.portrait__form__text}>
+            {portraitContent.form.description}
+          </p>
           <QuestionForPortrait
             question={portraitContent.form.firstQ.question}
             options={[
@@ -188,12 +205,30 @@ export const PortraitForm = ({ portrait, portraitContent }) => {
             showError={errors.allergies}
           />
 
-          <button type="button" onClick={saveAnswers}>
-            {portraitContent.form.sendBtn}
-          </button>
-          <button type="button" onClick={handleOpenPortraitFrom}>
-            {portraitContent.form.laterBtn}
-          </button>
+              <div className={styles.portrait__form__buttons}>
+            <div
+              className={`${styles.portraitForm__open__btn__container} ${styles.portraitForm__send__btn__container}`}
+            >
+              <button
+                type="button"
+                onClick={saveAnswers}
+                className={`${styles.portraitForm__open__btn} ${styles.portraitForm__send__btn}`}
+              >
+                {portraitContent.form.sendBtn}
+              </button>
+            </div>
+            <div
+              className={`${styles.portraitForm__open__btn__container}`}
+            >
+              <button
+                type="button"
+                onClick={handleOpenPortraitFrom}
+                className={`${styles.portraitForm__open__btn}`}
+              >
+                {portraitContent.form.laterBtn}
+              </button>
+            </div>
+          </div>
         </div>
       )}
     </div>

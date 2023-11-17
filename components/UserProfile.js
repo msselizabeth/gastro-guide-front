@@ -11,13 +11,9 @@ import { PersonalRecipes } from "./PersonalResipes";
 
 
 export const UserProfile = ({
-  title,
   exit,
   greatestMess,
   noAuthContent,
-  recipesListTitle,
-  recipesListDescription,
-  notFoundRecipe,
   portraitContent,
 }) => {
   const router = useRouter();
@@ -76,11 +72,9 @@ export const UserProfile = ({
   return (
     <>
       {isAuthenticated ? (
-        <section className="section">
-          <div className="container">
-            <h2 className="sectionTitle">{title}</h2>
+           <>
             <div className={styles.name__container}>
-              <p>
+              <p className={styles.name}>
                 {greatestMess} {user.userName}!
               </p>
               <button
@@ -97,22 +91,14 @@ export const UserProfile = ({
               portraitContent={portraitContent}
             />
 
-            <PersonalRecipes
-              recipesListTitle={recipesListTitle}
-              recipesListDescription={recipesListDescription}
-              notFoundRecipe={notFoundRecipe}
-            />
-          </div>
-        </section>
+        </>
       ) : (
-        <section className="section">
-          <div className="container">
-            <h2>{noAuthContent.needAuth}</h2>
-            <Link href={"/authorization"}>{noAuthContent.needAuthLink}</Link>
-            <h3>{noAuthContent.needRegistr}</h3>
-            <Link href={"/registration"}>{noAuthContent.needRegistrLink}</Link>
-          </div>
-        </section>
+        <>
+            <h2 className={styles.noAuth__title}>{noAuthContent.needAuth}</h2>
+            <div className={styles.noAuth__btn__container}><Link href={"/authorization"} className={styles.noAuth__btn}>{noAuthContent.needAuthLink}</Link></div>
+            <h2 className={styles.noAuth__title}>{noAuthContent.needRegistr}</h2>
+            <div className={styles.noAuth__btn__container}><Link href={"/registration"} className={styles.noAuth__btn}>{noAuthContent.needRegistrLink}</Link></div>
+        </>
       )}
     </>
   );

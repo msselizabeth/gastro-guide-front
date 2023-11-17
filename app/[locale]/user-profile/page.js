@@ -7,7 +7,7 @@ export default function UserPage() {
 
   const noAuthContent = {
     needAuth: t("noAuth.needAuth"),
-    heedAuthLink: t("noAuth.needAuthLink"),
+    needAuthLink: t("noAuth.needAuthLink"),
     needRegistr: t("noAuth.needRegistr"),
     needRegistrLink: t("noAuth.needRegistrLink"),
   };
@@ -96,9 +96,6 @@ export default function UserPage() {
       title={t("majorTitle")}
       greatestMess={t("greatestMess")}
       exit={t("exit")}
-      recipesListTitle={t("recipesListTitle")}
-      recipesListDescription={t("recipesListDescription")}
-      notFoundRecipe={t("notFoundRecipe")}
       noAuthContent={noAuthContent}
       portraitContent={portraitContent}
     />

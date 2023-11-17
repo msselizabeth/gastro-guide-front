@@ -413,6 +413,10 @@
   },
   "UserProfile": {
     "majorTitle": "Your profile",
+    "userMenu": {
+      "profileText": "Profile",
+      "recipesText": "Recipes List"
+    },
     "greatestMess": "Hello, ",
     "exit": "Logout",
     "recipesListTitle": "Your personal list",
@@ -420,7 +424,7 @@
     "notFoundRecipe": "I was unable to find any recipe for your request. Maybe you haven't filled out your portrait yet, or fill it out again.",
     "noAuth": {
       "needAuth": "You need to be logged in to view your personal profile.",
-      "heedAuthLink": "Login",
+      "needAuthLink": "Login",
       "needRegistr": "No account?",
       "needRegistrLink": "Registration"
     },
@@ -428,7 +432,7 @@
       "getPortraitText": "Would you like to receive a personal selection of recipes?",
       "changePortraitText": "Do you want to change your personal selection of recipes?",
       "btn": "Complete a taste portrait!",
-      "sendFormText": "Your answers have been saved. In order to see the results, refresh the page! Thank you for sharing the secrets of your tastes with me.",
+      "sendFormText": "Your answers have been saved. To see the results, go to the Recipes List tab in your personal profile! Thank you for sharing the secrets of your tastes with me.",
       "form": {
         "title": "A tasteful portrait!",
         "description": "Let's create your personal taste profile so I can recommend dishes based on your personal preferences. Answer the next few questions based solely on your personal tastes or what you would like to see on your personal profile.",
