@@ -66,6 +66,11 @@ export default function RecipePage({ params }) {
     },
   };
 
+  const favButtonsContent = {
+    add: t("favButtons.add"),
+    delete: t("favButtons.delete"),
+  };
+
 
   return (
     <>
@@ -79,6 +84,7 @@ export default function RecipePage({ params }) {
         staticTextNutritionalValues={staticTextNutritionalValues}
         commentsContent={commentsContent}
         stepsRecipeContent={stepsRecipeContent}
+        favButtonsContent={favButtonsContent}
       />
     </>
   );

@@ -275,6 +275,10 @@
         "btn": "Send",
         "messPlaceholder": "Type text here..."
       }
+    },
+      "favButtons": {
+      "add": "Add to",
+      "delete": "Delete from"
     }   
     },
   "Buttons": {

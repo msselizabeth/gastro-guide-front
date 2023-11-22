@@ -1,16 +1,15 @@
-"use client";
+"use client"
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { FavButton } from "./FavButtons";
-import styles from "../styles/RecipeList.module.scss";
-import Image from "next/image";
 
 
-export const RecipeList = ({ recipe, favButtonsContent, measure }) => {
+export const FavButtonForInnerRecipe = ({ recipe, favButtonsContent }) => {
+
   const [user, setUser] = useState("");
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-
+    console.log(user);
   async function checkAuth(token) {
     try {
       const response = await axios.get(
@@ -37,31 +36,15 @@ export const RecipeList = ({ recipe, favButtonsContent, measure }) => {
   }, []);
 
   return (
-    <div className={styles.recipeContainer}>
-      <Image
-        src={recipe.recipeImgSmall}
-        alt={recipe.recipeImgAlt}
-        width={300}
-        height={250}
-        className={styles.recipeImage}
-      />
-      <ul className={styles.recipeList}>
-        {recipe.recipe &&
-          recipe.recipe.map((field, index) => (
-            <li key={index} className={styles.recipeItem}>
-              <p>{field.productName}</p>
-              <p>{`${field.quantity} ${measure}`}</p>
-            </li>
-          ))}
-      </ul>
+    <>
       {isAuthenticated && (
         <FavButton
-          userFavList={user.favorites}
-          favButtonsContent={favButtonsContent}
           recipe={recipe}
+          userFavList={user.favorites}
           isAuthenticated={isAuthenticated}
+          favButtonsContent={favButtonsContent}
         />
       )}
-    </div>
+    </>
   );
 };

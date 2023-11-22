@@ -51,16 +51,16 @@ export const Header = () => {
     {
       id: 7,
       title: t("health"),
-      path: "/manual",
-      pathUA: "/ua/manual",
-      pathEN: "/en/manual",
+      path: "/health",
+      pathUA: "/ua/health",
+      pathEN: "/en/health",
     },
     {
       id: 8,
       title: t("events"),
-      path: "/manual",
-      pathUA: "/ua/manual",
-      pathEN: "/en/manual",
+      path: "/events",
+      pathUA: "/ua/events",
+      pathEN: "/en/events",
     },
     {
       id: 6,

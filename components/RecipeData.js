@@ -1,7 +1,7 @@
 import { Comments } from "./Comments";
 import { FeaturesDishList } from "./FeaturesDishList";
 import { HeroCountryAndRecipe } from "./HeroCountryAndRecipe";
-import { RecipeList } from "./RecipeList";
+import { RecipeInfo } from "./RecipeInfo";
 
 
 export async function FetchRecipe(params) {
@@ -30,6 +30,7 @@ export const RecipeData = async ({
   staticTextNutritionalValues,
   commentsContent,
   stepsRecipeContent,
+  favButtonsContent,
 }) => {
   const recipe = await FetchRecipe(params);
   const products = await FetchProducts(params);
@@ -44,21 +45,16 @@ export const RecipeData = async ({
         features={recipe.featuresDish}
         sectionTitle={featuresTitle}
       />
-      <RecipeList
-        recipe={recipe.recipe}
+      <RecipeInfo
+        recipe={recipe}
         measure={measure}
         sectionTitle={recipeTitle}
-        img={recipe.recipeImgSmall}
-        alt={recipe.recipeImgAlt}
         cookTitle={cookTitle}
-        cookTechnology={recipe.cookTechnology}
         nutritionalTitle={nutritionalTitle}
-        nutritionalValues={recipe.nutritionalValues}
         products={products}
         staticTextNutritionalValues={staticTextNutritionalValues}
-        stepsRecipe={recipe.stepsRecipe}
         stepsRecipeContent={stepsRecipeContent}
-        recipeName={recipe.recipeName}
+        favButtonsContent={favButtonsContent}
       />
 
       <Comments commentsContent={commentsContent} id={params.slug} />

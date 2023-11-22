@@ -6,7 +6,7 @@ async function calculateCalories(products, recipe) {
   let totalFats = 0;
   let totalCarbohydrates = 0;
 
-  for (const ingredient of recipe) {
+  for (const ingredient of recipe.recipe) {
     const validProduct = products.result.find(
       (oneProduct) => oneProduct.productName === ingredient.productName
     );
