@@ -149,6 +149,10 @@
       "title": "Recipes of the world",
       "placeholder": "Enter a name of recipe/dish",
       "buttonMore": "Load more"
+    },
+    "favButtons": {
+      "add": "Add to",
+      "delete": "Delete from"
     }
   },
    "ProductsPage": {
@@ -415,7 +419,8 @@
     "majorTitle": "Your profile",
     "userMenu": {
       "profileText": "Profile",
-      "recipesText": "Recipes List"
+      "recipesText": "Recipes List",
+      "favorite": "Favorites"
     },
     "greatestMess": "Hello, ",
     "exit": "Logout",
@@ -505,6 +510,16 @@
         "sendBtn": "Send",
         "laterBtn": "Later"
       }
+    },
+    "favorite": {
+      "title": "Your favorite recipes",
+      "description": "Your list of favorite recipes that you have chosen on the site.",
+      "noOne": "You haven't selected any recipe in your favorites yet.",
+      "btn": "Delete from"
+    },
+    "favButtons": {
+      "add": "Add to",
+      "delete": "Delete from"
     }
    
   }

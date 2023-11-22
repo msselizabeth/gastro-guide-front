@@ -4,22 +4,6 @@ import { CookTechnology } from "./CookTechnology";
 import { NutritionalValues } from "./NutritionalValues";
 import { CalcCaloriesAndMacronutrients } from "./CalcCaloriesAndMarconutrients";
 
-const recipeSteps = [
-  {
-    title: "Step 1",
-    instruction: "Preheat the oven to 350°F.",
-    image: "step1.jpg",
-    notes: "",
-    sub: "smth",
-  },
-  {
-    title: "Step 2",
-    instruction: "Mix the ingredients in a large bowl.",
-    image: "step2.jpg",
-    notes: "blla bla bla",
-  },
-  // Add more steps as needed
-];
 
 export const RecipeList = ({
   img,

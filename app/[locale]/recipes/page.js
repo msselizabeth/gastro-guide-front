@@ -11,6 +11,11 @@ export const metadata = {
 
 export default function RecipesPage() {
   const t = useTranslations("RecipesPage");
+
+  const favButtonsContent = {
+    add: t("favButtons.add"),
+    delete: t("favButtons.delete"),
+  };
   return (
     <>
       <PagesHero image={imageUrl} title={t("title")} />
@@ -18,6 +23,7 @@ export default function RecipesPage() {
         sectionTitle={t("recipesSection.title")}
         placeholder={t("recipesSection.placeholder")}
         textBtnMore={t("recipesSection.buttonMore")}
+        favButtonsContent={favButtonsContent}
       />
     </>
   );

@@ -6,14 +6,41 @@ import Link from "next/link";
 import Image from "next/image";
 import { LoadMore } from "./LoadMoreBtn";
 import styles from "../styles/RecipesList.module.scss";
+import axios from "axios";
+import { FavButton } from "./FavButtons";
 
-export const RecipesList = ({ sectionTitle, placeholder, textBtnMore }) => {
+export const RecipesList = ({
+  sectionTitle,
+  placeholder,
+  textBtnMore,
+  favButtonsContent,
+}) => {
   const pathname = usePathname();
   const [allRecipes, setAllRecipes] = useState([]);
   const [searchValue, setSearchValue] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(2);
   const [limit, setLimit] = useState(3);
+  const [user, setUser] = useState("");
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  async function checkAuth(token) {
+    try {
+      const response = await axios.get(
+        "https://gastro-guide-cb84aa2b2322.herokuapp.com/api/auth/current",
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+      const userData = response.data;
+      setUser(userData);
+      setIsAuthenticated(true);
+    } catch (err) {
+      console.error(err);
+    }
+  }
 
   async function fetchRecipes(page, limit, pathname) {
     const response = await fetch(
@@ -28,7 +55,11 @@ export const RecipesList = ({ sectionTitle, placeholder, textBtnMore }) => {
   }
 
   useEffect(() => {
+    const token = localStorage.getItem("authToken");
     fetchRecipes(currentPage, limit, pathname);
+    if (token) {
+      checkAuth(token);
+    }
   }, [currentPage, limit, pathname]);
 
   const loadMoreCountries = () => {
@@ -40,6 +71,7 @@ export const RecipesList = ({ sectionTitle, placeholder, textBtnMore }) => {
   const filteredRecipes = allRecipes.filter((recipe) =>
     recipe.recipeName.toLowerCase().includes(searchValue.toLowerCase())
   );
+
   return (
     <section className="section">
       <div className="container">
@@ -52,7 +84,7 @@ export const RecipesList = ({ sectionTitle, placeholder, textBtnMore }) => {
 
         <ul className={styles.recipes__list}>
           {filteredRecipes.map((recipe) => (
-            <li key={recipe._id}>
+            <li key={recipe._id} className={styles.recipes__item}>
               <Link
                 href={`/recipes/${recipe._id}`}
                 className={styles.recipes__link}
@@ -70,6 +102,14 @@ export const RecipesList = ({ sectionTitle, placeholder, textBtnMore }) => {
                   </span>
                 </span>
               </Link>
+              {isAuthenticated && (
+                <FavButton
+                  recipe={recipe}
+                  userFavList={user.favorites}
+                  isAuthenticated={isAuthenticated}
+                  favButtonsContent={favButtonsContent}
+                />
+              )}
             </li>
           ))}
         </ul>

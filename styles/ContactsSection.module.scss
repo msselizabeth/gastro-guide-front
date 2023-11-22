@@ -9,6 +9,9 @@
     justify-content: space-between;
 
 }
+.contactsContainer{
+    padding-bottom: 30px;
+}
 
 .contactsSocialItem{
     display: flex;
@@ -130,6 +133,9 @@
         margin-top: 15px;
         font-size: 16px;
     }
+        .contactsContainer {
+            padding-bottom: 40px;
+        }
 
 }
 
@@ -137,6 +143,10 @@
     .contactsList {
         margin-top: 35px;
         gap: 65px;
+    }
+
+    .contactsContainer {
+         padding-bottom: 45px;
     }
 
     .contactsSocialList {
@@ -184,6 +194,10 @@
         margin-top: 40px;
         gap: 95px;
     }
+
+          .contactsContainer {
+              padding-bottom: 50px;
+          }
 
     .contactsSocialList {
         gap: 95px;

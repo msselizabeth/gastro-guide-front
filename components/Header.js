@@ -99,9 +99,9 @@ export const Header = () => {
           >
 
               <Image
-                src="/logo-guide.svg"
-                width={120}
-                height={120}
+                src="/logo-sections.svg"
+                width={100}
+                height={100}
                 className={styles.logo}
               />
 

@@ -1,0 +1,35 @@
+.favBtn__container{
+    position: absolute;
+    top: 0;
+    right: 15px;
+
+    backdrop-filter: blur(2.2px);
+    margin: 15px auto 0px auto;
+
+}
+.favBtn{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 33px 12px 16px;
+    
+    color: var(--color-fav-btn);
+    border: 1px solid var(--color-fav-btn);
+    background-color: var(--color-bg-countries);
+    box-shadow: 3px 5px 5px 0px var(--color-shadow);
+    border-radius: 25px;
+    cursor: pointer;
+
+    &::after {
+            content: '';
+            position: absolute;
+            top: 10px;
+            right: 7px;
+            width: 20px;
+            height: 20px;
+            background-image: url("/fav.svg");
+            background-repeat: no-repeat;
+        }
+}
+

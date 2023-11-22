@@ -8,8 +8,6 @@ import { PortraitForm } from "./PortraitForm";
 import { PersonalRecipes } from "./PersonalResipes";
 
 
-
-
 export const UserProfile = ({
   exit,
   greatestMess,

@@ -5,20 +5,44 @@ import Link from "next/link";
 import styles from "../styles/RecipesList.module.scss";
 import Image from "next/image";
 import { useParams } from "next/navigation";
+import { FavButton } from "./FavButtons";
 
 
 export const PersonalRecipes = ({
   recipesListTitle,
   notFoundRecipe,
   recipesListDescription,
+  favButtonsContent,
 }) => {
   const [recipes, setRecipes] = useState([]);
+  const [user, setUser] = useState("");
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   const params = useParams();
-  console.log(params);
+
+  async function checkAuth(token) {
+    try {
+      const response = await axios.get(
+        "https://gastro-guide-cb84aa2b2322.herokuapp.com/api/auth/current",
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+      const userData = response.data;
+      setUser(userData);
+      setIsAuthenticated(true);
+    } catch (err) {
+      console.error(err);
+    }
+  }
 
   useEffect(() => {
     const getPersonalRecipes = async () => {
       const token = localStorage.getItem("authToken");
+      if (token) {
+        checkAuth(token);
+      }
       try {
         const recipes = await axios.get(
           `https://gastro-guide-cb84aa2b2322.herokuapp.com/api/user/${params.locale}/portrait`,
@@ -39,12 +63,12 @@ export const PersonalRecipes = ({
   return (
     <>
       <h2 className="sectionTitle">{recipesListTitle}</h2>
-      {recipes.length > 0 ? (
+      {isAuthenticated && recipes.length > 0 ? (
         <>
           <p>{recipesListDescription}</p>
           <ul className={styles.recipes__list}>
             {recipes.map((recipe) => (
-              <li key={recipe._id}>
+              <li key={recipe._id} className={styles.recipes__item}>
                 <Link
                   href={`/recipes/${recipe._id}`}
                   className={styles.recipes__link}
@@ -62,6 +86,14 @@ export const PersonalRecipes = ({
                     </span>
                   </span>
                 </Link>
+                {isAuthenticated && (
+                  <FavButton
+                    recipe={recipe}
+                    userFavList={user.favorites}
+                    isAuthenticated={isAuthenticated}
+                    favButtonsContent={favButtonsContent}
+                  />
+                )}
               </li>
             ))}
           </ul>

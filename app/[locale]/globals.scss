@@ -12,10 +12,11 @@
     --color-shadow: rgba(90, 3, 25, 0.25);
     --color-border: #5A0319;
     --color-bg-countries: rgba(90, 3, 25, 0.55);
+    --color-fav-btn: rgb(245, 242, 142);
     --background-color-primary: rgba(245, 242, 142, 0.15);
-    --background-color-header-footer: rgba(255, 168, 0, 0.85);
-    --background-color-mob-menu: rgba(255, 168, 0, 0.55);
-    --box-shadow-color-header-footer: rgba(184, 125, 10, 0.40);
+    --background-color-header-footer: rgba(255, 168, 0);
+    --background-color-mob-menu: rgba(255, 168, 0, 0.85);
+    --box-shadow-color-header-footer: rgba(184, 125, 10, 0.50);
 
 }
 
@@ -92,7 +93,7 @@ img {
 .section {
     width: 100%;
     margin: 0 auto;
-    padding: 20px 0px;
+    padding-top: 30px;
 }
 
 .container {
@@ -128,7 +129,7 @@ img {
 
     .section {
         width: 768px;
-        padding: 40px 0px;
+        padding-top: 40px;
     }
 
     .container {
@@ -140,7 +141,7 @@ img {
 @media screen and (min-width:1000px) {
     .section {
         width: 1000px;
-        padding: 45px 0px;
+        padding-top: 45px;
     }
 
     .sectionTitle {
@@ -166,7 +167,7 @@ img {
 
     .section {
         width: 1200px;
-        padding: 50px 0px;
+        padding-top:50px;
     }
 
     .container {
@@ -191,7 +192,6 @@ img {
 
     .section {
         width: 1440px;
-        padding: 35px 0px;
     }
 
     .sectionTitle {
