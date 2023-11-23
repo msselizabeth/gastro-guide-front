@@ -14,6 +14,7 @@ export const RecipesList = ({
   placeholder,
   textBtnMore,
   favButtonsContent,
+  filterContent,
 }) => {
   const pathname = usePathname();
   const [allRecipes, setAllRecipes] = useState([]);
@@ -23,6 +24,9 @@ export const RecipesList = ({
   const [limit, setLimit] = useState(3);
   const [user, setUser] = useState("");
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  const [selectedCategory, setSelectedCategory] = useState("");
+  const [selectedDifficulty, setSelectedDifficulty] = useState("");
 
   async function checkAuth(token) {
     try {
@@ -68,7 +72,25 @@ export const RecipesList = ({
     }
   };
 
-  const filteredRecipes = allRecipes.filter((recipe) =>
+  const filterRecipes = () => {
+    let filteredRecipes = allRecipes;
+
+    if (selectedCategory) {
+      filteredRecipes = filteredRecipes.filter(
+        (recipe) => recipe.filterCategory === selectedCategory
+      );
+    }
+
+    if (selectedDifficulty) {
+      filteredRecipes = filteredRecipes.filter(
+        (recipe) => recipe.filterLevel === selectedDifficulty
+      );
+    }
+
+    return filteredRecipes;
+  };
+
+  const filteredRecipes = filterRecipes().filter((recipe) =>
     recipe.recipeName.toLowerCase().includes(searchValue.toLowerCase())
   );
 
@@ -81,6 +103,55 @@ export const RecipesList = ({
           searchValue={searchValue}
           onChange={(e) => setSearchValue(e.target.value)}
         />
+        <form className={styles.filter__form}>
+          <label className={styles.filter__label}>
+            {filterContent.category.label}
+            <select
+              className={styles.filter__select}
+              value={selectedCategory}
+              onChange={(e) => setSelectedCategory(e.target.value)}
+            >
+              <option value="">{filterContent.category.all}</option>
+              <option value="sauces">{filterContent.category.sauces}</option>
+              <option value="garnishes">
+                {filterContent.category.garnishes}
+              </option>
+              <option value="cold">{filterContent.category.cold}</option>
+              <option value="hot">{filterContent.category.hot}</option>
+              <option value="soups">{filterContent.category.soups}</option>
+              <option value="fish dish">{filterContent.category.fish}</option>
+              <option value="meat dish">{filterContent.category.meat}</option>
+              <option value="poultry dish">
+                {filterContent.category.poultry}
+              </option>
+              <option value="vegetables">
+                {filterContent.category.vegetables}
+              </option>
+              <option value="cereals">{filterContent.category.cereals}</option>
+              <option value="pasta">{filterContent.category.pasta}</option>
+              <option value="desserts">
+                {filterContent.category.desserts}
+              </option>
+              <option value="baking">{filterContent.category.baking}</option>
+              <option value="drinks">{filterContent.category.drinks}</option>
+            </select>
+          </label>
+
+          <label className={styles.filter__label}>
+            {filterContent.level.label}
+            <select
+              className={styles.filter__select}
+              value={selectedDifficulty}
+              onChange={(e) => setSelectedDifficulty(e.target.value)}
+            >
+              <option value="">{filterContent.level.all}</option>
+              <option value="easy">{filterContent.level.easy}</option>
+              <option value="medium">{filterContent.level.med}</option>
+              <option value="hard">{filterContent.level.hard}</option>
+              <option value="extra-hard">{filterContent.level.extra}</option>
+            </select>
+          </label>
+        </form>
 
         <ul className={styles.recipes__list}>
           {filteredRecipes.map((recipe) => (

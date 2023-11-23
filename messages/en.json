@@ -153,6 +153,34 @@
     "favButtons": {
       "add": "Add to",
       "delete": "Delete from"
+    },
+    "filter": {
+      "category":{
+        "label": "Tick category:",
+        "all":"All",
+         "sauces": "Sauces",
+            "garnishes": "Garnishes",
+            "cold":"Cold snacks",
+            "hot":"Hot appetizers",
+            "soups":"Soups",
+            "fish":"Fish dishes",
+            "meat":"Meat dishes",
+            "poultry":"Poultry dishes",
+            "vegetables":"Vegetables (salads and others)",
+            "cereals":"Cereal and legume dishes",
+            "pasta":"Pasta dishes",
+            "desserts":"Desserts",
+            "baking": "Baking",
+            "drinks": "Drinks"
+      },
+      "level":{
+        "label": "Tick level:",
+        "all": "All",
+        "easy": "Easy",
+        "med": "Medium",
+        "hard": "Hard",
+        "extra": "Extra hard"
+      }
     }
   },
    "ProductsPage": {

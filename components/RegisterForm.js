@@ -55,7 +55,7 @@ export const RegistrationForm = ({textContent}) => {
     const newErrors = {};
 
     // Проверка почты
-    if (!/^\S+@\S+\.\S+$/.test(email)) {
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       newErrors.email = textContent.errors.email;
       isValid = false;
     }

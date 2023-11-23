@@ -16,6 +16,35 @@ export default function RecipesPage() {
     add: t("favButtons.add"),
     delete: t("favButtons.delete"),
   };
+
+  const filterContent = {
+    category: {
+      label: t("filter.category.label"),
+      all: t("filter.category.all"),
+      sauces: t("filter.category.sauces"),
+      garnishes: t("filter.category.garnishes"),
+      cold: t("filter.category.cold"),
+      hot: t("filter.category.hot"),
+      soups: t("filter.category.soups"),
+      fish: t("filter.category.fish"),
+      meat: t("filter.category.meat"),
+      poultry: t("filter.category.poultry"),
+      vegetables: t("filter.category.vegetables"),
+      cereals: t("filter.category.cereals"),
+      pasta: t("filter.category.pasta"),
+      desserts: t("filter.category.desserts"),
+      baking: t("filter.category.baking"),
+      drinks: t("filter.category.drinks"),
+    },
+    level: {
+      label: t("filter.level.label"),
+      all: t("filter.level.all"),
+      easy: t("filter.level.easy"),
+      med: t("filter.level.med"),
+      hard: t("filter.level.hard"),
+      extra: t("filter.level.extra"),
+    },
+  };
   return (
     <>
       <PagesHero image={imageUrl} title={t("title")} />
@@ -24,6 +53,7 @@ export default function RecipesPage() {
         placeholder={t("recipesSection.placeholder")}
         textBtnMore={t("recipesSection.buttonMore")}
         favButtonsContent={favButtonsContent}
+        filterContent={filterContent}
       />
     </>
   );
