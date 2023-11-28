@@ -28,10 +28,12 @@
     "about":{
       "title": "About the resource",
       "descriptions": {
-        "global": "- your personal culinary guide in the world, offering an exiting journey through diverse gastronomic cultures. It’s a famous fact that food is an essential need of life and it also has social and cultural significance. Moreover, we can enjoy the taste and smell of food which lifts our mood and improves our well-being . In the different countries there are unique traditions of cooking food, features of the use of products and culinary arts with rich story." ,
-        "info": "is a source of information, filled with interesting facts of different cultures and food traditions around the world. The second topic in this application is information about benefits of nutrition and the effect of products on the human body. You need to remember that nutrition is more important than anything else.",
-        "pages": "On each county page you can find really exciting information about that county’s food, traditional dishes, local products and culture. A detailed recipe and useful properties of this dish are described on each page of the dish. You can use this app to determine the benefits of your own food intake.",
-        "data": "In addition , other pages present valuable macronutrient and micronutrient data that are included in the products. You can also find the full chemical composition of the most popular products. This data will be added and updated regularly."
+        "global": "- is not just a guide to the world of cooking, but a true culinary encyclopedia that invites you on an exciting journey through various gastronomic cultures. Food, as an integral part of life, in Gastro Guide is not only a physiological need, but also a social phenomenon that brings pleasure." ,
+        "local": "This guide not only reveals the unique traditions of cooking in different countries, but also explores the history of dishes, noting their seasonal features. You will learn about how food customs influence the culture of each region. And this is not only a gastronomic journey, but also an in-depth study of the history and traditions of world cuisine.",
+        "info": "is created to be your guide to the world of taste and healthy nutrition. Each country page is packed with fascinating information about features, history, traditional dishes and local products. The descriptions of the dishes are enriched with detailed recipes, also with useful information about the nutritional value and composition of the ingredients. This approach makes it possible to better understand the benefits and effects of taking specific dishes on health.",
+        "pages": "In the tab devoted to health, you will find carefully reasoned aspects of both pros and againsts of the ingredients of the recipes, as well as scientific studies related to the chemical composition of food products. The presented dietary recipes take into account individual characteristics, regardless of the origin of the dish.",
+        "user": "The custom Gastro Guide functionality makes your trip even more interesting. Registration in the system allows you to participate in the discussion of recipes, save your favorite recipes in your personal profile, create your own taste portrait and receive personal recommendations from the guide. And on Gastro Guide you will find interactive step-by-step recipes for cooking dishes that allow you to learn and experience culinary art in real time.",
+        "data": "Not only the culinary side defines the Gastro Guide. In addition to recipes, you will receive valuable information about macro and micronutrients in foods, as well as the complete chemical composition of the most popular foods. You will also learn about the most interesting events in the world of cooking. And it is important to note that these data will be regularly updated to always give you new impressions and knowledge."
       }
     },
     "author":{
@@ -60,7 +62,20 @@
          "title": "Contacts",
          "feedback": "Feedback",
          "socialmedia": "Social Media",
-         "socialAuthor": "Author's social networks"
+         "socialAuthor": "Author's social networks",
+         "support": {
+             "problem": "Маєте зауваження чи бажаєте залишити відгук?",
+             "sendText": "Дякую! Ваш лист вже було відправлено до служби підтримки. За потребою ми з вами звʼяжемося поштою.",
+             "supportForm": {
+               "openBtn": "Залишити повідомлення",
+               "email": "Введіть свою пошту для звʼязку:",
+               "emailPlaceholder": "Введіть свою пошту",
+               "emailErr": "Введіть дійсну пошту!",
+               "message": "Будь-ласка, напишіть ваше зауваження(відгук):",
+               "messagePlaceholder": "Напишіть повідомлення тут...",
+               "sendBtn": "Відправити"
+              }
+          }
   },
   "Footer": {
     "navigation": "Site navigation",

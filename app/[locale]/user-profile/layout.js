@@ -7,7 +7,6 @@ export default function UserLayout({ children }) {
 
     const t = useTranslations("UserProfile");
     
-
     return (
       <section className="section">
         <div className="container">

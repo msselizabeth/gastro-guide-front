@@ -1,10 +1,25 @@
 import Link from "next-intl/link";
 import { useTranslations } from "next-intl";
 import styles from "../styles/ContactsSection.module.scss";
+import { SupportMail } from "./SupportMail";
 
 
 export const ContactsSection = () => {
-    const t = useTranslations("Contacts");
+  const t = useTranslations("Contacts");
+  
+  const supportContent = {
+    problem: t("support.problem"),
+    sendText: t("support.sendText"),
+    supportForm: {
+      openBtn: t("support.supportForm.openBtn"),
+      email: t("support.supportForm.email"),
+      emailPlaceholder: t("support.supportForm.emailPlaceholder"),
+      emailErr: t("support.supportForm.emailErr"),
+      message: t("support.supportForm.message"),
+      messagePlaceholder: t("support.supportForm.messagePlaceholder"),
+      sendBtn: t("support.supportForm.sendBtn"),
+    },
+  };
 
     return (
       <section className="section" id="contacts">
@@ -78,6 +93,9 @@ export const ContactsSection = () => {
               </div>
             </li>
           </ul>
+          <div className={styles.support__container}>
+            <SupportMail supportContent={supportContent} />
+          </div>
         </div>
       </section>
     );

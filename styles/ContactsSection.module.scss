@@ -111,6 +111,10 @@
     }
 }
 
+.support__container{
+    margin-top: 35px;
+}
+
 @media screen and (min-width:768px) {
     .contactsList {
         margin-top: 30px;
@@ -136,6 +140,10 @@
         .contactsContainer {
             padding-bottom: 40px;
         }
+
+                .support__container {
+                    margin-top: 45px;
+                }
 
 }
 
@@ -187,6 +195,10 @@
             width: 29px;
         }
     }
+
+        .support__container {
+            margin-top: 55px;
+        }
 }
 
 @media screen and (min-width:1200px) {
@@ -206,12 +218,16 @@
     .contactsSocialTitle,
     .contactsTitleMail {
         font-size: 22px;
+        
     }
 
     .contactsLinkMail {
         font-size: 22px;
         width: 300px;
+        height: 28px;
         &::before {
+            top: 5px;
+            left: -5px;
                 width: 30px;
                 height: 20px;
     
@@ -237,6 +253,9 @@
     &Youtube::before {
          width: 33px;
     }
+   }
+   .support__container {
+       margin-top: 60px;
    }
 
 }

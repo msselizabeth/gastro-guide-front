@@ -1,4 +1,4 @@
-import styles from "../../styles/Home.module.scss";
+import styles from "../../styles/AboutResourceSection.module.scss";
 
 export const InfoIcon = () => {
   return (
@@ -31,5 +31,3 @@ export const InfoIcon = () => {
     </svg>
   );
 };
-
-

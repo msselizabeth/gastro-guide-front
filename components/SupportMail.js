@@ -88,7 +88,7 @@ export const SupportMail = ({supportContent}) => {
               <>
                 <form onSubmit={handleSubmit} className={styles.support__form}>
                   <label className={styles.support__label}>
-                    {supportContent.supportForm.email}{" "}
+                    {supportContent.supportForm.email}
                   </label>
                   <input
                     placeholder={supportContent.supportForm.emailPlaceholder}

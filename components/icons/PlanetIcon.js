@@ -1,4 +1,4 @@
-import styles from "../../styles/Home.module.scss";
+import styles from "../../styles/AboutResourceSection.module.scss";
 
 export const PlanetIcon = () => {
   return (
@@ -41,4 +41,3 @@ export const PlanetIcon = () => {
     </svg>
   );
 };
-
