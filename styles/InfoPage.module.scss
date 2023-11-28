@@ -1,0 +1,141 @@
+
+.info__title{
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--font-titles);
+    font-weight: 700;
+
+}
+.info__text{
+    margin-top: 10px;
+}
+
+
+.infoImg{
+    display: block;
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+        border-radius: 25px;
+        box-shadow: 3px 6px 10px 0px var(--color-shadow);
+}
+.info__endWord__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    gap: 7px;
+    margin-top: 10px;
+}
+
+@media screen and (min-width:768px) {
+    .infoImg {
+        width: 400px;
+        height: 400px;
+       margin-left: auto;
+       margin-right: auto;
+       margin-top: 15px;
+    }
+    .info__text{
+        margin-top: 15px;
+    }
+  
+}
+
+@media screen and (min-width:1000px) {
+
+    .infoImg {
+        width: 350px;
+        height: 350px;
+        margin: 0;
+    }
+    .info__title{
+        margin-top: 40px;
+    margin-bottom: 15px;
+    }
+
+    .info__container{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+    .info__container__rev{
+        display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            gap: 20px;
+            margin-bottom: 15px;
+    }
+   .info__end__container{
+    margin-top: 20px;
+   }
+   .info__endWord__container{
+    justify-content: center;
+    gap: 20px;
+
+   }
+   .infoLogo{
+    width: 100px;
+    height: 100px;
+   }
+}
+
+@media screen and (min-width:1200px) {
+
+    .infoImg {
+        width: 400px;
+        height: 400px;
+    }
+         .info__title {
+            margin-top: 60px;
+             margin-bottom: 20px;
+         }
+
+    .info__container {
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .info__container__rev {
+        gap: 25px;
+        margin-bottom: 20px;
+    }
+
+    .info__end__container {
+        margin-top: 25px;
+    }
+
+    .info__endWord__container {
+        gap: 25px;
+
+    }
+
+    .infoLogo {
+        width: 110px;
+        height: 110px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+
+    .infoImg {
+        width: 450px;
+        height: 450px;
+    }
+
+    .infoLogo {
+        width: 130px;
+        height: 130px;
+    }
+         .info__container {
+             gap: 25px;
+             margin-bottom: 25px;
+         }
+    
+         .info__container__rev {
+             gap: 30px;
+             margin-bottom: 25px;
+         }
+}

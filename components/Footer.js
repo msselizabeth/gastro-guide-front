@@ -72,7 +72,7 @@ export const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/#author"
+                    href="/info/author"
                     className={`${styles.footerNavLink} ${styles.footerNavLinkAuthor}`}
                   >
                     {t("author")}
@@ -80,7 +80,7 @@ export const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    href="/#resource"
+                    href="/info"
                     className={`${styles.footerNavLink} ${styles.footerNavLinkResource}`}
                   >
                     {t("resource")}

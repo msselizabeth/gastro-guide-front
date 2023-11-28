@@ -58,6 +58,14 @@
       "country": "Choose country"
     }
   },
+  "InfoPage": {
+     "title": "About project",
+     "menu": {
+      "resource": "About resource",
+      "author": "About author",
+      "terms": "Terms of use"
+     }
+  },
    "Contacts": {
          "title": "Contacts",
          "feedback": "Feedback",
