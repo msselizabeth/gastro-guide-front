@@ -22,8 +22,6 @@ export const AuthForm = ({textContent}) => {
     }, [isAuthenticated]);
 
     const checkAuthentication = async () => {
-      // Выполнить запрос на бекенд для проверки авторизации
-      // Замените YOUR_BACKEND_ENDPOINT на фактический адрес вашего бекенда
       const response = await fetch(
         "https://gastro-guide-cb84aa2b2322.herokuapp.com/api/auth/current",
         {
@@ -52,7 +50,8 @@ export const AuthForm = ({textContent}) => {
         setError("");
         setEmail("");
         setPassword("");
-        setLoggedInUser(true);
+      setLoggedInUser(true);
+     
     
     } catch (error) {
       if (error.response.status === 400) {
@@ -87,63 +86,72 @@ export const AuthForm = ({textContent}) => {
         error.response.data.message
       );
     }
-  };
+    };
+  
 
   return (
-    <div>
-      {loggedInUser ? (
-        <div>
-          <p className={styles.loggedInText}>
-            {textContent.loggedInText}
-            <div className={`${styles.login__btn__container} ${styles.auth__btn__container}`}>
-              <Link
-                href={"/user-profile"}
-                target="_blank"
-                className={`${styles.login__btn} ${styles.auth__btn}`}
-              >
-                {textContent.profileLink}
-              </Link>
-            </div>
-          </p>
-        </div>
+    <>
+      {isAuthenticated ? (
+        <h1>You have already login</h1>
       ) : (
-        <>
-          <form className={styles.auth__form}>
-            <label className={styles.auth__label}>
-              {textContent.form.email}:
-              <input
-                type="email"
-                placeholder={textContent.form.emailPlaceholder}
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className={styles.auth__input}
-              />
-            </label>
-            <label className={styles.auth__label}>
-              {textContent.form.password}:
-              <input
-                type="password"
-                placeholder={textContent.form.passwordPlaceholder}
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                className={styles.auth__input}
-              />
-            </label>
-            <div className={styles.auth__btn__container}>
-              <button
-                type="button"
-                onClick={handleLogin}
-                className={styles.auth__btn}
-              >
-                {textContent.form.btn}
-              </button>
+        <div>
+          {loggedInUser ? (
+            <div>
+              <p className={styles.loggedInText}>
+                {textContent.loggedInText}
+                <div
+                  className={`${styles.login__btn__container} ${styles.auth__btn__container}`}
+                >
+                  <Link
+                    href={"/user-profile"}
+                    target="_blank"
+                    className={`${styles.login__btn} ${styles.auth__btn}`}
+                  >
+                    {textContent.profileLink}
+                  </Link>
+                </div>
+              </p>
             </div>
-            {error && <p style={{ color: "red" }}>{error}</p>}
-          </form>
-          <NotHaveProfile textContent={textContent} />
-        </>
+          ) : (
+            <>
+              <form className={styles.auth__form}>
+                <label className={styles.auth__label}>
+                  {textContent.form.email}:
+                  <input
+                    type="email"
+                    placeholder={textContent.form.emailPlaceholder}
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className={styles.auth__input}
+                  />
+                </label>
+                <label className={styles.auth__label}>
+                  {textContent.form.password}:
+                  <input
+                    type="password"
+                    placeholder={textContent.form.passwordPlaceholder}
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    className={styles.auth__input}
+                  />
+                </label>
+                <div className={styles.auth__btn__container}>
+                  <button
+                    type="button"
+                    onClick={handleLogin}
+                    className={styles.auth__btn}
+                  >
+                    {textContent.form.btn}
+                  </button>
+                </div>
+                {error && <p style={{ color: "red" }}>{error}</p>}
+              </form>
+              <NotHaveProfile textContent={textContent} />
+            </>
+          )}
+        </div>
       )}
-    </div>
+    </>
   );
 };
 

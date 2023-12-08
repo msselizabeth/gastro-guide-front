@@ -1,4 +1,5 @@
 import styles from "../styles/CalcCaloriesAndMacronutrients.module.scss";
+
 async function calculateCalories(products, recipe) {
   let totalCal = 0;
   let weightDish = 0;
@@ -11,7 +12,10 @@ async function calculateCalories(products, recipe) {
       (oneProduct) => oneProduct.productName === ingredient.productName
     );
 
-    if (validProduct) {
+    if (
+      validProduct &&
+      !isNaN(ingredient.quantity)
+    ) {
       const ingredientCal =
         (parseFloat(validProduct.kcal) * ingredient.quantity) / 100;
       totalCal += ingredientCal;
@@ -33,19 +37,29 @@ async function calculateCalories(products, recipe) {
     }
     weightDish += Number(ingredient.quantity);
   }
-  
-  const portions = (weightDish / 300).toFixed(2);
-  const totalCalPortion = totalCal / portions;
-  const totalProteinsPortion = totalProteins / portions;
-  const totalFatsPortion = totalFats / portions;
-  const totalCarbohydratesPortion = totalCarbohydrates / portions;
+ 
+  if (!isNaN(weightDish)) {
+    const portions = (weightDish / 300).toFixed(2);
+    const totalCalPortion = totalCal / portions;
+    const totalProteinsPortion = totalProteins / portions;
+    const totalFatsPortion = totalFats / portions;
+    const totalCarbohydratesPortion = totalCarbohydrates / portions;
 
-  return {
-    totalCalories: totalCalPortion.toFixed(2),
-    totalProteins: totalProteinsPortion.toFixed(2),
-    totalFats: totalFatsPortion.toFixed(2),
-    totalCarbohydrates: totalCarbohydratesPortion.toFixed(2),
-  };
+    return {
+      totalCalories: totalCalPortion.toFixed(2),
+      totalProteins: totalProteinsPortion.toFixed(2),
+      totalFats: totalFatsPortion.toFixed(2),
+      totalCarbohydrates: totalCarbohydratesPortion.toFixed(2),
+    };
+  } else {
+    return {
+      totalCalories: 0,
+      totalProteins: 0,
+      totalFats: 0,
+      totalCarbohydrates: 0,
+    };
+  }
+  
 }
 
 export async function CalcCaloriesAndMacronutrients({ dish, products, staticText }) {

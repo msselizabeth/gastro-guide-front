@@ -54,19 +54,16 @@ export const RegistrationForm = ({textContent}) => {
     let isValid = true;
     const newErrors = {};
 
-    // Проверка почты
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
       newErrors.email = textContent.errors.email;
       isValid = false;
     }
 
-    // Проверка пароля
     if (password.length < 6) {
       newErrors.password = textContent.errors.password;
       isValid = false;
     }
 
-    // Проверка подтверждения пароля
     if (password !== confirmPassword) {
       newErrors.confirmPassword = textContent.errors.confirmPass;
       isValid = false;
