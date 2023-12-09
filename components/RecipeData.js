@@ -33,6 +33,7 @@ export const RecipeData = async ({
   favButtonsContent,
 }) => {
   const recipe = await FetchRecipe(params);
+
   const products = await FetchProducts(params);
 
   return (

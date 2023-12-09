@@ -51,6 +51,7 @@ export const RecipesList = ({
       `https://gastro-guide-cb84aa2b2322.herokuapp.com/api${pathname}?page=${page}&limit=${limit}`
     );
     const recipes = await response.json();
+    console.log(recipes)
     const sortedRecipes = [...allRecipes, ...recipes.result].sort((a, b) =>
       a.recipeName.localeCompare(b.recipeName)
     );

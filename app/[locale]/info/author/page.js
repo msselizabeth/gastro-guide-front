@@ -12,7 +12,7 @@ export default function ResourcePage() {
   const t = useTranslations("InfoPage");
   return (
     <>
-      <h1>Author page</h1>
+      <h1>Про автора</h1>
     </>
   );
 }
