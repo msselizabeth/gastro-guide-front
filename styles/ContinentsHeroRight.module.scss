@@ -1,7 +1,7 @@
 .continentTitleContainer{
     padding-top: 77px;
     padding-bottom: 77px;
-    margin-left: 110px;
+    margin-left: 80px;
 }
 
 .continentTitleRight{
@@ -24,6 +24,12 @@
             margin-top: 12px;
             font-size: 26px;
             font-family: var(--font-titles);
+    }
+}
+
+@media screen and (min-width:375px) {
+    .continentTitleContainer{
+        margin-left: 110px;
     }
 }
 

@@ -1,0 +1,23 @@
+.author__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.author__container__rev {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.author__text{
+    margin-bottom: 15px;
+}
+.authorImage{
+    display: block;
+    border-radius: 25px;
+    box-shadow: 3px 6px 10px 0px var(--color-shadow);
+}

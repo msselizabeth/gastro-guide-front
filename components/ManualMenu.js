@@ -30,7 +30,57 @@ export const ManualMenu = () => {
               : ""
           } ${styles.manualMenu__link}`}
         >
-          Cook Methods
+          Методи
+        </Link>
+      </li>
+      <li className={styles.manualMenu__item}>
+        <Link
+          href={"/manual/chemistry-compound"}
+          className={`${
+            pathname === "/ua/manual/chemistry-compound" ||
+            pathname === "/en/manual/chemistry-compound"
+              ? styles.current
+              : ""
+          } ${styles.manualMenu__link}`}
+        >
+          Хімічний склад
+        </Link>
+      </li>
+      <li className={styles.manualMenu__item}>
+        <Link
+          href={"/manual/meat"}
+          className={`${
+            pathname === "/ua/manual/meat" || pathname === "/en/manual/meat"
+              ? styles.current
+              : ""
+          } ${styles.manualMenu__link}`}
+        >
+          Мʼясо та птиця
+        </Link>
+      </li>
+      <li className={styles.manualMenu__item}>
+        <Link
+          href={"/manual/fish"}
+          className={`${
+            pathname === "/ua/manual/fish" || pathname === "/en/manual/fish"
+              ? styles.current
+              : ""
+          } ${styles.manualMenu__link}`}
+        >
+          Риба та морепродукти
+        </Link>
+      </li>
+      <li className={styles.manualMenu__item}>
+        <Link
+          href={"/manual/vegetables"}
+          className={`${
+            pathname === "/ua/manual/vegetables" ||
+            pathname === "/en/manual/vegetables"
+              ? styles.current
+              : ""
+          } ${styles.manualMenu__link}`}
+        >
+          Овочі та фрукти
         </Link>
       </li>
     </ul>

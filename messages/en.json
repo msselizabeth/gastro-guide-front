@@ -217,42 +217,327 @@
       "part1": "Cuisine and traditions of the continent",
       "part2": "South America"
     },
-    "countriesTitle": "Countries of the South American continent"
+    "countriesTitle": "Countries of the South American continent",
+    "featuresTitle": "Features of the continent",
+    "featuresList": {
+      "parag":"South America is known for its diverse and unique food, and some dishes from this continent are gaining great popularity in world cuisine. I suggest you familiarize yourself with some features and interesting facts about food on this continent:",
+      "point1": {
+        "text": "The cuisine of Peru is considered one of the most diverse in South America and one of the best in the world. Peru's culinary heritage has a refined and diverse cuisine that combines Native American, Spanish and African influences. Peruvian food culture is known for dishes such as \"ceviche\" (raw seafood with lemon juice and spices), \"lomo saltado\" (grilled pork with vegetables and spices), \"quei\" (quinoa cheese) and \"anticucho\" (grilled marinated meat).",
+        "alt": "Ceviche is a dish of Peruvian cuisine"
+      },
+       "point2": {
+        "text": "Argentina is famous for its \"asado\" - a traditional barbecue with beef, lamb and pork. This special meat dish is cooked over an open fire and is one of the main parts of Argentine culture and family gatherings. Also popular are \"empanadas\" (stuffed pies), \"milanesa\" (breaded meat), \"mate\" (Paraguayan tea) and \"dulce de leche\" (milk pastry cream). Food is a way to bring family and friends together, and Argentines value table time and hospitality.",
+        "alt": "Asado is a dish of Argentine cuisine."
+      },
+      "point3": {
+        "text": "Brazil is known for its abundance of exotic fruits such as acai, passion fruit, guava and mango. Brazilian cuisine includes such popular dishes as \"feijoada\" (bean soup with meat) and \"pao de queueu\" (cheese balls). In Brazil, there is a tradition of morning breakfast called \"cafe-com-light\". It is a rich breakfast that usually includes fresh fruit, bread, cookies, cakes and juices. And on the walk you can find acaraje - this is a popular street food in Brazil, especially in the state of Bahia. These are fried corn balls with shrimp, served with spicy sauces.",
+        "alt": "Brazilian national breakfast"
+      },
+      "point4": {
+        "text": "Chile is the largest consumer of seafood in South America. Salmon, eel, mussels, scallops, oysters and shrimp are just some of the most popular types of seafood found in Chilean cuisine. Chile is famous for its production of high-quality wine. Vineyards in Chile produce a variety of wines, including Cabernet Sauvignon, Merlot, and Chardonnay. In Chile, in addition to its exquisite wines, there is a popular dish called \"pastel de choclo\", which is a baked puff pastry with meat, eggs, olives and corn filling.",
+        "alt": "Seafood, fish, shrimp, lobster, lobster, octopus"
+      },
+      "point5": {
+        "text": "In Venezuela, the \"arepa\" is a popular street food, which is a flat corn bread fried and filled with various fillings such as meat, cheese or beans. Venezuela produces and consumes more bananas than any other country in South America. Bananas are often used in a variety of dishes, including banana bread and desserts. \"Pabellon criollo\" is a traditional national dish of Venezuela. It consists of cotton rice, black beans, roast beef or pork and plantain.",
+        "alt": "Arepa is a Venezuelan dish. Corn bread."
+      }, 
+      "point6": {
+        "text": "The Amazon rainforest offers a variety of exotic foods: acai, dragon fruit, guava, passion fruit, guanabana and mangosteen. These fruits have unique flavors and nutritional properties, and are used in many dishes and drinks. The Amazon forest is one of the main places where Brazil nuts are grown, a rich source of healthy fats and proteins. The Amazon is known for growing quality cocoa, and many types of cocoa beans come from this region. The Amazon is known for its superfoods such as acai, maca, chia. Which have a high nutritional value and are a source of vitamins and antioxidants.",
+        "alt": "Exotic fruits, dragon, dragon fruit, mango, papaya, melon, grapefruit"
+      }
+    },
+     "featuresProductsList": {
+       "parag": "South America is rich in variety of products due to its climate and geographical diversity. Here you can find various fruits, vegetables, seafood and meat:",
+      "point1": {
+        "text": "Potatoes were one of the main food products of the Incas and other ancient civilizations in the Andes, in the region of modern southern Peru and the extreme northwestern region of Bolivia. It was brought to Europe after the discovery of America and became one of the key cultivated plants around the world.",
+        "alt": "Potatoes are the most popular vegetable in the world"
+      },
+       "point2": {
+        "text": "Chili, or pepper, originates from South America and has been important in local cuisines for centuries. Different varieties of chilies are used to prepare sauces, spices and add spiciness to dishes.",
+        "alt": "Chili pepper is a traditional product of the countries of South America, Chile, Argentina, Bolivia, Peru."
+      },
+       "point3": {
+        "text": "Alkagan, or amaranth, is also one of the ancient cultural crops of South America. Amaranth seeds contain a lot of protein and are the basis for preparing various dishes and bakery products.",
+        "alt": "Amaranth is a plant that has its roots in South America."
+      },
+       "point4": {
+        "text": "Quinoa is a pseudo-grain that originates from the Andes of South America. Quinoa is a rich source of protein, carbohydrates, vitamins and minerals. The absence of gluten and the content of the essential amino acid \"lysine\" make this product convenient and useful for people with a gluten allergy and a limited diet.",
+        "alt": "Quinoa seeds are a gluten-free product"
+      },
+       "point5": {
+        "text": "Chocolate: Cocoa, from which chocolate is made, has its origins in South America. Historically, the Maya and Aztecs used cacao in their culture and religious ceremonies. Chocolate continues to be an important product in the region and is exported around the world.",
+        "alt": "Chocolate - made from cocoa beans."
+      }
+    }
   },
    "NorthAmerica": {
     "title": {
       "part1": "Cuisine and traditions of the continent",
       "part2": "North America"
     },
-    "countriesTitle": "Countries of the North American continent"
+    "countriesTitle": "Countries of the North American continent",
+    "featuresTitle": "Features of the continent",
+    "featuresList": {
+      "parag": "The diversity of the food culture of North America is connected not only with the history and national characteristics of the continent, but also with a large number of migrants from all over the world, who brought the diversity of food traditions to all countries of the continent.",
+      "point1": {
+        "text": "North America is known for its love of fast food. Hot dogs and hamburgers are symbols of American culture. A large number of famous international fast food chains, such as McDonald's and Burger King, have their roots here. This passion for fast food has had a significant impact on the food culture of the region, reflecting consumer habits and contemporary trends. From here, fast food grew into a global phenomenon, offering the tastes of America in every corner of the planet and becoming an integral part of the world's culinary heritage.",
+        "alt": "Fast food is an American popular food"
+      },
+      "point2": {
+        "text": "BBQ is an important part of the food culture in North America, especially in the Southern states. This culinary tradition is a real passion for many Americans, and various styles of barbecue are known, such as Texas with large cuts of meat, Carolina with a special sauce and Memphis with pork. This tradition not only unites families and friends during gastronomic events, but also reflects the versatility of American taste and the ability to perfect recipes over the generations.",
+        "alt": "Barbecue - culinary traditions of America and Canada"
+      },
+      "point3": {
+        "text": "North America is also famous for its authentic Mexican cuisine, which is one of the most popular cuisines on the continent. Mexican cuisine impresses with its variety and use of characteristic ingredients, such as tasty avocados, aromatic chilies, juicy tomatoes, traditional corn, and white lentils. Dishes such as traditional tacos, mouth-watering fajitas, juicy guacamole and spicy salsa impress with their taste and roots in Mexican culture, giving them popularity and a special place in the culinary manifestation of the region.",
+        "alt": "Mexican tacos are a traditional dish of Mexico"
+      },
+      "point4": {
+        "text": "North America is famous for its diversity in food, and the continent often hosts a variety of multinational food festivals dedicated to different cuisines and traditions. These festivals provide a great opportunity to taste a variety of foods and enjoy cultural diversity through the presence of food. Thanks to this, you can find restaurants and cafes on the continent that offer cuisines from all over the world. From delicious Italian pizzas to exquisite French dishes, from fragrant Asian cuisine to the indigenous flavors of African dishes, you have the opportunity to enjoy the authentic tastes of different cultures.",
+        "alt": "Food festivals around the world"
+      },
+      "point5": {
+        "text": "North America is famous for the popularity of carbonated beverages such as cola and lemonade, as well as a variety of non-alcoholic beverages such as coffee and tea. In particular, the continent is home to a burgeoning craft brewing industry, particularly in the US and Canada, where a large number of independent breweries operate. These breweries offer a wide range of different beers, including exotic and experimental options, reflecting the versatility of flavors and an innovative approach to brewing.",
+        "alt": "Traditional drinks of North America"
+      },
+      "point6": {
+        "text": "In the United States and Canada, breakfast is considered an extremely important meal and is given special attention and importance. It traditionally serves dishes that include scrambled eggs, bacon, cereal, toast, and donuts. Another characteristic feature is the portion sizes in North American restaurants, which often impress with their gigantic portions. This reflects the tradition of \"bigger and better\". So, when visiting such establishments, be prepared to share dishes with mutual friends or ask to pack leftovers for later consumption.",
+        "alt": "An important traditional breakfast of North America, the USA, and Canada."
+      }
+    },
+    "featuresProductsList": {
+       "parag": "The region has a rich heritage and a variety of foods that have had a significant impact on culinary traditions both within and outside the continent.",
+      "point1": {
+        "text": "The pumpkin originated and was cultivated for thousands of years in the territory of North America, it is an important part of the history of this region. It has a special significance in the culture and traditions of Native American tribes, who used the pumpkin not only as food, but also for various religious and ritual purposes. Today, the pumpkin is widely used in North American cooking, where it has become not only a main ingredient in popular dishes such as pumpkin pie and pumpkin soup, but also a symbol of the fall holiday season, such as Thanksgiving and Halloween.",
+        "alt": "Pumpkin is a popular Halloween decoration and a delicious fruit that grows on American soil."
+      },
+        "point2": {
+        "text": "Different varieties of beans, such as black beans, red beans, and Navajo beans, also have deep roots in North American history. Beans were not only a staple food source for Native American tribes, but also played an important role in cooking, adding many flavors to Mexican and South American cuisine. The purposeful use of the bean in various dishes has given it cultural significance and highlighted its importance in the food heritage of the continent.",
+        "alt": "Different varieties of beans that grow in North America."
+      },
+        "point3": {
+        "text": "Cranberry, also known as bog cranberry, is a plant with a long history in North America. It has deep roots in use by Native American tribes, who have been finding ways to use this plant in food, medicine, and ritual for centuries. Today, cranberries are widely used in cooking, adding their unique flavor properties to a variety of dishes, including sauces, drinks, and desserts.",
+        "alt": "Cranberry (cranberry) - traditional berries in North America."
+      },
+        "point4": {
+        "text": "Corn (maize) has its roots in Mexico and Central America, where it has been cultivated for thousands of years. Over time, corn became one of the most important foods in North America, and its use spread in various forms, such as whole grains, cornmeal, and cornflakes, which gained popularity for their taste and versatility in cooking.",
+        "alt": "Corn is a root plant of the North American continent"
+      }
+    }
   },
    "Africa": {
     "title": {
       "part1": "Cuisine and traditions of the continent",
       "part2": "Africa"
     },
-    "countriesTitle": "Countries of the Africa continent"
+    "countriesTitle": "Countries of the Africa continent",  "featuresTitle": "Features of the continent",
+    "featuresList": {
+      "parag": "",
+      "point1": {
+        "text": "",
+        "alt": ""
+      },
+      "point2": {
+        "text": "",
+        "alt": ""
+      },
+      "point3": {
+        "text": "",
+        "alt": ""
+      },
+      "point4": {
+        "text": "",
+        "alt": ""
+      },
+      "point5": {
+        "text": "",
+        "alt": ""
+      }
+    },
+    "featuresProductsList": {
+       "parag": "",
+      "point1": {
+        "text": "",
+        "alt": ""
+      },
+        "point2": {
+        "text": "",
+        "alt": ""
+      },
+        "point3": {
+        "text": "",
+        "alt": ""
+      },
+        "point4": {
+        "text": "",
+        "alt": ""
+      },
+        "point5": {
+        "text": "",
+        "alt": ""
+      }
+    }
   },
    "Asia": {
     "title": {
       "part1": "Cuisine and traditions of the continent",
       "part2": "Asia"
     },
-    "countriesTitle": "Countries of the Asian continent"
+    "countriesTitle": "Countries of the Asian continent",
+      "featuresTitle": "Features of the continent",
+    "featuresList": {
+      "parag": "",
+      "point1": {
+        "text": "",
+        "alt": ""
+      },
+      "point2": {
+        "text": "",
+        "alt": ""
+      },
+      "point3": {
+        "text": "",
+        "alt": ""
+      },
+      "point4": {
+        "text": "",
+        "alt": ""
+      },
+      "point5": {
+        "text": "",
+        "alt": ""
+      }
+    },
+    "featuresProductsList": {
+       "parag": "",
+      "point1": {
+        "text": "",
+        "alt": ""
+      },
+        "point2": {
+        "text": "",
+        "alt": ""
+      },
+        "point3": {
+        "text": "",
+        "alt": ""
+      },
+        "point4": {
+        "text": "",
+        "alt": ""
+      },
+        "point5": {
+        "text": "",
+        "alt": ""
+      }
+    }
   },
    "Europe": {
     "title": {
       "part1": "Cuisine and traditions of the continent",
       "part2": "Europe"
     },
-    "countriesTitle": "Countries of the European continent"
+    "countriesTitle": "Countries of the European continent",
+      "featuresTitle": "Features of the continent",
+    "featuresList": {
+      "parag": "",
+      "point1": {
+        "text": "",
+        "alt": ""
+      },
+      "point2": {
+        "text": "",
+        "alt": ""
+      },
+      "point3": {
+        "text": "",
+        "alt": ""
+      },
+      "point4": {
+        "text": "",
+        "alt": ""
+      },
+      "point5": {
+        "text": "",
+        "alt": ""
+      }
+    },
+    "featuresProductsList": {
+       "parag": "",
+      "point1": {
+        "text": "",
+        "alt": ""
+      },
+        "point2": {
+        "text": "",
+        "alt": ""
+      },
+        "point3": {
+        "text": "",
+        "alt": ""
+      },
+        "point4": {
+        "text": "",
+        "alt": ""
+      },
+        "point5": {
+        "text": "",
+        "alt": ""
+      }
+    }
   },
    "Australia": {
     "title": {
       "part1": "Cuisine and traditions of the continent",
       "part2": "Australia(Oceania)"
     },
-    "countriesTitle": "Countries of the Australian continent"
+    "countriesTitle": "Countries of the Australian continent",
+      "featuresTitle": "Features of the continent",
+    "featuresList": {
+      "parag": "",
+      "point1": {
+        "text": "",
+        "alt": ""
+      },
+      "point2": {
+        "text": "",
+        "alt": ""
+      },
+      "point3": {
+        "text": "",
+        "alt": ""
+      },
+      "point4": {
+        "text": "",
+        "alt": ""
+      },
+      "point5": {
+        "text": "",
+        "alt": ""
+      }
+    },
+    "featuresProductsList": {
+       "parag": "",
+      "point1": {
+        "text": "",
+        "alt": ""
+      },
+        "point2": {
+        "text": "",
+        "alt": ""
+      },
+        "point3": {
+        "text": "",
+        "alt": ""
+      },
+        "point4": {
+        "text": "",
+        "alt": ""
+      },
+        "point5": {
+        "text": "",
+        "alt": ""
+      }
+    }
   },
   "CountryPage": {
     "featuresTitle": "Features of the country",

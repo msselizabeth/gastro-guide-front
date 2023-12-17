@@ -1,0 +1,139 @@
+.features__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.features__img {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 25px;
+    box-shadow: 3px 3px 5px 0px var(--color-shadow);
+    object-fit: cover;
+}
+
+.features__point__container{
+    display: flex;
+    justify-content: space-between;
+}
+.features__inner__text{
+    width: 280px;
+}
+
+.features__text {
+    font-weight: 500;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.features__item {
+    border-radius: 25px;
+    padding: 10px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+        box-shadow: 3px 3px 5px 0px var(--color-shadow);
+        color: var(--color-hover-current-link);
+        transform: scale(1.02);
+    }
+
+}
+
+@media screen and (min-width:375px) {
+  .features__inner__text{
+    width: 305px;
+  }
+  .features__point__container{
+    justify-content: center;
+    gap: 5px;
+  }
+}
+@media screen and (min-width:425px) {
+    .features__inner__text {
+        width: 360px;
+    }
+}
+@media screen and (min-width:768px) {
+    .features__point__container{
+        gap: 10px;
+    }
+    .features__inner__text {
+        width: 480px;
+    }
+    .features__img{
+        margin: 0;
+        width: 200px;
+        height: 200px;
+    }
+    .features__item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    .features__point__img {
+        width: 23px;
+        height: 46px;
+    }
+}
+@media screen and (min-width:1000px) {
+    .features__point__container {
+        gap: 12px;
+    }
+
+    .features__inner__text {
+        width: 720px;
+    }
+
+    .features__img {
+        width: 170px;
+        height: 150px;
+    }
+
+    .features__item {
+        gap: 20px;
+    }
+ 
+}
+@media screen and (min-width:1200px) {
+    .features__point__container {
+        gap: 15px;
+    }
+
+    .features__inner__text {
+        width: 870px;
+    }
+
+    .features__img {
+        width: 200px;
+        height: 180px;
+    }
+
+    .features__item {
+        gap: 25px;
+    }
+   .features__point__img {
+        width: 25px;
+        height: 50px;
+    }
+}
+@media screen and (min-width:1440px) {
+    .features__point__container {
+        gap: 18px;
+    }
+
+    .features__inner__text {
+        width: 1050px;
+    }
+
+    .features__img {
+        width: 230px;
+        height: 200px;
+    }
+    .features__point__img{
+        width: 30px;
+        height: 60px;
+    }
+}
