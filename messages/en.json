@@ -439,49 +439,49 @@
     "countriesTitle": "Countries of the European continent",
       "featuresTitle": "Features of the continent",
     "featuresList": {
-      "parag": "",
-      "point1": {
-        "text": "",
-        "alt": ""
+      "parag": "European gastronomy is a taste mark in history and traditions. European cuisine is a place where taste and history are intertwined, and the aromas of dishes carry centuries-old traditions. Each region of the continent brings to the world of gastronomy something unique, deeply rooted in culture and way of life. European cuisine is not just food. It embodies the history, traditions and specifics of each region, making the taste trail a great revelation for everyone who touches the European table.",
+        "point1": {
+        "text": "Culinary map: regional differences and identity. Europe is a mosaic of various cultures and traditions. Each region has its own unique culinary identity. Mediterranean cuisine, rich in olive oil and fresh herbs, differs from the delicious sausages and cheeses of Central Europe. And these are just a few examples from an incredible variety of dishes and ingredients.",
+        "alt": "Bruschettas with different contents, indicating the diversity of the food culture of the regions of the continent."
       },
       "point2": {
-        "text": "",
-        "alt": ""
+        "text": "Seasonality and simplicity: Europeans prefer seasonal and fresh products. Salads, baked vegetables, fruit desserts - all this becomes part of the tables depending on the season. Ease of preparation and the use of the best ingredients emphasize natural taste harmony.",
+        "alt": "Fresh products: vegetables, fruits, cheese, dairy products, eggs."
       },
       "point3": {
-        "text": "",
-        "alt": ""
+        "text": "Rituals and communal tables united within the heart. Food culture in Europe is defined by family dinners and shared dinners with friends. Here, cooking and consuming food is a real ritual. From long lunches in the Mediterranean to festive dinners in Eastern Europe, food brings people together.",
+        "alt": "Traditional table settings."
       },
       "point4": {
-        "text": "",
-        "alt": ""
+        "text": "Winemaking and brewing - the art of drinks. Wine and beer in Europe are not just drinks, but works of art. Vineyards of Provence, wine cellars of Tuscany, breweries of Belgium - each region has its own traditions and secrets of production, which are passed down from generation to generation.",
+        "alt": "Winemaking is a traditional European production."
       },
       "point5": {
-        "text": "",
-        "alt": ""
+        "text": "Gastronomic creativity from tradition to innovation. European cuisine is a combination of ancient traditions and bold innovations. Chefs introduce new cooking techniques and experiment with flavors, creating author's masterpieces. While preserving the taste touch of the past, they open new perspectives of modern gastronomy.",
+        "alt": "New tastes and new dishes."
       }
     },
     "featuresProductsList": {
-       "parag": "",
+       "parag": "Europe is the historical place of origin of many products. The most popular of them:",
       "point1": {
-        "text": "",
-        "alt": ""
+        "text": "Olives originate from the Mediterranean region of Europe, especially Spain, Italy and Greece. Olives are grown for the production of olive oil. It is an integral part of local cuisine, used as an appetizer, antipasto and as an ingredient in many dishes.",
+        "alt": "Olives - oil and traditions of the Mediterranean."
       },
         "point2": {
-        "text": "",
-        "alt": ""
+        "text": "Grapes are spread all over the world, in particular, they have roots in Italy, Spain and France. Grapes are used to make wine, which has become not only a drink but also a part of culture and ritual in Europe. Known for the wealth of varieties and wine regions.",
+        "alt": "Grapes are a traditional product of European countries."
       },
         "point3": {
-        "text": "",
-        "alt": ""
+        "text": "Tomato is a product of southern Europe. Tomatoes have become an integral part of European cuisine, in particular, in Italian sauces and salads. They gained popularity due to their juiciness and rich taste. Most dishes of European cuisine contain tomatoes.",
+        "alt": "Tomatoes are juicy and irreplaceable in the European cultural heritage."
       },
         "point4": {
-        "text": "",
-        "alt": ""
+        "text": "Cheeses are the main cultural culinary heritage of all of Europe. Cheesemaking became one of the most important industries in ancient Europe. There are many varieties of cheese, such as Parmesan, Gouda, Dor Bleu, Maasdam, Radomer, Mozzarella, Feta and others.",
+        "alt": "Cheese making is an ancient European tradition."
       },
         "point5": {
-        "text": "",
-        "alt": ""
+        "text": "Bacon - a salted, smoked piece of pork breast or belly. It is spread all over the world, but it has its roots in Europe. Germany and Spain are famous for the production of high-quality bacon. Bacon is used in a variety of dishes, from breakfasts to soups and salads, and gives them a characteristic aroma and taste.",
+        "alt": "Bacon - a salted, smoked piece of pork breast or belly."
       }
     }
   },

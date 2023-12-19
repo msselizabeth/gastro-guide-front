@@ -48,8 +48,8 @@ export const FeaturesOfTheContinent = ({
                   <Image
                     className={styles.features__point__img}
                     src={pointImg}
-                    width={20}
-                    height={40}
+                    width={25}
+                    height={25}
                     alt="Point"
                   ></Image>
                   <p className={styles.features__inner__text}>{feature.text}</p>
