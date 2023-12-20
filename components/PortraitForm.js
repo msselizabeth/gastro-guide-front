@@ -63,7 +63,6 @@ export const PortraitForm = ({ portrait, portraitContent }) => {
     const isCategoriesSelected = isAtLeastOneOptionSelected("categories");
     const isCookingMethodsSelected =
       isAtLeastOneOptionSelected("cookingMethods");
-    // const isAllergiesSelected = isAtLeastOneOptionSelected("allergies");
 
     // Якщо обрана хоча б одна опція для кожного питання, зберегти відповіді
     if (isCuisineSelected && isCategoriesSelected && isCookingMethodsSelected) {

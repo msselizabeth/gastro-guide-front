@@ -86,7 +86,7 @@ export default function RegistrationPage() {
         <h1 className="sectionTitle">{textContent.majorTitle}</h1>
         <div className={styles.register__main__container}>
           <p className={styles.confidential}>{textContent.confidential}</p>
-          <Link href={"/confidential"} className={styles.confidential__link}>
+          <Link href={"/info/terms"} className={styles.confidential__link}>
             {textContent.confidentialLink}
           </Link>
           <RegistrationForm textContent={textContent} />

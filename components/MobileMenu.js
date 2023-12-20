@@ -43,7 +43,10 @@ export const MobileMenu = ({ navList, mobileNavList, registrate , auth, textExit
         ref={menuRef}
       >
         <div className={styles.mobileMenuContainer}>
-          <button className={styles.mobileMenuBtnClose} onClick={closeMenu}></button>
+          <button
+            className={styles.mobileMenuBtnClose}
+            onClick={closeMenu}
+          ></button>
           <div>
             <ul className={styles.mobileMenuNavList}>
               {navList.map(({ id, title, path, pathEN, pathUA }) => {
@@ -82,12 +85,18 @@ export const MobileMenu = ({ navList, mobileNavList, registrate , auth, textExit
               })}
             </ul>
 
-            <AuthMobile registrate={registrate} auth={auth} onClick={closeMenu} textExit={textExit} textProfile={textProfile} /> 
+            <AuthMobile
+              registrate={registrate}
+              auth={auth}
+              onClick={closeMenu}
+              textExit={textExit}
+              textProfile={textProfile}
+            />
 
             <ul className={styles.mobContactsList}>
               <li>
                 <Link
-                  href="https://instagram.com/_gastroguide?igshid=NTc4MTIwNjQ2YQ=="
+                  href="https://www.instagram.com/gastro___guide?igshid=OGQ5ZDc2ODk2ZA=="
                   className={`${styles.mobContactsLink} ${styles.mobContactsLinkInsta}`}
                   target="_blank"
                 ></Link>

@@ -143,7 +143,7 @@ export default function ResourcePage() {
           <ul className={styles.terms__social__list}>
             <li className={styles.terms__social__item}>
               <Link
-                href="https://instagram.com/_gastroguide?igshid=NTc4MTIwNjQ2YQ=="
+                href="https://www.instagram.com/gastro___guide?igshid=OGQ5ZDc2ODk2ZA=="
                 target="_blank"
                 className={`${styles.terms__social__link} ${styles.terms__social__linkInsta}`}
               ></Link>

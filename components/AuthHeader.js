@@ -1,3 +1,4 @@
+
 "use client"
 import { useState, useEffect } from "react";
 
@@ -8,16 +9,14 @@ import { AuthHeaderList } from "./AuthHeaderList";
 
 export const AuthHeader = ({ textAuth, textRegister, textExit, textProfile }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-    const [userName, setUserName] = useState("");
-const router = useRouter();
+  const [userName, setUserName] = useState("");
+  const router = useRouter();
+
   useEffect(() => {
-    // Провести проверку авторизации при монтировании компонента
     checkAuthentication();
-  }, [isAuthenticated]);
+  }, []);
 
   const checkAuthentication = async () => {
-    // Выполнить запрос на бекенд для проверки авторизации
-    // Замените YOUR_BACKEND_ENDPOINT на фактический адрес вашего бекенда
     const response = await fetch(
       "https://gastro-guide-cb84aa2b2322.herokuapp.com/api/auth/current",
       {
@@ -32,7 +31,7 @@ const router = useRouter();
       const data = await response.json();
       setUserName(data.userName);
         setIsAuthenticated(true);
-       
+
     } else {
       setIsAuthenticated(false);
     }
@@ -59,7 +58,7 @@ const router = useRouter();
      }
 
     router.push("/")
-     
+
   };
 
   return (

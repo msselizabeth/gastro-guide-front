@@ -95,7 +95,7 @@ export const Footer = () => {
                 <ul className={styles.footerContactsList}>
                   <li>
                     <Link
-                      href="https://instagram.com/_gastroguide?igshid=NTc4MTIwNjQ2YQ=="
+                      href="https://www.instagram.com/gastro___guide?igshid=OGQ5ZDc2ODk2ZA=="
                       className={`${styles.footerContactsLink} ${styles.footerContactsLinkInsta}`}
                       target="_blank"
                     ></Link>

@@ -35,7 +35,7 @@ export const ContactsSection = () => {
                   <ul className={styles.socialLinksList}>
                     <li className={styles.socialLinksItem}>
                       <Link
-                        href="https://instagram.com/_gastroguide?igshid=NTc4MTIwNjQ2YQ=="
+                        href="https://www.instagram.com/gastro___guide?igshid=OGQ5ZDc2ODk2ZA=="
                         className={`${styles.socialLinksLink} ${styles.socialLinksLinkInsta}`}
                         target="_blank"
                       ></Link>
