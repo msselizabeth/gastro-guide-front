@@ -5,17 +5,27 @@ import { RecipeInfo } from "./RecipeInfo";
 
 
 export async function FetchRecipe(params) {
-  const response = await fetch(
+  let response;
+  if (params.locale === 'en') {
+    response = await fetch(
+    `https://gastro-guide-cb84aa2b2322.herokuapp.com/api/recipes/${params.slug}`)
+  } else {
+    response = await fetch(
     `https://gastro-guide-cb84aa2b2322.herokuapp.com/api/${params.locale}/recipes/${params.slug}`
   );
+  }
   const recipe = await response.json();
   return recipe;
 }
 
 export async function FetchProducts(params) {
-  const response = await fetch(
+  let response;
+  if (params.locale === 'en') {
+    response = await fetch(
+    `https://gastro-guide-cb84aa2b2322.herokuapp.com/api/products`)
+  } else { response = await fetch(
     `https://gastro-guide-cb84aa2b2322.herokuapp.com/api/${params.locale}/products`
-  );
+  );}
   const products = await response.json();
   return products;
 }

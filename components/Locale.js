@@ -5,23 +5,19 @@ import Link from "next-intl/link";
 
 
 export const Locale = ({navList}) => {
-    const pathname = usePathname();
+  const pathname = usePathname();
 
     return (
       <div className={styles.locale}>
         <Link
-          href="/"
+          href={pathname.substring(3)}
           locale="en"
           className={styles.localeLink}
         >
           EN
         </Link>
 
-        <Link
-          href="/"
-          locale="ua"
-          className={styles.localeLink}
-        >
+        <Link href={pathname} locale="ua" className={styles.localeLink}>
           УКР
         </Link>
       </div>

@@ -56,7 +56,7 @@ export const MobileMenu = ({ navList, mobileNavList, registrate , auth, textExit
                       onClick={closeMenu}
                       href={path}
                       className={`${styles.mobileMenuNavListLink} ${
-                        pathname === pathEN || pathname === pathUA
+                        pathname === path || pathname === pathUA
                           ? `${styles.current}`
                           : ""
                       }`}
@@ -69,14 +69,14 @@ export const MobileMenu = ({ navList, mobileNavList, registrate , auth, textExit
             </ul>
 
             <ul className={styles.mobileMenuNavList}>
-              {mobileNavList.map(({ id, title, path }) => {
+              {mobileNavList.map(({ id, title, path, pathUA }) => {
                 return (
                   <li key={id} className={styles.mobileMenuNavListItem}>
                     <Link
                       href={path}
                       onClick={closeMenu}
                       className={`${styles.mobileMenuNavListLink} 
-                    ${pathname === path ? `${styles.current}` : ""}`}
+                    ${pathname === path || pathname == pathUA ? `${styles.current}` : ""}`}
                     >
                       {title}
                     </Link>

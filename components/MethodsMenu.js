@@ -13,7 +13,7 @@ export const MethodsMenu = () => {
           href={"/manual/cook-methods/fry"}
           className={`${
             pathname === "/ua/manual/cook-methods/fry" ||
-            pathname === "/en/manual/cook-methods/fry"
+            pathname === "/manual/cook-methods/fry"
               ? styles.current
               : ""
           } ${styles.methodsMenu__link}`}
@@ -26,7 +26,7 @@ export const MethodsMenu = () => {
           href={"/manual/cook-methods/boil"}
           className={`${
             pathname === "/ua/manual/cook-methods/boil" ||
-            pathname === "/en/manual/cook-methods/boil"
+            pathname === "/manual/cook-methods/boil"
               ? styles.current
               : ""
           } ${styles.methodsMenu__link}`}
@@ -39,7 +39,7 @@ export const MethodsMenu = () => {
           href={"/manual/cook-methods/stew"}
           className={`${
             pathname === "/ua/manual/cook-methods/stew" ||
-            pathname === "/en/manual/cook-methods/stew"
+            pathname === "/manual/cook-methods/stew"
               ? styles.current
               : ""
           } ${styles.methodsMenu__link}`}
@@ -52,7 +52,7 @@ export const MethodsMenu = () => {
           href={"/manual/cook-methods/bake"}
           className={`${
             pathname === "/ua/manual/cook-methods/bake" ||
-            pathname === "/en/manual/cook-methods/bake"
+            pathname === "/manual/cook-methods/bake"
               ? styles.current
               : ""
           } ${styles.methodsMenu__link}`}
@@ -65,7 +65,7 @@ export const MethodsMenu = () => {
           href={"/manual/cook-methods/addition"}
           className={`${
             pathname === "/ua/manual/cook-methods/addition" ||
-            pathname === "/en/manual/cook-methods/addition"
+            pathname === "/manual/cook-methods/addition"
               ? styles.current
               : ""
           } ${styles.methodsMenu__link}`}

@@ -12,7 +12,7 @@ export const InfoMenu = ({ infoMenuContent }) => {
         <Link
           href={"/info"}
           className={`${
-            pathname === "/ua/info" || pathname === "/en/info"
+            pathname === "/ua/info" || pathname === "/info"
               ? styles.current
               : ""
           } ${styles.infoMenu__link}`}
@@ -25,7 +25,7 @@ export const InfoMenu = ({ infoMenuContent }) => {
           href={"/info/author"}
           className={`${
             pathname === "/ua/info/author" ||
-            pathname === "/en/info/author"
+            pathname === "/info/author"
               ? styles.current
               : ""
           } ${styles.infoMenu__link}`}
@@ -38,7 +38,7 @@ export const InfoMenu = ({ infoMenuContent }) => {
           href={"/info/terms"}
           className={`${
             pathname === "/ua/info/terms" ||
-            pathname === "/en/info/terms"
+            pathname === "/info/terms"
               ? styles.current
               : ""
           } ${styles.infoMenu__link}`}

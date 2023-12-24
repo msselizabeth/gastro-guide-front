@@ -15,7 +15,7 @@ export const MainNavList = ({navList}) => {
               <Link
                 href={path}
                 className={`${styles.navListLink} ${
-                  pathname === pathUA || pathname === pathEN
+                  pathname === pathUA || pathname === path
                     ? `${styles.current}`
                     : ""
                 }`}

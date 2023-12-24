@@ -80,12 +80,14 @@ export const Header = () => {
     {
       id: 2,
       title: t("author"),
-      path: "/#author",
+      path: "/info/author",
+      pathUA: "/ua/info/author",
     },
     {
       id: 3,
       title: t("resource"),
-      path: "/#resource",
+      path: "/info",
+      pathUA: "/ua/info",
     },
   ];
 

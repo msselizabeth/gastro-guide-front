@@ -12,7 +12,7 @@ export const ManualMenu = () => {
         <Link
           href={"/manual"}
           className={`${
-            pathname === "/ua/manual" || pathname === "/en/manual"
+            pathname === "/ua/manual" || pathname === "/manual"
               ? styles.current
               : ""
           } ${styles.manualMenu__link}`}
@@ -25,7 +25,7 @@ export const ManualMenu = () => {
           href={"/manual/cook-methods"}
           className={`${
             pathname === "/ua/manual/cook-methods" ||
-            pathname === "/en/manual/cook-methods"
+            pathname === "/manual/cook-methods"
               ? styles.current
               : ""
           } ${styles.manualMenu__link}`}
@@ -38,7 +38,7 @@ export const ManualMenu = () => {
           href={"/manual/chemistry-compound"}
           className={`${
             pathname === "/ua/manual/chemistry-compound" ||
-            pathname === "/en/manual/chemistry-compound"
+            pathname === "/manual/chemistry-compound"
               ? styles.current
               : ""
           } ${styles.manualMenu__link}`}
@@ -50,7 +50,7 @@ export const ManualMenu = () => {
         <Link
           href={"/manual/meat"}
           className={`${
-            pathname === "/ua/manual/meat" || pathname === "/en/manual/meat"
+            pathname === "/ua/manual/meat" || pathname === "/manual/meat"
               ? styles.current
               : ""
           } ${styles.manualMenu__link}`}
@@ -62,7 +62,7 @@ export const ManualMenu = () => {
         <Link
           href={"/manual/fish"}
           className={`${
-            pathname === "/ua/manual/fish" || pathname === "/en/manual/fish"
+            pathname === "/ua/manual/fish" || pathname === "/manual/fish"
               ? styles.current
               : ""
           } ${styles.manualMenu__link}`}
@@ -75,7 +75,7 @@ export const ManualMenu = () => {
           href={"/manual/vegetables"}
           className={`${
             pathname === "/ua/manual/vegetables" ||
-            pathname === "/en/manual/vegetables"
+            pathname === "/manual/vegetables"
               ? styles.current
               : ""
           } ${styles.manualMenu__link}`}

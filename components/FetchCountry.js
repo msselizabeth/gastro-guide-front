@@ -7,17 +7,34 @@ import { DishesOfCountryList } from "./DishesOfCountryList";
 
 export async function FetchCountry(params) {
 
-  const response = await fetch(
-    `https://gastro-guide-cb84aa2b2322.herokuapp.com/api/${params.locale}/countries/${params.slug}`
-  );
+  let response;
+
+  if (params.locale === 'en') {
+     response = await fetch(
+      `https://gastro-guide-cb84aa2b2322.herokuapp.com/api/countries/${params.slug}`
+    );
+  } else {
+    response = await fetch(
+      `https://gastro-guide-cb84aa2b2322.herokuapp.com/api/${params.locale}/countries/${params.slug}`
+    );
+  }
+    
   const country = await response.json();
   return country;
 }
 
 export async function FetchDishesOfCountry(params) {
-  const response = await fetch(
-    `https://gastro-guide-cb84aa2b2322.herokuapp.com/api/${params.locale}/countries/${params.slug}/recipes`
-  );
+  let response;
+  if (params.locale === 'en') {
+    response = await fetch(
+      `https://gastro-guide-cb84aa2b2322.herokuapp.com/api/countries/${params.slug}/recipes`
+    );
+  }
+  else {
+    response = await fetch(
+      `https://gastro-guide-cb84aa2b2322.herokuapp.com/api/${params.locale}/countries/${params.slug}/recipes`
+    );
+  }
   const dishes = await response.json();
   return dishes;
   
@@ -27,7 +44,8 @@ export async function FetchDishesOfCountry(params) {
 export const CountryData = async ({params, featuresTitle, historyTitle, seasonsTitle, dishesTitle}) => {
   const country = await FetchCountry(params);
   const dishes = await FetchDishesOfCountry(params);
-   
+    console.log(params);
+
   return (
     <>
       <HeroCountryAndRecipe

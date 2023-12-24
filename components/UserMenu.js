@@ -13,7 +13,7 @@ export const UserMenu = ({ profileText, recipesText, favotitesText }) => {
         <Link
           href={"/user-profile"}
           className={`${
-            pathname === "/ua/user-profile" || pathname === "/en/user-profile"
+            pathname === "/ua/user-profile" || pathname === "/user-profile"
               ? styles.current
               : ""
           } ${styles.userMenu__link}`}
@@ -26,7 +26,7 @@ export const UserMenu = ({ profileText, recipesText, favotitesText }) => {
           href={"/user-profile/recipes"}
           className={`${
             pathname === "/ua/user-profile/recipes" ||
-            pathname === "/en/user-profile/recipes"
+            pathname === "/user-profile/recipes"
               ? styles.current
               : ""
           } ${styles.userMenu__link}`}
@@ -39,7 +39,7 @@ export const UserMenu = ({ profileText, recipesText, favotitesText }) => {
           href={"/user-profile/favorite"}
           className={`${
             pathname === "/ua/user-profile/favorite" ||
-            pathname === "/en/user-profile/favorite"
+            pathname === "/user-profile/favorite"
               ? styles.current
               : ""
           } ${styles.userMenu__link}`}
