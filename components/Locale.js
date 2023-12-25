@@ -6,11 +6,12 @@ import Link from "next-intl/link";
 
 export const Locale = ({navList}) => {
   const pathname = usePathname();
+  const newPath = pathname.slice(0, 1) + pathname.slice(4);
 
     return (
       <div className={styles.locale}>
         <Link
-          href={pathname.substring(3)}
+          href={newPath}
           locale="en"
           className={styles.localeLink}
         >
