@@ -13,7 +13,7 @@ export default function ResourcePage() {
   const t = useTranslations("InfoPage");
   return (
     <>
-      <h1 className="sectionTitle">Умови користування</h1>
+      <h1 className="sectionTitle">{t("termsTitle")}</h1>
       <div className={styles.terms__start__container}>
         <Image
           src="/logo-sections.svg"
@@ -22,123 +22,113 @@ export default function ResourcePage() {
           height={80}
           className={styles.termsLogo}
         />
-        <p>Ласкаво прошу у світ кулінарії! Я ваш персональний гід.</p>
+        <p>{t("terms.greatest1")}</p>
       </div>
 
-      <p className={styles.terms__start__text}>
-        Повідомляю про правила користування моїми можливостями. Реєстрація на
-        сайті відкриває перед вами:
-      </p>
+      <p className={styles.terms__start__text}>{t("terms.greatest2")}</p>
 
       <ul className={styles.terms__list}>
         <li className={styles.terms__item}>
-          <h2 className={styles.terms__item__title}>Профіль користувача</h2>
+          <h2 className={styles.terms__item__title}>
+            {t("terms.profile.title")}
+          </h2>
           <p className={styles.terms__item__inner__text}>
             <span className={styles.terms__item__inner__title}>
-              Ваш персоналізований підбор страв:
+              {t("terms.profile.subtitle1")}
             </span>
-            заповніть ваш особистий смаковий портрет і отримайте персональний
-            перелік традиційних страв світу згідно вашого вибору.
+            {t("terms.profile.text1")}
           </p>
           <p className={styles.terms__item__inner__text}>
             <span className={styles.terms__item__inner__title}>
-              Ваш особистий лист улюбленого:
+              {t("terms.profile.subtitle2")}
             </span>
-            зберігайте свої улюблені рецепти в своєму профілі , які будуть
-            доступні вам з будь-якого пристрою.
+            {t("terms.profile.text2")}
           </p>
           <p className={styles.terms__item__inner__text}>
             <span className={styles.terms__item__inner__title}>
-              Спільнота смаків:
+              {t("terms.profile.subtitle3")}
             </span>
-            приєднуйтеся до обговорень, де кулінарні ентузіасти діляться
-            враженнями та порадами.
+            {t("terms.profile.text3")}
           </p>
         </li>
         <li className={styles.terms__item}>
           <h2 className={styles.terms__item__title}>
-            Авторизація, реєстрація та безпека
+            {t("terms.safety.title")}
           </h2>
           <p className={styles.terms__item__inner__text}>
-            Ваша безпека для мене важлива. Зареєструйтеся та скористайтеся
-            перевагами:
+            {t("terms.safety.additionText")}
           </p>
           <p className={styles.terms__item__inner__text}>
             <span className={styles.terms__item__inner__title}>
-              Легкість реєстрації:
+              {t("terms.safety.subtitle1")}
             </span>
-            мені не потрібні багато ваших даних, лише пошта та імʼя, щоб я знав
-            як до вас звертатися.
+            {t("terms.safety.text1")}
           </p>
           <p className={styles.terms__item__inner__text}>
             <span className={styles.terms__item__inner__title}>
-              Технології шифрування:
+              {t("terms.safety.subtitle2")}
             </span>
-            я використовую передові технології шифрування для захисту вашої
-            конфіденційної інформації.
+            {t("terms.safety.text2")}
           </p>
         </li>
         <li className={styles.terms__item}>
-          <h2 className={styles.terms__item__title}>Правила коментування</h2>
+          <h2 className={styles.terms__item__title}>
+            {t("terms.comments.title")}
+          </h2>
           <p className={styles.terms__item__inner__text}>
-            На гастрономічному гіді прагну створити позитивне та дружнє
-            середовище:
+            {t("terms.comments.additionText")}
           </p>
           <p className={styles.terms__item__inner__text}>
             <span className={styles.terms__item__inner__title}>
-              Повага до авторів:
+              {t("terms.comments.subtitle1")}
             </span>
-            залишайте коментарі, що надихають та підтримують. Уникайте
-            нецензурної лексики та образ.
+            {t("terms.comments.text1")}
           </p>
           <p className={styles.terms__item__inner__text}>
             <span className={styles.terms__item__inner__title}>
-              Будьте конструктивними:
+              {t("terms.comments.subtitle2")}
             </span>
-            ваші враження важливі. Якщо у вас зауваження, будь ласка, виражайте
-            їх конструктивно.
+            {t("terms.comments.text2")}
           </p>
         </li>
         <li className={styles.terms__item}>
-          <h2 className={styles.terms__item__title}>Рецепти та категорії</h2>
+          <h2 className={styles.terms__item__title}>
+            {t("terms.categories.title")}
+          </h2>
           <p className={styles.terms__item__inner__text}>
-            Огляньте розділ рецептів, продуктів та країн, там ви знайдете всю
-            цікаву інформацію.
+            {t("terms.categories.additionText")}
           </p>
           <p className={styles.terms__item__inner__text}>
             <span className={styles.terms__item__inner__title}>
-              Спеціальні категорії:
+              {t("terms.categories.subtitle1")}
             </span>
-            відкрийте для себе тему здорового харчування або ознайомтеся з
-            кулінарними подіями в світі. Я турботливо ставлюсь до всіх своїх
-            користувачів.
+            {t("terms.categories.text1")}
           </p>
           <p className={styles.terms__item__inner__text}>
             <span className={styles.terms__item__inner__title}>
-              Фільтри рецептів та країн:
+              {t("terms.categories.subtitle2")}
             </span>
-            обирайте рецепти відповідно до того, чого ви бажаєте скуштувати або
-            скільки часу ви маєте на страву.
-          </p>
-          <p className={styles.terms__item__inner__text}>
-            <span className={styles.terms__item__inner__title}>Пошук:</span>
-            приєднуйтеся до обговорень, де кулінарні ентузіасти діляться
-            враженнями та порадами.
+            {t("terms.categories.text2")}
           </p>
           <p className={styles.terms__item__inner__text}>
             <span className={styles.terms__item__inner__title}>
-              Допомога в готуванні:{" "}
+              {t("terms.categories.subtitle3")}
             </span>
-            я допоможу вам приготувати страву за доступним інтерактивним
-            покроковим рецептом, що можна знайти на сторінці конкретного
-            рецепта.
+            {t("terms.categories.text3")}
+          </p>
+          <p className={styles.terms__item__inner__text}>
+            <span className={styles.terms__item__inner__title}>
+              {t("terms.categories.subtitle4")}
+            </span>
+            {t("terms.categories.text4")}
           </p>
         </li>
         <li className={styles.terms__item}>
-          <h2 className={styles.terms__item__title}>Зворотній зв'язок:</h2>
+          <h2 className={styles.terms__item__title}>
+            {t("terms.feedback.title")}
+          </h2>
           <p className={styles.terms__item__inner__text}>
-            Ваші думки допомагають мені стати кращим. Будь ласка, долучайтеся до
-            моїх сторінок в соціальних мережах:
+            {t("terms.feedback.additionText")}
           </p>
           <ul className={styles.terms__social__list}>
             <li className={styles.terms__social__item}>
@@ -158,28 +148,23 @@ export default function ResourcePage() {
           </ul>
           <p className={styles.terms__item__inner__text}>
             <span className={styles.terms__item__inner__title}>
-              Форма зворотного зв'язку:
+              {t("terms.feedback.subtitle1")}
             </span>
-            маєте ідеї чи зауваження? Напишіть моїй підтримці через форму
-            зворотного зв'язку в блоці "Контакти", що розташовані знизу кожної
-            сторінки.
+            {t("terms.feedback.text1")}
           </p>
         </li>
         <li className={styles.terms__item}>
-          <h2 className={styles.terms__item__title}>Порушення</h2>
+          <h2 className={styles.terms__item__title}>
+            {t("terms.violation.title")}
+          </h2>
           <p className={styles.terms__item__inner__text}>
-            Я сподіваюсь, що ви не станете порушувати правила користування, але
-            маю попередити, що за порушення правил ваші коментарі або інші дії
-            будуть негайно видалені без попередження , а за систематичне
-            порушення вас буде заблоковано.
+            {t("terms.violation.additionText")}
           </p>
         </li>
       </ul>
+      <p className={styles.terms__end__text}>{t("terms.end1")}</p>
       <p className={styles.terms__end__text}>
-        Приємної подорожі світом смаків!
-      </p>
-      <p className={styles.terms__end__text}>
-        Із турботою, ваш <span className={styles.bold}>Gastro Guide</span>.
+        {t("terms.end2")} <span className={styles.bold}>Gastro Guide</span>.
       </p>
     </>
   );

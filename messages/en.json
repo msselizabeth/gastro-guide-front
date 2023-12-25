@@ -60,10 +60,65 @@
   },
   "InfoPage": {
      "title": "About project",
+     "termsTitle": "Terms of use",
      "menu": {
       "resource": "About resource",
       "author": "About author",
       "terms": "Terms of use"
+     },
+     "terms": {
+      "greatest1": "Welcome to the world of cooking! I am your personal guide.",
+      "greatest2": "I inform you about the rules for using my capabilities. Registration on the app opens up to you:",
+      "profile": {
+        "title": "User profile",
+        "subtitle1": "Your personalized slection of dishes:",
+        "text1": "fill in your personal taste portrait and recieve a personal list of traditional dishes of the world according to your choice.",
+        "subtitle2": "Your personal favorite list:",
+        "text2": "save your favorite recipes in your profile, which will be available to you from any device.",
+        "subtitle3": "Community of tastes:",
+        "text3": " join discussions where culinary enthusiasts share experience and tips."
+      },
+      "safety": {
+        "title": "Authorization, registration and security",
+        "additionText": "You safety is important to me. Register and take advantage of:",
+        "subtitle1": "Ease of registration:",
+        "text1": "I do not need a lof of your details, just your email and name so I know how contact to you.",
+        "subtitle2": "Encryption technologies:",
+        "text2": "I use advanced encryption technologies to protect your confidential information."
+      },
+       "comments": {
+        "title": "Commenting rules",
+        "additionText": "At the gastronomic guide, I strive to create a positive and friendly enviroment:",
+        "subtitle1":"Respect to the authors:",
+        "text1": "leave encouraging and supportive comments. Avoid profanity and insults.",
+        "subtitle2": "Be constructive:",
+        "text2": "your impressions are important. If you have comments, please express them  constructively."
+      },
+      "categories": {
+        "title": "Recipes and categories",
+        "additionText": "Take a look at the recipies, products and countries sections, which you will find all the interesting information.",
+        "subtitle1":"Special categories:",
+        "text1": "discover the topic of healthy eating os learn about culinary eventsin the world. I care about all my users.",
+        "subtitle2": "Recipe and country filters:",
+        "text2": "choose recipes according to what you want to taste or how much time you have for the dish.",
+        "subtitle3": "Search:",
+        "text3": "you can search by name of recipe, products or country.",
+        "subtitle4": "Help in cooking:",
+        "text4": "I will help you prepare the dish with an accessible interactive step-by-step recipe that can be found on the recipe page."
+        
+      },
+      "feedback": {
+         "title": "Feedback:",
+         "additionText": "Your thoughts help me become better. Please join my social media pages:",
+         "subtitle1":"Feedback form:",
+         "text1": "Have ideas or comments? Write to my support through the feedback form in the \"Contacts\" block located at the bottom of every page."
+       },
+       "violation": {
+         "title": "Violation",
+         "additionText": "I hope that you will not violate the rules of use, but I must warn you that if you violate the rules, your comments or other actions will be immediately deleted without warning, and for systematic violations you will be banned."
+       },
+       "end1":"Have a nice journey through the world of flavors!",
+       "end2":"With care, yours"
      }
   },
    "Contacts": {
@@ -72,16 +127,16 @@
          "socialmedia": "Social Media",
          "socialAuthor": "Author's social networks",
          "support": {
-             "problem": "Маєте зауваження чи бажаєте залишити відгук?",
-             "sendText": "Дякую! Ваш лист вже було відправлено до служби підтримки. За потребою ми з вами звʼяжемося поштою.",
+             "problem": "Have comments or feedback?",
+             "sendText": "Thank you! Your letter has already been sent for my support service.",
              "supportForm": {
-               "openBtn": "Залишити повідомлення",
-               "email": "Введіть свою пошту для звʼязку:",
-               "emailPlaceholder": "Введіть свою пошту",
-               "emailErr": "Введіть дійсну пошту!",
-               "message": "Будь-ласка, напишіть ваше зауваження(відгук):",
-               "messagePlaceholder": "Напишіть повідомлення тут...",
-               "sendBtn": "Відправити"
+               "openBtn": "Leave a message",
+               "email": "Enter your valid email for feedback:",
+               "emailPlaceholder": "Enter your email",
+               "emailErr": "Enter a valid email!",
+               "message": "Please, describe your comment(review):",
+               "messagePlaceholder": "Type text here...",
+               "sendBtn": "Send message"
               }
           }
   },
