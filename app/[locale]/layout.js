@@ -5,7 +5,7 @@ import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 import { ContactsSection } from '@/components/ContactsSection';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
-
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 
 export const mons = Montserrat({
@@ -57,14 +57,15 @@ export default function RootLayout({ children, params}) {
       className={`${mons.variable} ${daysOne.variable} ${monsA.variable}`}
     >
       <body>
-          <NextIntlClientProvider locale={params.locale} messages={messages}>
-            <Header></Header>
-            <main>
-              {children}
-              <ContactsSection />
-            </main>
-            <Footer></Footer>
-          </NextIntlClientProvider>
+        <NextIntlClientProvider locale={params.locale} messages={messages}>
+          <Header></Header>
+          <main>
+            {children}
+            <ContactsSection />
+          </main>
+          <Footer></Footer>
+        </NextIntlClientProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
