@@ -26,22 +26,22 @@ export const daysOne = Days_One({
 
 const locales = ["en", "ua"];
 
-export const metadata = {
-  icons: [
-    {
-      rel: "icon",
-      type: "image/png",
-      sizes: "16x16",
-      url: "/favicon.png",
-    },
-    {
-      rel: "icon",
-      type: "image/svg",
-      sizes: "16x16",
-      url: "/favicon.svg",
-    },
-  ],
-};
+// export const metadata = {
+//   icons: [
+//     {
+//       rel: "icon",
+//       type: "image/png",
+//       sizes: "16x16",
+//       url: "/favicon.png",
+//     },
+//     {
+//       rel: "icon",
+//       type: "image/svg",
+//       sizes: "16x16",
+//       url: "/favicon.svg",
+//     },
+//   ],
+// };
 
 
 export default function RootLayout({ children, params}) {
