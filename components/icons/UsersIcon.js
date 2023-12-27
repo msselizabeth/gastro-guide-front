@@ -10,7 +10,7 @@ export const UsersIcon = () => {
       xmlns="http://www.w3.org/2000/svg"
       className={styles.aboutListIcon}
     >
-      <g clip-path="url(#clip0_994_4)">
+      <g clipPath="url(#clip0_994_4)">
         <path
           d="M49.5 52.6791V53.1381L49.9573 53.1773C56.9556 53.7774 63.1185 55.8817 67.5171 58.9003C71.7445 61.8014 74.291 65.505 74.4877 69.4998H17.179C17.3756 65.5051 19.9222 61.802 24.1496 58.9011C28.5482 55.8828 34.7111 53.7785 41.7095 53.1773L42.1667 53.138V52.6791V49.072V48.7868L41.9212 48.6416C37.5064 46.0303 33.8333 39.4381 33.8333 32.8145C33.8333 30.0908 33.8337 27.5229 34.0269 25.1921C34.2203 22.8605 34.6045 20.8021 35.3537 19.0938C36.0982 17.3963 37.2026 16.0444 38.8533 15.109C40.5128 14.1685 42.7635 13.627 45.8333 13.627C48.9032 13.627 51.1539 14.1685 52.8134 15.109C54.464 16.0444 55.5685 17.3963 56.3129 19.0938C57.0622 20.8021 57.4464 22.8605 57.6397 25.1921C57.833 27.5229 57.8333 30.0908 57.8333 32.8145C57.8333 39.436 54.1603 46.0303 49.7455 48.6416L49.5 48.7868V49.072V52.6791Z"
           fill="url(#paint0_linear_994_4)"
@@ -31,8 +31,8 @@ export const UsersIcon = () => {
           y2="69.9998"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C4C23D" stop-opacity="0.9" />
-          <stop offset="1" stop-color="#FB9803" stop-opacity="0.9" />
+          <stop stopColor="#C4C23D" stopOpacity="0.9" />
+          <stop offset="1" stopColor="#FB9803" stopOpacity="0.9" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_994_4"
@@ -42,8 +42,8 @@ export const UsersIcon = () => {
           y2="56.8728"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C4C23D" stop-opacity="0.9" />
-          <stop offset="1" stop-color="#FB9803" stop-opacity="0.9" />
+          <stop stopColor="#C4C23D" stopOpacity="0.9" />
+          <stop offset="1" stopColor="#FB9803" stopOpacity="0.9" />
         </linearGradient>
         <clipPath id="clip0_994_4">
           <rect width="75" height="70" fill="white" />

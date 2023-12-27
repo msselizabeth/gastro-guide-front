@@ -24,8 +24,8 @@ export const LocalIcon = () => {
           y2="75"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#C4C23D" stop-opacity="0.9" />
-          <stop offset="1" stop-color="#FB9803" stop-opacity="0.9" />
+          <stop stopColor="#C4C23D" stopOpacity="0.9" />
+          <stop offset="1" stopColor="#FB9803" stopOpacity="0.9" />
         </linearGradient>
       </defs>
     </svg>

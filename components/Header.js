@@ -99,13 +99,14 @@ export const Header = () => {
             href="/"
             className={`${styles.headerLogo} ${daysOne.className}`}
           >
-
-              <Image
-                src="/logo-sections.svg"
-                width={100}
-                height={100}
-                className={styles.logo}
-              />
+            <Image
+              src="/logo-sections.svg"
+              alt="gastro guide"
+              width={100}
+              height={100}
+              className={styles.logo}
+              priority={true}
+            />
 
             <div>
               <span className={styles.headerLogoDecorWord}>Gastro</span>
