@@ -6,6 +6,7 @@ import { Footer } from "../../components/Footer";
 import { ContactsSection } from '@/components/ContactsSection';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 
 export const mons = Montserrat({
@@ -66,6 +67,7 @@ export default function RootLayout({ children, params}) {
           <Footer></Footer>
         </NextIntlClientProvider>
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
