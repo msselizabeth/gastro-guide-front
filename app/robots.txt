@@ -1,5 +1,5 @@
 User-Agent: *
 Allow: /
-Disallow: /private/
+Disallow: /user-profile/
 
 Sitemap: https://gastro-guide.com.ua/sitemap.xml
