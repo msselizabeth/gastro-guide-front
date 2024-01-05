@@ -28,14 +28,11 @@
 
 @media screen and (min-width:768px) {
         .aboutList {
-                height: 720px;
                 font-size: 16px;
-                flex-direction: column;
-                flex-wrap: wrap;
-                column-gap: 10px;
-                row-gap: 20px;
+                gap: 20px;
                 &Item{
-                    width: 365px;
+                    width: 705px;
+                    gap: 10px;
                 }
         
                 &Icon {
@@ -43,27 +40,17 @@
                     height: 45px;
                 }
         }
-        .aboutListItem__first{
-            height: 190px;
-        }
-        .aboutListItem__second {
-            height: 230px;
-        }
-        .aboutListItem__third {
-            height: 260px;
-        }
+
 }
 
 @media screen and (min-width:1000px) {
     .aboutList {
-        height: 730px;
         font-size: 18px;
-        column-gap: 15px;
-        row-gap: 25px;
+        gap: 22px;
         
         &Item {
-            gap: 10px;
-            width: 470px;
+            gap: 12px;
+            width: 900px;
         }
         
         &Icon {
@@ -72,28 +59,19 @@
         }
     }
 
-    .aboutListItem__first {
-        height: 180px;
-    }
-
-    .aboutListItem__second {
-        height: 240px;
-    }
-
-    .aboutListItem__third {
-        height: 260px;
-    }
 }
 
 @media screen and (min-width:1200px) {
     .aboutList {
-        height: 800px;
+        height: 980px;
         font-size: 20px;
+        flex-wrap: wrap;
         column-gap: 20px;
         row-gap: 30px;
 
         &Item {
             width: 570px;
+            height: 305px;
         }
 
         &Icon {
@@ -102,26 +80,17 @@
         }
     }
 
-    .aboutListItem__first {
-        height: 170px;
-    }
-
-    .aboutListItem__second {
-        height: 250px;
-    }
-
-    .aboutListItem__third {
-        height: 320px;
-    }
 }
 
 @media screen and (min-width:1440px) {
     .aboutList {
+        height: 1025px;
         font-size: 22px;
-        row-gap: 35px;
+        row-gap: 30px;
 
         &Item {
             width: 685px;
+            height: 310px;
         }
 
         &Icon {
@@ -130,15 +99,5 @@
         }
     }
 
-    .aboutListItem__first {
-        height: 200px;
-    }
-
-    .aboutListItem__second {
-        height: 250px;
-    }
-
-    .aboutListItem__third {
-        height: 280px;
-    }
+   
 }

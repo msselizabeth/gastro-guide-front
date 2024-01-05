@@ -2,6 +2,7 @@ import { PagesHero } from "@/components/PagesHero";
 import imageUrl from "../../../public/products/products-2.jpg";
 import { useTranslations } from "next-intl";
 import { ProductsList } from "@/components/ProductsList";
+import { DevelopingPage } from "@/components/DevelopingPage";
 
 export const metadata = {
   title: "Харчові продукти",
@@ -13,10 +14,11 @@ export default function ProductsPage() {
   const t = useTranslations("ProductsPage");
   return (
     // <PagesHero image={imageUrl} title={t("title")} />
-    <ProductsList
-      sectionTitle={t("prodSection.title")}
-      placeholder={t("prodSection.placeholder")}
-      textBtnMore={t("prodSection.buttonMore")}
-    />
+    // <ProductsList
+    //   sectionTitle={t("prodSection.title")}
+    //   placeholder={t("prodSection.placeholder")}
+    //   textBtnMore={t("prodSection.buttonMore")}
+    // />
+    <DevelopingPage text={t("developingText")} />
   );
 }

@@ -266,6 +266,7 @@
   },
    "ProductsPage": {
     "title": "Food products",
+      "developingText": "The \"Food Products\" page is under development.",
     "prodSection": {
       "title": "Food products",
       "placeholder": "Enter a name of product",

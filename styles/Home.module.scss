@@ -280,24 +280,6 @@
         }
     }
 
-    .aboutList {
-            height: 1000px;
-    
-            font-size: 16px;
-            flex-direction: column;
-            flex-wrap: wrap;
-            gap: 20px;
-    
-            &Item {
-                width: 355px;
-                height: 305px;
-            }
-    
-            &Icon {
-                width: 45px;
-                height: 45px;
-            }
-    }
 
          .travelList {
              flex-direction: row;
@@ -355,7 +337,7 @@
 
         .authorText {
             font-size: 16px;
-            width: 530px;
+            width: 550px;
         }
     
         .authorList {
@@ -373,8 +355,8 @@
         }
     
         .authorImage {
-            width: 420px;
-            height: 300px;
+            width: 390px;
+            // height: 300px;
             margin: 0;
         }
 
@@ -450,12 +432,12 @@
 
          .authorText {
              font-size: 18px;
-             width: 630px;
+             width: 710px;
          }
     
          .authorImage {
-             width: 500px;
-             height: 350px;
+             width: 430px;
+            //  height: 350px;
              border-radius: 50px;
          }
 
@@ -542,12 +524,12 @@
 
         .authorText {
             font-size: 22px;
-            width: 800px;
+            width: 830px;
         }
     
         .authorImage {
-            width: 570px;
-            height: 380px;
+            width: 520px;
+           
             object-fit: cover;
         }
 
