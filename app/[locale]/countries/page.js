@@ -13,7 +13,7 @@ export default function CountriesPage() {
   const t = useTranslations("CountriesPage");
   return (
     <>
-      <PagesHero image={imageUrl} title={t("title")} />
+      {/* <PagesHero image={imageUrl} title={t("title")} /> */}
       <CountriesList
         sectionTitle={t("countriesSection.title")}
         placeholder={t("countriesSection.placeholder")}

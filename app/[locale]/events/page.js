@@ -1,6 +1,7 @@
 import { PagesHero } from "@/components/PagesHero";
 import imageUrl from "../../../public/manual/manual-2.jpg";
 import { useTranslations } from "next-intl";
+import { DevelopingPage } from "@/components/DevelopingPage";
 
 export const metadata = {
   title: "Довідник гастро гіда",
@@ -10,5 +11,6 @@ export const metadata = {
 
 export default function EventsPage() {
   
-  return <h1>EVENTS PAGE</h1>;
+  const t = useTranslations("EventsPage");
+  return <DevelopingPage text={t("developingText")} />;
 }

@@ -47,7 +47,7 @@ export default function RecipesPage() {
   };
   return (
     <>
-      <PagesHero image={imageUrl} title={t("title")} />
+      {/* <PagesHero image={imageUrl} title={t("title")} /> */}
       <RecipesList
         sectionTitle={t("recipesSection.title")}
         placeholder={t("recipesSection.placeholder")}

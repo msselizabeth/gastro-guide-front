@@ -1,6 +1,7 @@
 import { PagesHero } from "@/components/PagesHero";
 import imageUrl from "../../../public/manual/manual-2.jpg";
 import { useTranslations } from "next-intl";
+import { DevelopingPage } from "@/components/DevelopingPage";
 
 export const metadata = {
   title: "Довідник гастро гіда",
@@ -9,5 +10,6 @@ export const metadata = {
 };
 
 export default function HealthPage() {
-  return <h1>Health PAGE</h1>;
+  const t = useTranslations("HealthPage")
+  return <DevelopingPage text={t("developingText")} />;
 }

@@ -14,7 +14,7 @@ export const CountriesList = ({ sectionTitle, placeholder, textBtnMore }) => {
   const [searchValue, setSearchValue] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(2);
-  const [limit, setLimit] = useState(3);
+  const [limit, setLimit] = useState(9);
 
   async function fetchCountries(page, limit, pathname) {
     const response = await fetch(

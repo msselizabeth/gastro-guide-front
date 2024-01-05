@@ -147,10 +147,13 @@
        "countries": "Countries",
        "recipes": "Recipes",
        "products": "Products",
+       "health": "Health",
+       "events": "Events",
        "manual": "Manual",
        "contacts": "Contacts",
        "author": "About author",
        "resource": "About resource",
+       "terms": "Terms of use",
        "feedback": "Feedback"
   },
   "ContinentsPage": {
@@ -262,10 +265,22 @@
     }
   },
    "ProductsPage": {
-    "title": "Food products"
+    "title": "Food products",
+    "prodSection": {
+      "title": "Food products",
+      "placeholder": "Enter a name of product",
+      "buttonMore": "Load more"
+    }
   },
    "ManualPage": {
-    "title": "Manual"
+    "title": "Manual",
+    "developingText": "The \"Manual\" page is under development."
+  },
+    "HealthPage": {
+    "developingText": "The \"Health\" page is under development."
+  },
+  "EventsPage": {
+    "developingText": "The \"Events\" page is under development."
   },
    "SouthAmerica": {
     "title": {

@@ -56,6 +56,22 @@ export const Footer = () => {
                 </li>
                 <li>
                   <Link
+                    href="/health"
+                    className={`${styles.footerNavLink} ${styles.footerNavLinkProducts}`}
+                  >
+                    {t("health")}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/events"
+                    className={`${styles.footerNavLink} ${styles.footerNavLinkProducts}`}
+                  >
+                    {t("events")}
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     href="/manual"
                     className={`${styles.footerNavLink} ${styles.footerNavLinkManual}`}
                   >
@@ -84,6 +100,14 @@ export const Footer = () => {
                     className={`${styles.footerNavLink} ${styles.footerNavLinkResource}`}
                   >
                     {t("resource")}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/info/terms"
+                    className={`${styles.footerNavLink} ${styles.footerNavLinkResource}`}
+                  >
+                    {t("terms")}
                   </Link>
                 </li>
               </ul>

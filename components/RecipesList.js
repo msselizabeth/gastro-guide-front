@@ -21,7 +21,7 @@ export const RecipesList = ({
   const [searchValue, setSearchValue] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(2);
-  const [limit, setLimit] = useState(3);
+  const [limit, setLimit] = useState(9);
   const [user, setUser] = useState("");
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
