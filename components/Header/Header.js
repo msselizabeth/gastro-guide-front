@@ -3,7 +3,7 @@ import { MainNavList } from "./MainNavList";
 import styles from "./Header.module.scss";
 import { daysOne } from "@/app/[locale]/layout";
 import { useTranslations } from "next-intl";
-import Link from "next-intl/link";
+import Link from "next/link";
 import { Locale } from "./Locale";
 import { AuthHeader } from "../AuthHeader";
 import Image from "next/image";

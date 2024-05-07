@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import Link from "next-intl/link";
+import Link from "next/link";
 import styles from "../styles/Home.module.scss";
 import authorPhotoFirst from "../public/aboutauthor1.jpg";
 import authorPhotoSecond from "../public/aboutauthor2.jpg";

@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import Link from "next-intl/link";
+import Link from "next/link";
 import { monsA } from "../../app/[locale]/layout";
 import styles from "./Hero.module.scss";
 import { slides, slidesEnglish, slidesUkrainian } from "@/data/hero-slider";

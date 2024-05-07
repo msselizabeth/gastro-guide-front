@@ -1,7 +1,7 @@
 "use client";
 import { useParams, usePathname } from "next/navigation";
 import styles from "./Header.module.scss";
-import Link from "next-intl/link";
+import Link from "next/link";
 
 export const Locale = ({ navList }) => {
   const pathname = usePathname();

@@ -1,4 +1,4 @@
-import Link from "next-intl/link";
+import Link from "next/link";
 import { useTranslations } from "next-intl";
 import styles from "../styles/ContactsSection.module.scss";
 import { SupportMail } from "./SupportMail";

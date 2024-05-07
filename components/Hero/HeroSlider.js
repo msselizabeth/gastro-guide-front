@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef, Suspense } from "react";
 import styles from "./HeroSlide.module.scss";
 import Image from "next/image";
-import Link from "next-intl/link";
+import Link from "next/link";
 import { useParams } from "next/navigation";
 import { slidesEnglish, slidesUkrainian } from "@/data/hero-slider";
 import Loading from "@/app/[locale]/loading";

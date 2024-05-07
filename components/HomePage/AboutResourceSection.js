@@ -6,7 +6,7 @@ import { PageIcon } from "../icons/PageIcon";
 import { DataIcon } from "../icons/DataIcon";
 import { LocalIcon } from "../icons/LocalIcon";
 import { UsersIcon } from "../icons/UsersIcon";
-import Link from 'next/link'
+import Link from "next/link";
 
 export const AboutResourceSection = () => {
   const t = useTranslations("Home.about");

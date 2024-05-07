@@ -1,7 +1,7 @@
 "use client";
 import styles from "./MobileMenu.module.scss";
 import { useEffect, useState, useRef } from "react";
-import Link from "next-intl/link";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AuthMobile } from "../AuthMobile";
 

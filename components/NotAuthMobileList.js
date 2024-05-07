@@ -1,5 +1,5 @@
 import styles from "../styles/NotAuthMobileList.module.scss";
-import Link from "next-intl/link";
+import Link from "next/link";
 
 export const NotAuthMobileList = ({ auth, registrate, onClick }) => {
   return (
