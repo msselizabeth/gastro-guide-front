@@ -17,7 +17,8 @@
        "exit": "Logout"
     },
   "Home": {
-    "title": "World cuisine Traditions and Benefits",
+    "title": "World's culinary!",
+    "chooseTitle": "Visit continent:",
     "greenland": "Greenland",
     "na": "North America",
     "sa": "South America",
@@ -25,6 +26,11 @@
     "eu": "Europe",
     "africa": "Africa",
     "au": "Australia",
+    "heroModalTitle": "Would you like to explore continent",
+    "heroModalBtns": {
+      "explore": "Explore",
+      "close": "Close"
+    },
     "about":{
       "title": "About the resource",
       "descriptions": {

@@ -25,7 +25,7 @@ export const FavButton = ({
   const removeFromFavorites = async (recipeId) => {
     try {
       await axios.delete(
-        "https://gastro-guide-cb84aa2b2322.herokuapp.com/api/user/favorite",
+        `${process.env.NEXT_PUBLIC_API_URL}/api/user/favorite`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("authToken")}`,
@@ -43,7 +43,7 @@ export const FavButton = ({
   const addToFavorites = async (recipeId) => {
     try {
       await axios.post(
-        "https://gastro-guide-cb84aa2b2322.herokuapp.com/api/user/favorite",
+        `${process.env.NEXT_PUBLIC_API_URL}/api/user/favorite`,
         { recipeId },
         {
           headers: {

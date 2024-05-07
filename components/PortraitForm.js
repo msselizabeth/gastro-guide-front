@@ -70,7 +70,7 @@ export const PortraitForm = ({ portrait, portraitContent }) => {
       const token = localStorage.getItem("authToken");
       try {
         const response = await axios.post(
-          "https://gastro-guide-cb84aa2b2322.herokuapp.com/api/user/addPortrait",
+          `${process.env.NEXT_PUBLIC_API_URL}/api/user/addPortrait`,
           { portrait: answers },
           {
             headers: {

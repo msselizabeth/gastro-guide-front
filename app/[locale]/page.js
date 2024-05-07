@@ -1,8 +1,7 @@
-import { HeroHomeSection } from "@/components/HeroHomeSection";
-import { AboutResourceSection } from "@/components/AboutResourceSection";
+import { HeroHomeSection } from "@/components/Hero/HeroHomeSection";
+import { AboutResourceSection } from "@/components/HomePage/AboutResourceSection";
 import { AuthorSection } from "@/components/AuthorSection";
 import { StartTravel } from "@/components/StartTrevel";
-
 
 const enMetadata = {
   title:
@@ -22,14 +21,11 @@ const uaMetadata = {
   googleSiteVerification: "Lf5mZGdfZuKq_Y5nsRckuGA6b6om3qxJTJTSqjjWqXg",
 };
 
-
-export async function generateMetadata({params}) {
+export async function generateMetadata({ params }) {
   return params.locale === "en" ? enMetadata : uaMetadata;
 }
 
-
 export default function Home() {
-
   return (
     <>
       <HeroHomeSection />

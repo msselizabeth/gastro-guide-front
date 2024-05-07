@@ -14,7 +14,7 @@ export const CountriesOfContinent = ({ title }) => {
   useEffect(() => {
     axios
       .get(
-        `https://gastro-guide-cb84aa2b2322.herokuapp.com/api${pathname}/countries`
+        `${process.env.NEXT_PUBLIC_API_URL}/api${pathname}/countries`
       )
       .then((response) => setCountries(response.data))
       .catch((error) => console.error(error));

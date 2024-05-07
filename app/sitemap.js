@@ -2,12 +2,12 @@ import axios from "axios";
 const baseUrl = "https://gastro-guide.com.ua";
 
 const responseCountries = await axios.get(
-      `https://gastro-guide-cb84aa2b2322.herokuapp.com/api/countries`
+      `${process.env.NEXT_PUBLIC_API_URL}/api/countries`
 );
 const countries = responseCountries.data.result;
 
 const responseRecipes = await axios.get(
-  `https://gastro-guide-cb84aa2b2322.herokuapp.com/api/recipes`
+  `${process.env.NEXT_PUBLIC_API_URL}/api/recipes`
 );
 const recipes = responseRecipes.data.result;
 

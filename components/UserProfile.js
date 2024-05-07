@@ -24,7 +24,7 @@ export const UserProfile = ({
       if (token) {
         try {
           const response = await axios.get(
-            "https://gastro-guide-cb84aa2b2322.herokuapp.com/api/auth/current",
+            `${process.env.NEXT_PUBLIC_API_URL}/api/auth/current`,
             {
               headers: {
                 Authorization: `Bearer ${token}`,
@@ -49,7 +49,7 @@ export const UserProfile = ({
       if (authToken) {
         // Отправляем запрос к серверу для выхода из системы с передачей токена
         await axios.post(
-          "https://gastro-guide-cb84aa2b2322.herokuapp.com/api/auth/logout",
+          `${process.env.NEXT_PUBLIC_API_URL}/api/auth/logout`,
           null,
           {
             headers: {

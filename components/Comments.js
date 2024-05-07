@@ -31,7 +31,7 @@ export const Comments = ({ commentsContent, id}) => {
 
     try {
       await axios.post(
-        "https://gastro-guide-cb84aa2b2322.herokuapp.com/api/comments",
+        `${process.env.NEXT_PUBLIC_API_URL}/api/comments`,
         { text: message, recipe: id },
         {
           headers: {

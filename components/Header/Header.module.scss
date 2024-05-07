@@ -1,61 +1,64 @@
 .header {
     width: 100%;
-    height: 110px;
+    height: 90px;
     box-shadow: 0px 10px 10px 0px var(--box-shadow-color-header-footer);
+    background-color: var(--background-color-header-footer);
 }
 
 .locale {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
     font-size: 12px;
     font-weight: 500;
-    transition: border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: var(--transition);
+    
     &Link{
-       color: #ffffff;
-        padding: 5px;
-
-       &:hover, &:focus{
-        border-bottom: 0.5px solid var(--color-primary-text) ;
-       }
+       color: var(--lang-color);
     }
 }
+
+.localeLine {
+    width: 30px;
+    border-bottom: 1.5px solid var(--lang-color); 
+    border-radius: 15px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
 .currentLocale{
-  border: 1px solid var(--color-primary-text);
-  border-radius: 15px;
+  border: 0.7px solid var(--color-primary-text);
+  border-radius: 20px;
+  padding: 3px 6px 3px 6px;
+  color: var(--color-primary-text);
+  pointer-events: none;
 }
 
 .navList{
     display: none;
 }
 
-.bgContainer {
-    width: 100%;
-    height: 100%;
-    background-color: var(--background-color-header-footer);
-}
-
 .headerNav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 18px;
+    justify-content: space-between;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    gap: 25px;
 }
 
 
 .headerLogo {
     position: relative;
-    height: 110px;
     font-size: 18px;
     display: flex;
     align-items: center;
     color: var(--color-primary-text);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    &DecorWord{
-        width: 80px;
+    &Guide{
         display: block;
+        margin-left: 10px;
     }
     
     &:hover, &:focus {
@@ -63,58 +66,99 @@
     }  
  
 }
-.headerLogo__GuideWord{
-    margin-left: 10px;
+.logo{
+    width: 85px;
+    height: 85px;
 }
 
+
 @media screen and (min-width:375px) {
-    .header {
-        height: 135px;
+
+    .header{
+        height: 110px;
     }
     .headerLogo{
-        height: 135px;
-        font-size: 23px;
+     font-size: 21px;
     }
     .headerNav{
-        gap: 22px;
+        gap: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
     .logo{
-        width: 130px;
-        height: 130px;
+        width: 100px;
+        height: 100px;
     }
-    .headerLogo__GuideWord {
-        margin-left: 13px;
-    }
+
     .locale{
+        gap: 2px;
         font-size: 15px;
         font-weight: 600;
-        gap: 10px;
+    }
+    .localeLine{
+        width: 33px;
+    }
+    .currentLocale{
+        border: 1px solid var(--color-primary-text);
     }
 }
 
 
 @media screen and (min-width:768px) {
  
- .headerNav{
-    gap: 130px;
- }
+ .header{
+    height: 130px;
+}
+.headerLogo{
+ font-size: 24px;
+}
+.headerNav{
+    gap: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.logo{
+    width: 120px;
+    height: 120px;
+}
+
+.locale{
+    gap: 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.localeLine{
+    width: 33px;
+}
+.currentLocale{
+    padding: 5px 8px 5px 8px;
+}
 }
 
 
-@media screen and (min-width:1000px) {
+@media screen and (min-width:1024px) {
     
     .mobileMenu, .mobMenuBtn {
         display: none;
     }
 
-    .locale{
+   
+    .locale {
         font-size: 16px;
+        font-weight: 600;
+    }
+    
+    .localeLine {
+        width: 36px;
+        border-radius: 25px;
+        margin-top: 8px;
+        margin-bottom: 8px;
     }
     .header{
         height: 150px;
     }
     .headerLogo{
-        height: 150px;
+        
         font-size: 25px;
     }
     .logo{
@@ -132,8 +176,8 @@
         justify-content: center;
         align-items: center;
         padding: 7px;
-        row-gap: 15px;
-        column-gap: 25px;
+        row-gap: 10px;
+        column-gap: 20px;
         width: 450px;
         font-size: 18px;
         font-weight: 500;
@@ -161,18 +205,18 @@
 
 }
 
-@media screen and (min-width:1200px) {
+// @media screen and (min-width:1200px) {
 
-    .headerNav{
-        gap: 90px;
-    }
-    .navList {
-        width: 500px;
-        column-gap: 30px;
-    }
+//     .headerNav{
+//         gap: 90px;
+//     }
+//     .navList {
+//         width: 500px;
+//         column-gap: 30px;
+//     }
    
    
-}
+// }
 
 @media screen and (min-width:1440px) {
     .headerNav {
@@ -180,18 +224,15 @@
     }
     .locale{
         font-size: 18px;
-        gap: 15px;
     }
     .headerLogo{
         font-size: 28px;
-        width: 250px;
+       
     }
-    .logo{
-        width: 140px;
-        height: 140px;
-    }
+  
     .navList {
         font-size: 20px;
+        width: 550px;
     }
 
 }

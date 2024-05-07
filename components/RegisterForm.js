@@ -18,7 +18,7 @@ export const RegistrationForm = ({textContent}) => {
   const [errors, setErrors] = useState({});
   const [registrationSuccess, setRegistrationSuccess] = useState(false);
 
-  const url = "https://gastro-guide-cb84aa2b2322.herokuapp.com/api/auth/register";
+  const url = `${process.env.NEXT_PUBLIC_API_URL}/api/auth/register`;
 
   const handleChange = (e) => {
       const { name, value } = e.target;

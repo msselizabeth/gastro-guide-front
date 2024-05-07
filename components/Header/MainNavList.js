@@ -1,6 +1,6 @@
 "use client"
 import { usePathname } from "next/navigation";
-import styles from "../styles/Header.module.scss";
+import styles from "./Header.module.scss";
 import Link from "next/link";
 
 export const MainNavList = ({navList}) => {

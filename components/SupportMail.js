@@ -44,7 +44,7 @@ export const SupportMail = ({supportContent}) => {
         if (validateForm()) {
                 try {
                   await axios.post(
-                    "https://gastro-guide-cb84aa2b2322.herokuapp.com/api/auth/help",
+                    `${process.env.NEXT_PUBLIC_API_URL}/api/auth/help`,
                     {
                       email,
                       message,

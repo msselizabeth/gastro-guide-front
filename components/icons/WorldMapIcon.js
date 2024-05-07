@@ -1,5 +1,4 @@
-import styles from "../../styles/Home.module.scss";
-
+import styles from "../HomePage/AboutResourceSection.module.scss";
 export const WorldMap = () => {
     return (
       <svg

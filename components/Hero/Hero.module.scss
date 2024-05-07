@@ -1,0 +1,656 @@
+
+.heroContainer {
+  width: calc(100% - 4px);
+  height: 310px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.85)
+    ),
+    url("/home/hero-mob.webp");
+  background-size: 100% 310px;
+  background-repeat: no-repeat;
+  border-bottom: 2px solid var(--ligth-primary-color);
+  border-right: 2px solid var(--ligth-primary-color);
+  border-left: 2px solid var(--ligth-primary-color);
+}
+
+.heroTitle {
+  color: transparent;
+  background-clip: text;
+  background-image: var(--main-title-gradient);
+  font-size: 19px;
+  font-weight: 800;
+
+  text-transform: uppercase;
+}
+
+.heroTitleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  padding-top: 17px;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.chooseTextContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  margin-top: 18px;
+  background-color: var(--ligth-primary-color);
+}
+
+.chooseText {
+  color: var(--color-primary-text);
+}
+
+@media screen and (min-width: 425px) {
+  .heroContainer {
+    height: 370px;
+    background-size: 100% 370px;
+  }
+
+  .heroTitle {
+    font-size: 22px;
+  }
+
+  .heroTitleContainer {
+    height: 40px;
+    padding-top: 20px;
+  }
+
+  .chooseTextContainer {
+    height: 40px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .heroContainer {
+    width: calc(100% - 6px);
+    height: 450px;
+
+    background-size: 100% 450px;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.85)
+    ),
+    url("/home/hero-tablet.webp");
+    border-bottom: 3px solid var(--ligth-primary-color);
+    border-right: 3px solid var(--ligth-primary-color);
+    border-left: 3px solid var(--ligth-primary-color);
+  }
+  .heroTitle {
+    font-size: 32px;
+  }
+  
+  .heroTitleContainer {
+    height: 55px;
+    padding-top: 25px;
+  }
+  .chooseTextContainer {
+    height: 55px;
+    margin-top: 25px;
+
+  }
+  .chooseText{
+     font-size: 28px;
+  }
+}
+@media screen and (min-width: 1024px){
+  .heroContainer {
+    width: calc(100% - 6px);
+    height: 460px;
+
+    background-size: 100% 460px;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.85)
+    ),
+    url("/home/hero-laptop.webp");
+  }
+  .heroTitle {
+    font-size: 35px;
+  }
+  
+  .heroTitleContainer {
+    height: 60px;
+    padding-top: 35px;
+  }
+  .chooseTextContainer {
+    height: 60px;
+    margin-top: 35px;
+
+  }
+  .chooseText{
+     font-size: 30px;
+  }
+}
+@media screen and (min-width: 1440px){
+  .heroContainer {
+    width: calc(100% - 8px);
+    height: 650px;
+
+    background-size: 100% 650px;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.85)
+    ),
+    url("/home/hero-desktop.webp");
+    border-bottom: 4px solid var(--ligth-primary-color);
+    border-right: 4px solid var(--ligth-primary-color);
+    border-left: 4px solid var(--ligth-primary-color);
+  }
+  .heroTitle {
+    font-size: 55px;
+  }
+  
+  .heroTitleContainer {
+    height: 80px;
+    padding-top: 60px;
+  }
+  .chooseTextContainer {
+    height: 80px;
+    margin-top: 60px;
+
+  }
+  .chooseText{
+     font-size: 40px;
+  }
+}
+// // .heroContainer {
+// //   position: relative;
+// // }
+// .heroMapContainer{
+//   position: relative;
+//   width: 300px;
+//   height: 180px;
+//   margin: 0 auto;
+//   background-image: url("/home/map-hero-mob.svg");
+//   background-size: 300px 180px;
+//   background-repeat: no-repeat;
+// }
+
+// // .worldMapIcon {
+// //   width: 100%;
+// //   height: auto;
+// //   filter: drop-shadow(2px 3px 1px var(--color-shadow));
+// // }
+
+// .heroTitle {
+//   font-size: 19px;
+//   font-weight: 800;
+//   margin: 0 auto 10px auto;
+//   text-align: center;
+//   text-transform: uppercase;
+// }
+
+// .heroLink {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   display: block;
+
+//   max-width: 50px;
+//   font-size: 6px;
+//   font-weight: 500;
+//   line-height: 1;
+//   color: var(--color-hero-text);
+//   transition: var(--transition);
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     top: 0px;
+//     left: -5px;
+//     width: 6px;
+//     height: 6px;
+//     background-size: cover;
+//     background-image: url("/countries-icon.svg");
+//   }
+
+//   &:hover,
+//   &:focus {
+//     transform: scale(1.1);
+//     color: yellow;
+//   }
+
+//   &NA {
+//     top: 25%;
+//     left: 13.5%
+//   }
+
+//   &SA {
+//     top: 62%;
+//     left: 27%;
+//   }
+
+//   &Africa {
+//     top: 49%;
+//     left: 48%;
+//   }
+
+//   &Europe {
+//     top: 27%;
+//     left: 55%;
+//   }
+
+//   &Asia {
+//     top: 30%;
+//     left: 76%;
+//   }
+
+//   &AU {
+//     top: 74.3%;
+//     left: 79.5%;
+//   }
+// }
+
+// .travelBlock {
+//   &Title {
+//     width: 250px;
+//    margin: 0px auto 10px auto;
+//     font-size: 16px;
+//     text-align: center;
+//   }
+
+//   &List {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     gap: 25px;
+//   }
+
+//   &Item {
+//     width: 120px;
+//     background: var(--icons-gradient);
+//     border-radius: 50px;
+//     transition: var(--transition);
+//     &:hover,
+//     &:focus {
+//       background: var(--color-primary-text);
+//     }
+//   }
+
+//   &Link {
+//     display: block;
+//     padding: 8px;
+//     border: 0.75px solid var(--color-border);
+//     color: var(--color-primary-text);
+//     border-radius: 50px;
+//     text-align: center;
+//     font-weight: 500;
+//     font-size: 14px;
+
+//     transition: var(--transition);
+
+//     &:hover,
+//     &:focus {
+//       color: transparent;
+//       background: var(--color-primary-text);
+//       background-clip: text;
+//       background-image: var(--hover-gradient);
+//     }
+//   }
+// }
+
+// @media screen and (min-width: 375px) {
+//   .heroMapContainer{
+//     width: 350px;
+//     height: 200px;
+//     background-size: 365px 200px;
+
+//   }
+//   .heroLink {
+//     font-weight: 600;
+//     font-size: 7px;
+//     &Greenland {
+//       left: 31%;
+//     }
+
+//     &NA {
+//       top: 24.5%;
+//       left: 16%;
+//     }
+
+//     &SA {
+//       left: 29%;
+//     }
+//     &Africa {
+//       left: 49%;
+//     }
+
+//     &Europe {
+//       top: 25%;
+//       left: 57%;
+//     }
+
+//     &Asia {
+//       top: 29%;
+//       left: 77%;
+//     }
+
+//     &AU {
+//       top: 74.3%;
+//       left: 80.5%;
+//     }
+//   }
+//   .travelBlock {
+
+//     &List {
+//       gap: 30px;
+//     }
+
+//     &Item {
+//       width: 135px;
+
+//     }
+
+//     &Link {
+//       padding: 10px;
+//       font-weight: 600;
+
+//     }
+//   }
+// }
+
+// @media screen and (min-width: 425px) {
+//   .heroLink {
+//     font-size: 8px;
+
+//     &NA {
+//       top: 27%;
+//       left: 15.5%;
+//     }
+//   }
+//   .heroTitle {
+//     font-size: 22px;
+//   }
+// }
+
+// @media screen and (min-width: 768px) {
+//   .worldMapIcon {
+//     filter: drop-shadow(3px 4px 1px var(--color-shadow));
+//   }
+//   .heroTitle {
+//     font-size: 28px;
+//   }
+
+//   .heroLink {
+//     font-size: 14px;
+//     max-width: 70px;
+//     line-height: 1.2;
+
+//     &::before {
+//       left: -14px;
+//       width: 16px;
+//       height: 16px;
+//     }
+
+//     &Greenland {
+//       top: 3%;
+//       left: 30.5%;
+//     }
+
+//     &NA {
+//       top: 23.5%;
+//       left: 15%;
+//     }
+
+//     &SA {
+//       top: 62.5%;
+//       left: 27.5%;
+//     }
+
+//     &Africa {
+//       top: 50%;
+//       left: 48%;
+//     }
+
+//     &Europe {
+//       top: 25%;
+//       left: 55.5%;
+//     }
+
+//     &Asia {
+//       top: 27%;
+//       left: 76%;
+//     }
+
+//     &AU {
+//       top: 76%;
+//       left: 79%;
+//     }
+//   }
+// }
+
+// @media screen and (min-width: 1024px) {
+//   .worldMapIcon {
+//     filter: drop-shadow(4px 6px 1px var(--color-shadow));
+//   }
+//   .heroTitle {
+//     font-size: 40px;
+//   }
+
+//   .heroLink {
+//     font-size: 18px;
+//     max-width: 90px;
+//     line-height: 1.4;
+
+//     &::before {
+//       left: -18px;
+//       width: 20px;
+//       height: 20px;
+//     }
+
+//     &Greenland {
+//       top: 3%;
+//     }
+
+//     &NA {
+//       top: 25.5%;
+//     }
+
+//     &SA {
+//       top: 63%;
+//       left: 28%;
+//     }
+
+//     &Africa {
+//       top: 49%;
+//     }
+
+//     &Europe {
+//       top: 25%;
+//       left: 55%;
+//     }
+
+//     &Asia {
+//       top: 30%;
+//     }
+
+//     &AU {
+//       top: 75%;
+//       left: 78.5%;
+//     }
+//   }
+// }
+
+// // @media screen and (min-width: 1200px) {
+// //   .heroTitle {
+// //     font-size: 55px;
+// //   }
+
+// //   .heroLink {
+// //     font-size: 22px;
+// //     max-width: 100px;
+
+// //     &Greenland {
+// //       top: 3%;
+// //       left: 31.5%;
+// //     }
+
+// //     &NA {
+// //       top: 23.5%;
+// //       left: 15.5%;
+// //     }
+
+// //     &SA {
+// //       top: 50.8%;
+// //       left: 27.7%;
+// //     }
+
+// //     &Africa {
+// //       top: 40.5%;
+// //     }
+
+// //     &Europe {
+// //       top: 21%;
+// //       left: 54%;
+// //     }
+
+// //     &Asia {
+// //       top: 24%;
+// //     }
+
+// //     &AU {
+// //       top: 61.5%;
+// //       left: 79%;
+// //     }
+// //   }
+
+// //   .authorText {
+// //     font-size: 18px;
+// //     width: 710px;
+// //   }
+
+// //   .authorImage {
+// //     width: 430px;
+// //     //  height: 350px;
+// //     border-radius: 50px;
+// //   }
+
+// //   .travelList {
+// //     gap: 100px;
+// //     margin-top: 40px;
+// //   }
+
+// //   .travelLinkContainer {
+// //     width: 423px;
+// //     border-radius: 65px;
+// //   }
+
+// //   .travelLink {
+// //     font-size: 25px;
+// //     width: 350px;
+// //     padding: 35px;
+// //     border-radius: 65px;
+// //   }
+
+// //   .travelTitle {
+// //     font-size: 40px;
+// //   }
+// // }
+
+// @media screen and (min-width: 1440px) {
+//   .heroTitle {
+//     text-align: center;
+//     font-size: 65px;
+//     margin-bottom: 30px;
+//   }
+
+//   .heroLink {
+//     font-size: 22px;
+//     max-width: 120px;
+
+//     &::before {
+//       left: -22px;
+//       width: 24px;
+//       height: 24px;
+//     }
+
+//     &Greenland {
+//       top: 3%;
+//       left: 31%;
+//     }
+
+//     &NA {
+//       left: 16%;
+//       top: 27%;
+//     }
+
+//     &SA {
+//       top: 64%;
+//       left: 28%;
+//     }
+
+//     &Africa {
+//       top: 50%;
+//     }
+
+//     &Europe {
+//       top: 26%;
+//     }
+
+//     &Asia {
+//       top: 28%;
+//       left: 77%;
+//     }
+
+//     &AU {
+//       top: 76%;
+//       left: 79.5%;
+//     }
+//   }
+//   .aboutList {
+//     font-size: 22px;
+//     gap: 30px;
+
+//     &Item {
+//       width: 665px;
+//     }
+
+//     &Icon {
+//       width: 60px;
+//       height: 60px;
+//     }
+//   }
+
+//   .authorText {
+//     font-size: 22px;
+//     width: 830px;
+//   }
+
+//   .authorImage {
+//     width: 520px;
+
+//     object-fit: cover;
+//   }
+
+//   .travelList {
+//     gap: 140px;
+//     margin-top: 45px;
+//   }
+
+//   .travelLinkContainer {
+//     width: 473px;
+//     border-radius: 80px;
+//   }
+
+//   .travelLink {
+//     font-size: 32px;
+//     width: 390px;
+//     padding: 40px;
+//     border-radius: 80px;
+//   }
+
+//   .travelTitle {
+//     font-size: 45px;
+//   }
+// }

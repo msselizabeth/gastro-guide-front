@@ -1,16 +1,16 @@
-import './globals.scss';
+import "./globals.scss";
 import { notFound } from "next/navigation";
 import { Montserrat, Days_One, Montserrat_Alternates } from "next/font/google";
-import { Header } from "../../components/Header";
+import { Header } from "../../components/Header/Header";
 import { Footer } from "../../components/Footer";
-import { ContactsSection } from '@/components/ContactsSection';
-import { NextIntlClientProvider, useMessages } from 'next-intl';
+import { ContactsSection } from "@/components/ContactsSection";
+import { NextIntlClientProvider, useMessages } from "next-intl";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 
-
 export const mons = Montserrat({
   subsets: ["cyrillic"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   variable: "--font-primary",
 });
 export const monsA = Montserrat_Alternates({
@@ -44,14 +44,12 @@ const locales = ["en", "ua"];
 //   ],
 // };
 
-
-export default function RootLayout({ children, params}) {
-  
+export default function RootLayout({ children, params }) {
   const isValidLocale = locales.some((cur) => cur === params.locale);
   if (!isValidLocale) notFound();
 
   const messages = useMessages();
-  
+
   return (
     <html
       lang={params.locale}

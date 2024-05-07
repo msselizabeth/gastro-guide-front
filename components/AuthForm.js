@@ -23,7 +23,7 @@ export const AuthForm = ({textContent}) => {
 
     const checkAuthentication = async () => {
       const response = await fetch(
-        "https://gastro-guide-cb84aa2b2322.herokuapp.com/api/auth/current",
+        `${process.env.NEXT_PUBLIC_API_URL}/api/auth/current`,
         {
           method: "GET",
           headers: {
@@ -42,7 +42,7 @@ export const AuthForm = ({textContent}) => {
   const handleLogin = async () => {
     try {
       const response = await axios.post(
-        "https://gastro-guide-cb84aa2b2322.herokuapp.com/api/auth/login",
+        `${process.env.NEXT_PUBLIC_API_URL}/api/auth/login`,
         { email, password }
       );
         const { user, token } = response.data;
@@ -69,7 +69,7 @@ export const AuthForm = ({textContent}) => {
             const authToken = localStorage.getItem("authToken");
             if (authToken) {
                 // Отправляем запрос к серверу для выхода из системы с передачей токена
-                await axios.post("https://gastro-guide-cb84aa2b2322.herokuapp.com/api/auth/logout", null, {
+                await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/api/auth/logout`, null, {
                     headers: {
                         Authorization: `Bearer ${authToken}`,
                     },

@@ -18,7 +18,7 @@ export const AuthMobile = ({ auth, registrate, onClick, textExit, textProfile })
   const checkAuthentication = async () => {
     // Выполнить запрос на бекенд для проверки авторизации
     const response = await fetch(
-      "https://gastro-guide-cb84aa2b2322.herokuapp.com/api/auth/current",
+      `${process.env.NEXT_PUBLIC_API_URL}/api/auth/current`,
       {
         method: "GET",
         headers: {

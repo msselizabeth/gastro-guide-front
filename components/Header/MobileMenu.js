@@ -1,11 +1,18 @@
 "use client";
-import styles from "../styles/MobileMenu.module.scss";
+import styles from "./MobileMenu.module.scss";
 import { useEffect, useState, useRef } from "react";
 import Link from "next-intl/link";
 import { usePathname } from "next/navigation";
-import { AuthMobile } from "./AuthMobile";
+import { AuthMobile } from "../AuthMobile";
 
-export const MobileMenu = ({ navList, mobileNavList, registrate , auth, textExit, textProfile}) => {
+export const MobileMenu = ({
+  navList,
+  mobileNavList,
+  registrate,
+  auth,
+  textExit,
+  textProfile,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
   const pathname = usePathname();
@@ -76,7 +83,11 @@ export const MobileMenu = ({ navList, mobileNavList, registrate , auth, textExit
                       href={path}
                       onClick={closeMenu}
                       className={`${styles.mobileMenuNavListLink} 
-                    ${pathname === path || pathname == pathUA ? `${styles.current}` : ""}`}
+                    ${
+                      pathname === path || pathname == pathUA
+                        ? `${styles.current}`
+                        : ""
+                    }`}
                     >
                       {title}
                     </Link>

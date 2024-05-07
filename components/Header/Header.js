@@ -1,16 +1,15 @@
 import { MobileMenu } from "./MobileMenu";
 import { MainNavList } from "./MainNavList";
-import styles from "../styles/Header.module.scss";
+import styles from "./Header.module.scss";
 import { daysOne } from "@/app/[locale]/layout";
 import { useTranslations } from "next-intl";
 import Link from "next-intl/link";
 import { Locale } from "./Locale";
-import { AuthHeader } from "./AuthHeader";
+import { AuthHeader } from "../AuthHeader";
 import Image from "next/image";
 
-
 export const Header = () => {
-  const t  = useTranslations("Header");
+  const t = useTranslations("Header");
 
   const navList = [
     {
@@ -102,19 +101,15 @@ export const Header = () => {
             <Image
               src="/logo-sections.svg"
               alt="gastro guide"
-              width={100}
-              height={100}
+              width={300}
+              height={300}
               className={styles.logo}
               priority={true}
             />
 
             <div>
-              <span className={styles.headerLogoDecorWord}>Gastro</span>
-              <span
-                className={`${styles.headerLogoDecorWord} ${styles.headerLogo__GuideWord}`}
-              >
-                Guide
-              </span>
+              <span className={styles.headerLogoDGastro}>Gastro</span>
+              <span className={styles.headerLogoGuide}>Guide</span>
             </div>
           </Link>
 

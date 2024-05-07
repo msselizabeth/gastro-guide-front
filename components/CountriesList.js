@@ -18,7 +18,7 @@ export const CountriesList = ({ sectionTitle, placeholder, textBtnMore }) => {
 
   async function fetchCountries(page, limit, pathname) {
     const response = await fetch(
-      `https://gastro-guide-cb84aa2b2322.herokuapp.com/api${pathname}?page=${page}&limit=${limit}`
+      `${process.env.NEXT_PUBLIC_API_URL}/api${pathname}?page=${page}&limit=${limit}`
     );
     const countries = await response.json();
     const sortedCountries = [...allCountries, ...countries.result].sort(

@@ -178,15 +178,14 @@
 }
 
 @media screen and (min-width:768px) {
-    .mobileMenuBtn {
-            width: 80px;
-            height: 60px;
-    
-            &Icon {
-                width: 80px;
-                height: 60px;
-            }
+     .mobMenuBtn{
+        width: 65px;
+        height: 57px;
+        &::before{
+            width: 65px;
+            height: 57px;
         }
+    }
     
         .mobileMenuContainer {
             width: 320px;

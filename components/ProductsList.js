@@ -17,7 +17,7 @@ export const ProductsList = ({ sectionTitle, placeholder, textBtnMore }) => {
 
   async function fetchProducts(page, limit, pathname) {
     const response = await fetch(
-      `https://gastro-guide-cb84aa2b2322.herokuapp.com/api${pathname}?page=${page}&limit=${limit}`
+      `${process.env.NEXT_PUBLIC_API_URL}/api${pathname}?page=${page}&limit=${limit}`
     );
     const products = await response.json();
     const sortedProducts = [...allProducts, ...products.result].sort(

@@ -1,5 +1,4 @@
-import styles from "../../styles/AboutResourceSection.module.scss";
-
+import styles from "../HomePage/AboutResourceSection.module.scss";
 export const LocalIcon = () => {
   return (
     <svg

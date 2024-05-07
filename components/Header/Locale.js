@@ -1,16 +1,16 @@
-"use client"
+"use client";
 import { useParams, usePathname } from "next/navigation";
-import styles from "../styles/Header.module.scss";
+import styles from "./Header.module.scss";
 import Link from "next-intl/link";
 
-
-export const Locale = ({navList}) => {
+export const Locale = ({ navList }) => {
   const pathname = usePathname();
   const params = useParams();
   const newPath = pathname.slice(0, 1) + pathname.slice(4);
 
-    return (
-      <div className={styles.locale}>
+  return (
+    <ul className={styles.locale}>
+      <li>
         <Link
           href={newPath}
           locale="en"
@@ -20,7 +20,10 @@ export const Locale = ({navList}) => {
         >
           EN
         </Link>
+      </li>
+      <li className={styles.localeLine}></li>
 
+      <li>
         <Link
           href={pathname}
           locale="ua"
@@ -30,6 +33,7 @@ export const Locale = ({navList}) => {
         >
           УКР
         </Link>
-      </div>
-    );
-}
+      </li>
+    </ul>
+  );
+};

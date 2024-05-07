@@ -8,10 +8,10 @@ export async function FetchRecipe(params) {
   let response;
   if (params.locale === 'en') {
     response = await fetch(
-    `https://gastro-guide-cb84aa2b2322.herokuapp.com/api/recipes/${params.slug}`)
+    `${process.env.NEXT_PUBLIC_API_URL}/api/recipes/${params.slug}`)
   } else {
     response = await fetch(
-    `https://gastro-guide-cb84aa2b2322.herokuapp.com/api/${params.locale}/recipes/${params.slug}`
+    `${process.env.NEXT_PUBLIC_API_URL}/api/${params.locale}/recipes/${params.slug}`
   );
   }
   const recipe = await response.json();
@@ -22,9 +22,9 @@ export async function FetchProducts(params) {
   let response;
   if (params.locale === 'en') {
     response = await fetch(
-    `https://gastro-guide-cb84aa2b2322.herokuapp.com/api/products`)
+    `${process.env.NEXT_PUBLIC_API_URL}/api/products`)
   } else { response = await fetch(
-    `https://gastro-guide-cb84aa2b2322.herokuapp.com/api/${params.locale}/products`
+    `${process.env.NEXT_PUBLIC_API_URL}/api/${params.locale}/products`
   );}
   const products = await response.json();
   return products;

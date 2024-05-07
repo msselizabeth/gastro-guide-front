@@ -1,0 +1,470 @@
+.desktopSlider{
+    display: none;
+}
+
+.mobileSlider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 270px;
+   margin-top: 10px;
+   margin-left: auto;
+   margin-right: auto;
+}
+.slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+.caption{
+    color: var(--ligth-primary-color);
+    font-family: var(--font-titles);
+    font-weight: 700;
+
+}
+.icon{
+
+    width: 165px;
+    height: 165px;
+
+}
+
+.prevBtn, .nextBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--ligth-primary-color);
+    width: 40px;
+    height: 40px;
+}
+.prevBtnIcon, .nextBtnIcon{
+    width: 40px;
+    height: 40px;
+    fill: currentColor;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+  }
+  .modalContentBackground{
+    background-color: rgba(255, 255, 255, 0.65);
+    width: calc(100% - 30px);
+    border: 1px solid var(--ligth-primary-color);
+    border-radius: 15px;
+  }
+  .modalContent {
+    background-color: var(--background-color-primary);
+    padding: 15px;
+    border-radius: 15px;
+    max-height: 90%;
+    overflow: auto;
+
+  }
+  
+  .modalQuestionContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  .modalQuestion{
+    font-weight: 700;
+    font-family: var(--font-titles);
+  }
+  .logo{
+    width: 85px;
+    height: 85px;
+  }
+  .modalContinentTitle{
+    margin-top: 5px;
+    text-align: center;
+    
+  }
+  .modalContinentItemsList{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 10px;
+  
+  }
+  .modalContinentItemsList li{
+    list-style-type: initial;
+  }
+  .modalButtonsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .buttonExploreContainer{
+    width: 120px;
+    background: var(--icons-gradient);
+        border-radius: 50px;
+        transition: var(--transition);
+        &:hover,
+        &:focus {
+          background: var(--color-primary-text);
+        }
+  }
+  .buttonCloseContainer{
+    width: 120px;
+    background: transparent;
+        border-radius: 50px;
+        transition: var(--transition);
+        &:hover,
+        &:focus {
+          background: var(--color-primary-text);
+        }
+  }
+  .buttonClose{
+    display: block;
+        padding: 8px;
+        width: 120px;
+        border: 0.75px solid var(--color-border);
+        color: var(--color-primary-text);
+        border-radius: 50px;
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        font-family: var(--font-primary);
+    
+        transition: var(--transition);
+    
+        &:hover,
+        &:focus {
+          color: transparent;
+          background: var(--color-primary-text);
+          background-clip: text;
+          background-image: var(--hover-gradient);
+        }
+  }
+  .buttonExplore {
+        display: block;
+        padding: 8px;
+    
+        border: 0.75px solid var(--color-border);
+        color: var(--color-primary-text);
+        border-radius: 50px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 14px;
+    
+        transition: var(--transition);
+    
+        &:hover,
+        &:focus {
+          color: transparent;
+          background: var(--color-primary-text);
+          background-clip: text;
+          background-image: var(--hover-gradient);
+        }
+      }
+
+
+@media screen and (min-width: 425px) {
+    .mobileSlider{
+        gap: 35px;
+        width: 400px;
+       margin-top: 15px;
+    }
+    .slide{
+
+        gap: 12px;
+    }
+    .caption{
+font-size: 19px;
+    }
+    .icon{
+    
+        width: 185px;
+        height: 185px;
+    
+    }
+    .prevBtn, .nextBtn {
+
+        width: 45px;
+        height: 45px;
+    }
+    .prevBtnIcon, .nextBtnIcon{
+        width: 45px;
+        height: 45px;
+    }
+    
+  }
+
+  @media screen and (min-width: 768px) {
+    .mobileSlider{
+        gap: 40px;
+        width: 550px;
+       margin-top: 20px;
+    }
+    .slide{
+
+        gap: 15px;
+    }
+    .caption{
+font-size: 22px;
+    }
+    .icon{
+    
+        width: 215px;
+        height: 215px;
+    
+    }
+    .prevBtn, .nextBtn {
+
+        width: 55px;
+        height: 55px;
+    }
+    .prevBtnIcon, .nextBtnIcon{
+        width: 55px;
+        height: 55px;
+    }
+
+
+  .modalContentBackground{
+    width: calc(100% - 60px);
+    border: 1.5px solid var(--ligth-primary-color);
+    border-radius: 25px;
+  }
+  .modalContent {
+
+    padding: 20px;
+    border-radius: 20px;
+
+  }
+  
+  .modalQuestionContainer{
+
+    gap: 7px;
+  }
+
+  .logo{
+    width: 95px;
+    height: 95px;
+  }
+ 
+  .modalContinentItemsList{
+
+    gap: 5px;
+    padding: 15px;
+  
+  }
+
+  .modalButtonsContainer{
+    gap: 25px;
+  }
+  .buttonExploreContainer{
+    width: 140px;
+  
+  }
+  .buttonCloseContainer{
+    width: 140px;
+    
+  }
+  .buttonClose{
+        padding: 10px;
+        width: 140px;
+        border: 1px solid var(--color-border);
+        color: var(--color-primary-text);
+
+        font-size: 16px;
+  }
+  .buttonExplore {
+        padding: 10px;
+        border: 1px solid var(--color-border);
+        font-size: 16px;
+      }
+
+    
+  }
+
+  @media screen and (min-width: 1024px) {
+    .mobileSlider{
+        display: none;
+        
+    }
+
+    .desktopSlider{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+
+        &List{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        &Item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            height: 250px;
+            
+        }
+
+        &Caption {
+            width: 100px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--ligth-primary-color);
+        }
+    }
+
+    .iconDesktop{
+        width: 155px;
+        height: 155px;
+    }
+
+    .modalContentBackground{
+        width: calc(100% - 80px);
+        border: 2px solid var(--ligth-primary-color);
+        border-radius: 35px;
+      }
+      .modalContent {
+        border-radius: 35px;
+        padding: 20px;
+      }
+      .modalQuestion{
+        font-size: 20px;
+      }
+      .modalQuestionContainer{
+    
+        gap: 10px;
+      }
+    
+      .logo{
+        width: 115px;
+        height: 115px;
+      }
+     
+      .modalContinentItemsList{
+    
+        gap: 10px;
+        padding: 25px;
+      
+      }
+    
+      .modalButtonsContainer{
+        gap: 35px;
+      }
+      .buttonExploreContainer{
+        width: 160px;
+      
+      }
+      .buttonCloseContainer{
+        width: 160px;
+        
+      }
+      .buttonClose{
+            padding: 10px;
+            width: 160px;
+            border: 1px solid var(--color-border);
+            color: var(--color-primary-text);
+    
+            font-size: 17px;
+      }
+      .buttonExplore {
+            padding: 10px;
+            border: 1px solid var(--color-border);
+            font-size: 17px;
+          }
+    
+  }
+
+  @media screen and (min-width: 1440px) {
+
+    .desktopSlider{
+        margin-top: 35px;
+
+        &List{
+            gap: 25px;
+            margin-top: 45px;
+        }
+
+        &Item{
+          
+            gap: 20px;
+            height: 270px;
+            
+        }
+
+        &Caption {
+            width: 120px;
+            font-size: 18px;
+ 
+        }
+    }
+
+    .iconDesktop{
+        width: 200px;
+        height: 200px;
+    }
+
+    .modalContentBackground{
+        width: calc(100% - 100px);
+        border-radius: 50px;
+      }
+      .modalContent {
+        border-radius: 50px;
+      }
+
+      .modalQuestion{
+        font-size: 22px;
+      }
+      .modalQuestionContainer{
+    
+        gap: 14px;
+      }
+    
+      .logo{
+        width: 125px;
+        height: 125px;
+      }
+     
+      .modalContinentItemsList{
+    
+        gap: 12px;
+      
+      }
+    
+      .modalButtonsContainer{
+        gap: 65px;
+      }
+      .buttonExploreContainer{
+        width: 170px;
+      
+      }
+      .buttonCloseContainer{
+        width: 170px;
+        
+      }
+      .buttonClose{
+            padding: 12px;
+            width: 170px;
+            border: 1.5px solid var(--color-border);
+            font-size: 19px;
+      }
+      .buttonExplore {
+            padding: 10px;
+            border: 1.5px solid var(--color-border);
+            font-size: 19px;
+          }
+  }

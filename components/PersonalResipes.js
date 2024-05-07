@@ -22,7 +22,7 @@ export const PersonalRecipes = ({
   async function checkAuth(token) {
     try {
       const response = await axios.get(
-        "https://gastro-guide-cb84aa2b2322.herokuapp.com/api/auth/current",
+        `${process.env.NEXT_PUBLIC_API_URL}/api/auth/current`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -45,7 +45,7 @@ export const PersonalRecipes = ({
       }
       try {
         const recipes = await axios.get(
-          `https://gastro-guide-cb84aa2b2322.herokuapp.com/api/user/${params.locale}/portrait`,
+          `${process.env.NEXT_PUBLIC_API_URL}/api/user/${params.locale}/portrait`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
