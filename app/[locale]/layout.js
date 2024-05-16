@@ -25,7 +25,7 @@ export const daysOne = Days_One({
   variable: "--font-logo",
 });
 
-const locales = ["en", "ua"];
+const locales = ["en", "uk"];
 
 // export const metadata = {
 //   icons: [

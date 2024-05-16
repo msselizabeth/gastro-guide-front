@@ -1,11 +1,13 @@
 "use client"
-import { usePathname } from "next/navigation";
+import { useParams, usePathname } from "next/navigation";
 import styles from "./Header.module.scss";
-import Link from "next/link";
+import { Link } from "@/navigation";
+
 
 export const MainNavList = ({navList}) => {
 
   const pathname = usePathname();
+  const { locale } = useParams();
 
     return (
       <ul className={styles.navList}>

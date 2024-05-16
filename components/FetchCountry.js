@@ -7,34 +7,22 @@ import { DishesOfCountryList } from "./DishesOfCountryList";
 
 export async function FetchCountry(params) {
 
-  let response;
-
-  if (params.locale === 'en') {
-     response = await fetch(
-      `${process.env.NEXT_PUBLIC_API_URL}/api/countries/${params.slug}`
-    );
-  } else {
-    response = await fetch(
-      `${process.env.NEXT_PUBLIC_API_URL}/api/${params.locale}/countries/${params.slug}`
-    );
-  }
+  const response = await fetch(
+    `${process.env.NEXT_PUBLIC_API_URL}/api/${params.locale}/countries/${params.slug}`
+  );
     
   const country = await response.json();
   return country;
 }
 
 export async function FetchDishesOfCountry(params) {
-  let response;
-  if (params.locale === 'en') {
-    response = await fetch(
-      `${process.env.NEXT_PUBLIC_API_URL}/api/countries/${params.slug}/recipes`
-    );
-  }
-  else {
-    response = await fetch(
-      `${process.env.NEXT_PUBLIC_API_URL}/api/${params.locale}/countries/${params.slug}/recipes`
-    );
-  }
+
+  const response = await fetch(
+    `${process.env.NEXT_PUBLIC_API_URL}/api/${params.locale}/countries/${params.slug}/recipes`
+  );
+  console.log(response)
+ 
+
   const dishes = await response.json();
   return dishes;
   

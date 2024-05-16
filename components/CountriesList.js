@@ -21,6 +21,7 @@ export const CountriesList = ({ sectionTitle, placeholder, textBtnMore }) => {
       `${process.env.NEXT_PUBLIC_API_URL}/api${pathname}?page=${page}&limit=${limit}`
     );
     const countries = await response.json();
+    console.log(countries)
     const sortedCountries = [...allCountries, ...countries.result].sort(
       (a, b) => a.countryName.localeCompare(b.countryName)
     );
