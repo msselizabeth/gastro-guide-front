@@ -1,20 +1,30 @@
 import axios from "axios";
 const baseUrl = "https://gastro-guide.com.ua";
 
-const responseCountries = await axios.get(
-      `${process.env.NEXT_PUBLIC_API_URL}/api/countries`
+const responseCountriesEN = await axios.get(
+      `${process.env.NEXT_PUBLIC_API_URL}/api/en/countries`
 );
-const countries = responseCountries.data.result;
+const countriesEN = responseCountriesEN.data.result;
 
-const responseRecipes = await axios.get(
-  `${process.env.NEXT_PUBLIC_API_URL}/api/recipes`
+const responseCountriesUK = await axios.get(
+  `${process.env.NEXT_PUBLIC_API_URL}/api/uk/countries`
 );
-const recipes = responseRecipes.data.result;
+const countriesUK = responseCountriesUK.data.result;
+
+const responseRecipesEN = await axios.get(
+  `${process.env.NEXT_PUBLIC_API_URL}/api/en/recipes`
+);
+const recipesEN = responseRecipesEN.data.result;
+
+const responseRecipesUK = await axios.get(
+  `${process.env.NEXT_PUBLIC_API_URL}/api/uk/recipes`
+);
+const recipesUK = responseRecipesUK.data.result;
 
 export default async function sitemap() {
   
     const countriesUrlsEN =
-      countries?.map((country) => {
+      countriesEN?.map((country) => {
         return {
           url: `${baseUrl}/en/countries/${country._id}`,
           lastModified: new Date(),
@@ -22,8 +32,8 @@ export default async function sitemap() {
           priority: 0.9,
         };
       }) ?? [];
-    const countriesUrlsUA =
-      countries?.map((country) => {
+    const countriesUrlsUK =
+      countriesUK?.map((country) => {
         return {
           url: `${baseUrl}/uk/countries/${country._id}`,
           lastModified: new Date(),
@@ -33,7 +43,7 @@ export default async function sitemap() {
       }) ?? [];
   
   const recipesUrlsEN =
-    recipes?.map((recipe) => {
+    recipesEN?.map((recipe) => {
       return {
         url: `${baseUrl}/en/recipes/${recipe._id}`,
         lastModified: new Date(),
@@ -41,8 +51,8 @@ export default async function sitemap() {
         priority: 0.9,
       };
     }) ?? [];
-  const recipesUrlsUA =
-    recipes?.map((recipe) => {
+  const recipesUrlsUK =
+    recipesUK?.map((recipe) => {
       return {
         url: `${baseUrl}/uk/recipes/${recipe._id}`,
         lastModified: new Date(),
@@ -52,7 +62,7 @@ export default async function sitemap() {
     }) ?? [];
   return [
     {
-      url: baseUrl,
+      url: `${baseUrl}/en`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,
@@ -124,8 +134,8 @@ export default async function sitemap() {
       priority: 0.3,
     },
     ...countriesUrlsEN,
-    ...countriesUrlsUA,
+    ...countriesUrlsUK,
     ...recipesUrlsEN,
-    ...recipesUrlsUA,
+    ...recipesUrlsUK,
   ];
 }
