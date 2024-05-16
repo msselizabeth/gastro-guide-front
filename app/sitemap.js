@@ -16,7 +16,7 @@ export default async function sitemap() {
     const countriesUrlsEN =
       countries?.map((country) => {
         return {
-          url: `${baseUrl}/countries/${country._id}`,
+          url: `${baseUrl}/en/countries/${country._id}`,
           lastModified: new Date(),
           changeFrequency: "weekly",
           priority: 0.9,
@@ -25,7 +25,7 @@ export default async function sitemap() {
     const countriesUrlsUA =
       countries?.map((country) => {
         return {
-          url: `${baseUrl}/ua/countries/${country._id}`,
+          url: `${baseUrl}/uk/countries/${country._id}`,
           lastModified: new Date(),
           changeFrequency: "weekly",
           priority: 0.9,
@@ -35,7 +35,7 @@ export default async function sitemap() {
   const recipesUrlsEN =
     recipes?.map((recipe) => {
       return {
-        url: `${baseUrl}/recipes/${recipe._id}`,
+        url: `${baseUrl}/en/recipes/${recipe._id}`,
         lastModified: new Date(),
         changeFrequency: "weekly",
         priority: 0.9,
@@ -44,7 +44,7 @@ export default async function sitemap() {
   const recipesUrlsUA =
     recipes?.map((recipe) => {
       return {
-        url: `${baseUrl}/ua/recipes/${recipe._id}`,
+        url: `${baseUrl}/uk/recipes/${recipe._id}`,
         lastModified: new Date(),
         changeFrequency: "weekly",
         priority: 0.9,
@@ -58,7 +58,7 @@ export default async function sitemap() {
       priority: 1,
     },
     {
-      url: `${baseUrl}/ua`,
+      url: `${baseUrl}/uk`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,
@@ -70,55 +70,55 @@ export default async function sitemap() {
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/ua/continents`,
+      url: `${baseUrl}/uk/continents`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/countries`,
+      url: `${baseUrl}/en/countries`,
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/ua/countries`,
+      url: `${baseUrl}/uk/countries`,
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/info`,
+      url: `${baseUrl}/en/info`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/uaua/info`,
+      url: `${baseUrl}/uk/info`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/registration`,
+      url: `${baseUrl}/en/registration`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.3,
     },
     {
-      url: `${baseUrl}/ua/registration`,
+      url: `${baseUrl}/uk/registration`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.3,
     },
     {
-      url: `${baseUrl}/authorization`,
+      url: `${baseUrl}/en/authorization`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.3,
     },
     {
-      url: `${baseUrl}/ua/authorization`,
+      url: `${baseUrl}/uk/authorization`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.3,
