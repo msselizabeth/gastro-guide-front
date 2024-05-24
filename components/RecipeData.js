@@ -6,26 +6,21 @@ import { RecipeInfo } from "./RecipeInfo";
 
 export async function FetchRecipe(params) {
   let response;
-  if (params.locale === 'en') {
-    response = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}/api/recipes/${params.slug}`)
-  } else {
+
     response = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/api/${params.locale}/recipes/${params.slug}`
   );
-  }
+  
   const recipe = await response.json();
   return recipe;
 }
 
 export async function FetchProducts(params) {
   let response;
-  if (params.locale === 'en') {
+
     response = await fetch(
     `${process.env.NEXT_PUBLIC_API_URL}/api/products`)
-  } else { response = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}/api/${params.locale}/products`
-  );}
+
   const products = await response.json();
   return products;
 }

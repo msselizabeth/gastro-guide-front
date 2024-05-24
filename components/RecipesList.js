@@ -1,5 +1,5 @@
 "use client"
-import { usePathname } from "next/navigation";
+import { useParams, usePathname } from "next/navigation";
 import { SearchInput } from "./SearchInput";
 import { useEffect, useState } from "react";
 import Link from "next/link";
@@ -17,6 +17,7 @@ export const RecipesList = ({
   filterContent,
 }) => {
   const pathname = usePathname();
+  const params = useParams();
   const [allRecipes, setAllRecipes] = useState([]);
   const [searchValue, setSearchValue] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
@@ -48,7 +49,7 @@ export const RecipesList = ({
 
   async function fetchRecipes(page, limit, pathname) {
     const response = await fetch(
-      `${process.env.NEXT_PUBLIC_API_URL}/api${pathname}?page=${page}&limit=${limit}`
+      `${process.env.NEXT_PUBLIC_API_URL}/api/${params.locale}/${pathname}?page=${page}&limit=${limit}`
     );
     const recipes = await response.json();
     

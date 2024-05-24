@@ -2,7 +2,7 @@ import axios from "axios";
 const baseUrl = "https://gastro-guide.com.ua";
 
 const responseCountriesEN = await axios.get(
-      `${process.env.NEXT_PUBLIC_API_URL}/api/en/countries`
+  `${process.env.NEXT_PUBLIC_API_URL}/api/en/countries`
 );
 const countriesEN = responseCountriesEN.data.result;
 
@@ -22,26 +22,25 @@ const responseRecipesUK = await axios.get(
 const recipesUK = responseRecipesUK.data.result;
 
 export default async function sitemap() {
-  
-    const countriesUrlsEN =
-      countriesEN?.map((country) => {
-        return {
-          url: `${baseUrl}/en/countries/${country._id}`,
-          lastModified: new Date(),
-          changeFrequency: "weekly",
-          priority: 0.9,
-        };
-      }) ?? [];
-    const countriesUrlsUK =
-      countriesUK?.map((country) => {
-        return {
-          url: `${baseUrl}/uk/countries/${country._id}`,
-          lastModified: new Date(),
-          changeFrequency: "weekly",
-          priority: 0.9,
-        };
-      }) ?? [];
-  
+  const countriesUrlsEN =
+    countriesEN?.map((country) => {
+      return {
+        url: `${baseUrl}/en/countries/${country._id}`,
+        lastModified: new Date(),
+        changeFrequency: "weekly",
+        priority: 0.9,
+      };
+    }) ?? [];
+  const countriesUrlsUK =
+    countriesUK?.map((country) => {
+      return {
+        url: `${baseUrl}/uk/countries/${country._id}`,
+        lastModified: new Date(),
+        changeFrequency: "weekly",
+        priority: 0.9,
+      };
+    }) ?? [];
+
   const recipesUrlsEN =
     recipesEN?.map((recipe) => {
       return {
