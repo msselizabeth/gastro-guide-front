@@ -10,43 +10,59 @@ export const CookingSteps = ({ steps, stepsRecipeContent, recipeName }) => {
   const [help, setHelp] = useState(false);
 
   const nextStep = () => {
-     const next = currentStep + 1;
-     setCurrentStep(next);
-     saveStep();
+    setCurrentStep(prev => {
+      const next = prev + 1;
+      saveStep(next);
+      return next;
+    });
   };
 
   const prevStep = () => {
-    const prev = currentStep - 1;
-    setCurrentStep(prev >= 0 ? prev : 0);
-    saveStep();
+    setCurrentStep(prev => {
+      const previous = prev - 1;
+      const validPrevious = previous >= 0 ? previous : 0;
+      saveStep(validPrevious);
+      return validPrevious;
+    });
   };
 
   const resetSteps = () => {
     setCurrentStep(0);
     setIsOpen(false);
     localStorage.removeItem("currentStep");
+    localStorage.removeItem("isOpen");
   };
 
-  useEffect(() => {
-    // Загрузка сохраненного шага из localStorage при монтировании компонента
-    const savedStep = localStorage.getItem("currentStep");
-    if (savedStep) {
-      setCurrentStep(parseInt(savedStep, 10));
-      setIsOpen(true);
-    }
-  }, []);
+  const saveStep = (step) => {
+    localStorage.setItem("currentStep", step.toString());
+  };
 
-   const saveStep = () => {
-     // Сохранение текущего шага в localStorage
-     localStorage.setItem("currentStep", currentStep.toString());
-   };
+  const saveIsOpen = (isOpen) => {
+    localStorage.setItem("isOpen", isOpen.toString());
+  };
+
   const handleClick = () => {
     setIsOpen(true);
-     saveStep();
+    saveIsOpen(true);
+    saveStep(currentStep);
   };
+
   const handleClickHelp = () => {
     setHelp(!help);
   };
+
+  useEffect(() => {
+    const savedStep = localStorage.getItem("currentStep");
+    const savedIsOpen = localStorage.getItem("isOpen");
+
+    if (savedStep) {
+      setCurrentStep(parseInt(savedStep, 10));
+    }
+
+    if (savedIsOpen) {
+      setIsOpen(savedIsOpen === "true");
+    }
+  }, []);
 
   return (
     <>

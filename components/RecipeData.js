@@ -19,7 +19,7 @@ export async function FetchProducts(params) {
   let response;
 
     response = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}/api/products`)
+    `${process.env.NEXT_PUBLIC_API_URL}/api/${params.locale}/products`)
 
   const products = await response.json();
   return products;
