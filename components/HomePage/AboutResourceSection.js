@@ -13,7 +13,7 @@ export const AboutResourceSection = () => {
   return (
     <section className="section" id="resource">
       <div className={`container`}>
-        <h2 className={`${styles.aboutTitle} sectionTitle`}>{t("title")}</h2>
+        {/* <h2 className={`${styles.aboutTitle} sectionTitle`}>{t("title")}</h2>
         <p><span className={styles.aboutBoldText}>Gastro Guide </span> - ваш надійний провідник у світі кулінарії, де кожний куточок планети представлений у всій своїй кулінарній красі. Наше веб-застосунок призначено задовольнити цікавість гурманів та любителів кулінарних пригод, надаючи обширну інформацію про різноманітність світової кухні.</p>
         <h3>Що чекає вас на сайті:</h3>
         <ul>
@@ -25,8 +25,8 @@ export const AboutResourceSection = () => {
           <li><h4>Кулінарні події:</h4><p>Будьте в курсі головних кулінарних подій та фестивалів, що відбуваються по всьому світу. Відкрийте для себе нові кулінарні традиції та враження, познайомтеся з кращими кулінарними майстрами та їхніми дивовижними шедеврами.</p><Link href={"/"}>Перейти</Link></li>
           <li><h4>Довідник методів приготування:</h4><p>Оволодійте різноманітними методами приготування та обробки продуктів. Від основних прийомів до високопродуктивних технік - у нас ви знайдете всю необхідну інформацію, щоб стати справжнім майстром кулінарії.</p><Link href={"/"}>Перейти</Link></li>
           
-        </ul>
-        {/* <ul className={styles.aboutList}>
+        </ul> */}
+        <ul className={styles.aboutList}>
           <li
             className={`${styles.aboutListItem} ${styles.aboutListItem__first}`}
           >
@@ -81,7 +81,7 @@ export const AboutResourceSection = () => {
             </div>
             <p className={styles.aboutListText}>{t("descriptions.user")}</p>
           </li>
-        </ul> */}
+        </ul>
       </div>
     </section>
   );

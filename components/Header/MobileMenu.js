@@ -54,6 +54,7 @@ export const MobileMenu = ({
             className={styles.mobileMenuBtnClose}
             onClick={closeMenu}
           ></button>
+          
           <div>
             <ul className={styles.mobileMenuNavList}>
               {navList.map(({ id, title, path, pathEN, pathUA }) => {
